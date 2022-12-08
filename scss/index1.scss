@@ -1,0 +1,47 @@
+@charset "UTF-8";
+// 引用 black 變數
+@import "var_default";
+@import "compass/css3";
+@import "components/header";
+
+/* 下方未整理 scss 先使用覆寫的方式 */
+.lcms-header .tools .profile .nav-up > .dropdown .btn {
+    border: 1px solid #000000;
+    background-image: linear-gradient(to bottom, #747474, #000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#747474', endColorstr = '#000000', GradientType = 0);
+}
+
+.nav-adv-search {
+    background-color: $nav-bg-color;
+}
+#franchisee {
+    background-color: $franchisee-bg-color;
+}
+.elastislide-wrapper {
+    background-color: $franchisee-bg-color2;
+}
+/* 課程分類 */
+.lcms-nav-group nav ul li.active,
+.lcms-nav-group nav ul li:hover{
+    border-color: $courselist-class-br-color;
+    a {
+        color: $courselist-class-txt-color;
+    }
+}
+.lcms-nav-tabs .mooc-nav-more {
+    background-color: $courselist-class-br-color;
+}
+.lcms-header .tools .profile .nav-up .user {
+    background-color: #626262;
+    &:hover{
+        background-color: #626262;
+    }
+}
+/* 檢視單一課程頁尾區域 */
+.footer-bg {
+    background: $footer-bg-bottom-color;
+}
+.footer {
+    background-image: linear-gradient(to bottom, $footer-bg-top-color 66px, #282828 1px, $footer-bg-bottom-color 28px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FF898989', endColorstr = '#FF9E9584', GradientType = 0);
+}

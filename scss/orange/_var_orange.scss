@@ -1,0 +1,51 @@
+@charset "UTF-8";
+// 總色碼
+@import "base/variable";
+
+//色碼引用請參照 base/variable 裡的參數
+//EX $nav-color: $color-red-1;
+
+
+//************************************* 
+// *   首頁套版
+//*************************************
+// header 導航列
+    // .lcms-header .title #FFFFFF
+    $header-bg-color: #FFFFFF;
+    // .lcms-header .title 邊框 #DDDDDD
+    $header-br-color: $color-gray-11;
+    // .lcms-header .tools .profile .nav>.divider 邊框 #DDDDDD
+    $header-br-color2: $color-gray-11;
+    // .lcms-header .tools .profile .nav > li >a,
+    // .lcms-header .tools .profile .nav > li > span 文字 #898989
+    $header-txt-color: #FFFFFF;
+
+// nav BANNER區
+    // .nav-adv-search 背景色 #FFCC00
+    $nav-bg-color: $color-orange-5;
+
+// franchisee 品牌大街
+    // #franchisee 背景色 #FBCED2
+    $franchisee-bg-color: $color-red-3;
+    // .elastislide-wrapper #FF7F7E
+    $franchisee-bg-color2: $color-red-2;
+
+// 內容商標題底色
+    // #FFCC00
+    $content-bg-color: $color-orange-5;
+
+// 最新消息
+    // #news_show_right 第二個div #E55756
+    $news-show-bg-color: $color-red-1;
+
+// 課程列表
+    // nav ul li a.active(:hover) 類別邊線, .mooc-nav-more 更多類別按鈕bg #FF9E14
+    $courselist-class-br-color: $color-orange-2;
+    // nav ul li a.active(:hover) 文字 #FF9E14
+    $courselist-class-txt-color: $color-orange-2;
+// Footer
+    // .footer 底色上漸層 #898989
+    $footer-bg-top-color: $color-gray-7;
+    // .footer 底色下漸層 #9E9584
+    $footer-bg-bottom-color: $color-gray-4;
+

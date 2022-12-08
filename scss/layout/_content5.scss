@@ -1,0 +1,71 @@
+/* qti process */
+.data5 {
+	@include border-radius($radius);
+	display: table;
+	padding: 0;
+	width: 100%;
+	height: 6.5em;
+	> .process-btn {
+		display: table-cell;
+		padding: 0.6em;
+		border-style: solid;
+		border-color: #DDDDDD;
+		border-width: 1px 1px 1px 0;
+		background-color: #f9f9f9;
+		color: #707070;
+		text-align: center;
+		&:first-child {
+			@include border-left-radius($radius);
+			border-width: 1px;
+		}
+		&:last-child {
+			@include border-right-radius($radius);
+		}
+		&.pay {
+			&.active {
+				background-color: #06A2A4;
+				color: white;
+				cursor: pointer;
+			}
+		}
+		&.rating {
+			&.active {
+				background-color: #F3800F;
+				color: white;
+				cursor: pointer;
+			}
+		}
+		&.score {
+			&.active {
+			    background-color: #2EB7EE;
+				color: white;
+				cursor: pointer;
+			}
+		}
+		> .level1 {
+			> .main-text {
+				line-height: 1.7em;
+				font-size: 2.3em;
+				font-weight: bold;
+			}
+			> .sub-text {
+				font-size: 1em;
+			}
+		}
+		> .level2 {
+			padding: 0.5em;
+			.btn {
+				padding: 0 10%;
+				margin-left: 1em;
+				height: 3em;
+				line-height: 3em;
+				font-size: 1.3em;
+				font-weight: bold;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+}

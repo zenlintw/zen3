@@ -1,0 +1,26 @@
+$link: #66aacc;
+$loading-msg-height: 2em;
+
+.isloading-wrapper.isloading-right {
+    margin-left: 10px;
+}
+
+.isloading-overlay {
+    position: relative;
+    text-align: center;
+
+    .isloading-wrapper {
+        display: inline-block;
+        margin: 0 auto;
+        padding: $loading-msg-height/10 $loading-msg-height*1.6;
+        top: 30%;
+        z-index:9000;
+        background: #000000;
+        opacity: 0.7;
+        color: #FFFFFF;
+        @include border-radius($loading-msg-height);
+        .icon-spin {
+            vertical-align: middle;
+        }
+    }
+}

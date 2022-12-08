@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* settings (*Need to import layout1) */
+.data6 {
+	@include border-radius($radius);
+	> .title {
+		@include border-top-radius($radius - 1);
+		position:relative;
+		height: 3.2em;
+		/* line-height: 2em; */
+		padding: 0 0.8em;
+		background-color: #F3800F;
+		background-image: image-url('icon_setup_title_1.png');
+		background-repeat: no-repeat;
+		background-position: right; 
+		/*
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 1.8em;
+		*/
+		> .nav {
+			position:absolute;
+			bottom: 0;
+			left: 1em;
+		}
+	}
+	> .content {
+		> form {
+			margin: 0;
+			input[type="text"], input[type="password"], select {
+				margin: 0;
+				height: 30px;
+				width: 350px;
+			}
+			input[type="checkbox"], input[type="radio"] {
+				// height: 20px;
+				// width: 20px;		
+			}
+			label {
+				display: inline-block;
+			}
+		}
+		.data {
+			width: 50%;
+			min-width: 600px;
+			.key {
+				width: 100px;
+				min-width: 100px;
+				padding: 0.3em 2em;
+				background-color: #F5F5F5;
+				text-align: right;
+				vertical-align: top;
+				line-height: 30px;
+			}
+			.key-lg {
+				width: 185px;
+				min-width: 185px;
+			}
+			.value {
+				padding: 0.3em 2em;
+				vertical-align: middle;
+				.main-info {
+					.id {
+						font-size: 2em;
+						line-height: 1.1em;
+						font-weight: bold;
+						white-space: nowrap;
+						.name {
+							display: inline-block;
+							color: #939393;
+							font-size: 0.5em;
+						}
+					}
+					.mail {
+						font-weight: bold;
+					}
+					button {
+						line-height: 1.4em;
+						padding: 0.3em 1.2em;
+						margin: 1em 0;
+					}
+				}
+				.sub-info {
+					.property {
+						width: 100px;
+						min-width: 100px;
+						text-align: left;
+						vertical-align: middle;
+						line-height: 2.5em;
+						font-weight: bold;
+					}
+					.value {
+						vertical-align: middle;
+						padding: 0.3em 4em;
+					}
+				}
+			}
+		}
+		.func {
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	> .operate {
+		text-align: right;
+		border-top: 1px solid #DDDDDD;
+		padding: 0.8em;
+		> button {
+			margin: 0 0.3em;
+			padding: 0 2.4em;
+			height: 2.1em;
+		}
+	}	
+	.divider-horizontal {
+		border-top-color: #F5F5F5;
+	}
+}

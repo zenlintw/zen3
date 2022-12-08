@@ -1,0 +1,248 @@
+.cssBg01 {
+	background-color: #7070B8;
+}
+
+.cssBg02 {
+	background-color: #9E9ECF;
+}
+
+.cssInput {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #A0B5D3;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.MMenu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.MContainer {
+	position: absolute;
+	left: 207px;
+	top: 44px;
+	width: 425px;
+	height: 30px;
+	overflow: hidden;
+	clip: auto;
+	visibility: visible;
+	z-index: 5;
+}
+
+.MMenuItemFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.MMenuItemFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #000000;
+	text-decoration: underline;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.MMenuItemOver {
+	background-color: #9E9ECF;
+	padding: 4px 6px 2px 6px;
+}
+
+.MMenuItemOut {
+	background-color: #FFFFFF;
+	padding: 4px 6px 2px 6px;
+}
+
+.MScroll {
+	position: absolute;
+	top: 48px;
+	left: 600px;
+}
+
+.SMenu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.SContainer {
+	position: absolute;
+	left: 207px;
+	top: 72px;
+	width: 425px;
+	height: 32px;
+	overflow: hidden;
+	clip: auto;
+	visibility: visible;
+	z-index: 5;
+}
+
+.SMenuItemOver {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.SMenuItemOut {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.SMenuItemSplit {
+	font-size: 12px;
+	height: 14px;
+	line-height: 14px;
+	margin: 0px 8px 0px 1px;
+	border-top: 0px none #FFFFFF;
+	border-left: 0px solid #FFFFFF;
+	border-bottom: 0px none #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	display: inline;
+}
+
+.SScroll {
+	position: absolute;
+	top: 70px;
+	left: 600px;
+}
+
+.sysUsername {
+	padding: 6px 0px 0px 9px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysOnline {
+	position: absolute;
+	top: 6px;
+	left: 600px;
+}
+
+.sysOnlineFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysOnlineFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysEnvFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysEnvFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysHelp {
+	position: absolute;
+	top: 46px;
+	left: 675px;
+	height: 20px;
+	margin: 0px 0px -5px 0px;
+	z-index: 20;
+}
+
+.sysHelpSplit {
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	margin: 0px 8px 0px 1px;
+	border-top: 0px none #FFFFFF;
+	border-left: 0px solid #FFFFFF;
+	border-bottom: 0px none #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	display: inline;
+}
+
+.sysHelpFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysHelpFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysTime {
+	position: absolute;
+	top: 72px;
+	left: 738px;
+}
+.sysTimeFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysTimeFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.sysErrorFont {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #FF0000;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}

@@ -1,0 +1,391 @@
+.bgHead {
+	background-color: #5176D2;
+}
+
+.bgTools {
+	background-color: #8CAAE6;
+}
+
+.bgWorkArea1 {
+	background-color: #8CAAE6;
+}
+
+.bgWorkArea2 {
+	background-color: #FFFFFF;
+	padding: 0px 20px 0px 20px;
+	width: 100%;
+	vertical-align: top;
+}
+
+.bgWorkArea3 {
+	background-color: #FFFFFF;
+	padding: 0px 20px 0px 0px;
+	vertical-align: top;
+}
+
+.bgFoot {
+	background-color: #5176D2;
+}
+
+.fontFoot {
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 22px;
+	height: 22px;
+}
+
+.fontTools {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 22px;
+	height: 22px;
+}
+
+.fontNormal {
+	font-size: 12px;
+	color: #323232;
+	line-height: 20px;
+}
+
+.cssLogin {
+	background-color: #C7D8FA;
+	border-style: none solid solid solid;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	padding: 0px 3px 5px 3px;
+	font-size: 12px;
+	color: #001376;
+}
+
+.itemLogin {
+	padding: 1px 0px 1px 0px;
+	line-height: 12px;
+}
+
+.cssInput {
+	background-color: #FFFFFF;
+	height: 16px;
+	line-height: 16px;
+	width: 70px;
+	border: 1px solid #5176D2;
+	font-size: 12px;
+}
+
+.cssBtn {
+	font-size: 12px;
+	height: 19px;
+	color: #484884;
+	background-color: #E6EEF3;
+	border: 1px solid #FFFFFF;
+	width: 161px;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+	vertical-align: middle;
+}
+
+.cssLoginBtn {
+	background-color: #C7D8FA;
+	border: 0px none #000000;
+	height: 21px;
+	width: 82px;
+}
+
+.cssCloseBtn {
+	font-size: 12px;
+	height: 20px;
+	color: #484884;
+	background-color: #E6EEF3;
+	border: 1px solid #A0B5D3;
+	display: block;
+	vertical-align: middle;
+}
+/* ------ Anchor ------ */
+.cssAnchor {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssAnchor:link {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssAnchor:visited{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	color: #000080;
+}
+
+.cssAnchor:hover {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #0000FF;
+}
+
+/* ------ News Anchor ------ */
+.cssNewsAnchor {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssNewsAnchor:link {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssNewsAnchor:visited{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	color: #000080;
+}
+
+.cssNewsAnchor:hover {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #0000FF;
+}
+
+/* ------ Course Anchor ------ */
+.cssCSAnchor {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssCSAnchor:link {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+}
+
+.cssCSAnchor:visited{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	color: #000080;
+}
+
+.cssCSAnchor:hover {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #0000FF;
+}
+
+.cssTabs {
+	font-size: 12px;
+	line-height: 17px;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 0px 0px 2px 0px;
+}
+
+.cssTable {
+	background-color: #E3E9F2;
+	border: 1px solid #5176D2;
+}
+
+.cssTrHead {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #C7D8FA;
+}
+
+.cssTrEvn {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.cssTrOdd {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #ECF1F7;
+}
+
+/* News */
+.cssNewsList {
+	font-size: 12px;
+	color: #323232;
+	/* line-height: 20px; */
+}
+
+.cssNewsMoreTable {
+	background-color: #E3E9F2;
+	border: 1px solid #C7D8FA;
+}
+
+.cssNewsMoreHead {
+	font-size: 12px;
+	line-height: 21px;
+	height: 21px;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 2px;
+	background-color: #BCD0F3;
+}
+
+.cssNewsMoreTdEvn {
+	font-size: 12px;
+	line-height: 17px;
+	color: #006699;
+	background-color: #FFFFFF;
+}
+
+.cssNewsMoreTdOdd {
+	line-height: 21px;
+	height: 21px;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.cssNewsMoreCont {
+	font-size: 12px;
+	line-height: 17px;
+	color: #006699;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 400px;
+	height: 200px;
+	overflow: auto;
+}
+/* New Course*/
+.cssCourseList {
+	font-size: 12px;
+	color: #323232;
+	line-height: 20px;
+}
+
+.cssCaleSchool {
+	margin: 15px 0px 0px 0px;
+}
+
+	/* ------ 行事曆 (今天) ------ */
+.cssCaleBg01 {
+	background-color: #C7D8FA;
+}
+	/* ------ 行事曆 (事件提醒) ------ */
+.cssCaleBg02 {
+	background-color: #F5CCF6;
+}
+	/* ------ 行事曆 (星期天) ------ */
+.cssCaleFont01 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #FF0000;
+}
+	/* ------ 行事曆 (星期六) ------ */
+.cssCaleFont02 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #008F29;
+}
+	/* ------ 行事曆 (其它星期) ------ */
+.cssCaleFont03 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #8CAAE6;
+}
+	/* ------ 行事曆 (今天有事件) ------ */
+.cssCaleFont04 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #BC8AD7;
+	background-color: #C7D8FA;
+}
+	/* ------ 分隔 ------ */
+.divide {
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	line-height: 9px;
+	height: 9px;
+	margin: 1px 8px 0px 8px;
+}
+/* ------ Tools Anchor ------ */
+.cssToolsAnchor {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.cssToolsAnchor:link {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.cssToolsAnchor:visited{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.cssToolsAnchor:hover {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	text-decoration: none;
+	color: #7A0BC0;
+}
+
+.cssVister {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #ffffff;
+}

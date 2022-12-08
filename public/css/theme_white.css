@@ -1,0 +1,55 @@
+.lcms-header .title {
+    background-color: #FFFFFF;
+    border-color: #dddddd;
+}
+
+.lcms-header .tools 
+.profile .nav>li>a {
+    color: #898989;
+}
+
+.lcms-header .tools 
+.profile .nav>.divider {
+    border-right: 1px solid #dddddd;
+}
+
+.lcms-header .tools 
+.profile .nav>li>span {
+    color: #898989;
+}
+
+.icon-home {
+    background-image: url(/public/images/theme_white/co_icon_home_w.png);
+}
+
+.personal-setup {
+    background-image: url(/public/images/theme_white/setup_w.png);
+}
+
+.mooc-sidebar {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(#FFFFFF));
+    background-image: linear-gradient(#ECECEC, #FFFFFF);
+}
+
+.wm-content .lcms-header 
+.tools .profile .nav .user-info {
+    color: #898989;
+}
+
+.wm-content .sidebar-toggle .icon-toggle {
+    background: transparent url("/public/images/theme_white/icon-toggle-w1.png") no-repeat center;
+}
+
+.wm-content .sidebar-toggle .icon-toggle:hover {
+    background: transparent url("/public/images/theme_white/icon-toggle-w2.png") no-repeat center;
+}
+
+.wm-content .toggle-arrow {
+    border-color: transparent transparent transparent #ececec;
+}
+
+.header {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="zh-tw">
+        <title>CSV範例說明</title>
+        <link rel="stylesheet" type="text/css" href="/theme/default/academic/wm.css">
+    </head>
+    <body>
+        <div align="center">
+            <table width="760" border="0" cellspacing="0" cellpadding="0" id="ListTable">
+                <tr class="cssTr">
+                    <td class="cssTd">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr class="cssTr">
+                                <td class="cssTd">
+                                    <img onselectstart="return false;" id="ImgL1" MyAttr="1" tabsIdx="1" src="/theme/default/academic/title_on_01.gif" width="25" height="30" border="0" align="absbottom">
+                                </td>
+                                <td align="center" valign="bottom" nowrap="NoWrap" id="TitleID1" MyAttr="1" tabsIdx="1" style="cursor: default; background-image: url('/theme/default/academic/title_on_02.gif');" class="cssTabs" onselectstart="return false;">CSV範例說明 </td>
+                                <td class="cssTd">
+                                    <img onselectstart="return false;" id="ImgR1" MyAttr="1" tabsIdx="1" src="/theme/default/academic/title_on_03.gif" width="28" height="30" border="0" align="absbottom">
+                                </td>
+                                <td class="cssTd" width="100%">&nbsp;</td>
+                                <td class="cssTd">
+                                    <a href="/wmhelp.php?url=%2Facademic%2Fstud%2Fstud_import_csvhelp.php" target="_blank"><img src="/theme/default/academic/help.gif" width="21" height="21" border="0" align="middle" alt="Help" title="Help"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="cssTr">
+                    <td class="cssTd" valign="top">
+                        <table width="100%" border="0" cellspacing="1" cellpadding="3" class="cssTable" style="display:inline">
+                            <tr class="cssTrHead">
+                                <td class="cssTd" colspan="3">請依照以下的格式編輯您的題目，每題一行。</td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" nowrap="nowrap">格式</td>
+                                <td class="cssTd">
+                                    <table border="0" cellspacing="1" cellpadding="3" style="display:inline">
+                                        <tr class="cssTrEvn">
+                                            <td align="right">作業、測驗 : </td>
+                                            <td><font color="blue">題型,答案,題目,選項,詳解,分類,難易度 </font>(以逗號隔開)</td>
+                                        </tr>
+                                        <tr class="cssTrEvn">
+                                            <td align="right">問卷 : </td>
+                                            <td><font color="blue">題型,,題目,選項,詳解,分類,難易度 </font>(以逗號隔開)</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="cssTrOdd">
+                                <td class="cssTd" nowrap="nowrap">說明</td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>題型：用數字代表題型。1=是非；2=單選；3=複選；4=填充；5=簡答；6=配合</li>
+                                        <li>
+                                            標準答案：
+                                            <ul>
+                                                <li>是非題：1表示「是」；0表示「否」</li>
+                                                <li>單選題以數字表示正確答案。例如：2</li>
+                                                <li>複選同單選，以逗號(半形)隔開。例如：1,2,5</li>
+                                                <li>填充不必填答案(因為答案就在題目的小括號中。不懂？往下看就知道了。)</li>
+                                                <li>簡答題：因為是開放性題目，可以不預設標準答案</li>
+                                                <li>配合則以 a{2},b{1},c{3} 表示 a 與 2 配對，b 與 1 配對 以此類推。</li>
+                                            </ul>
+                                        </li>
+                                        <li>題目描述：除不可出現 , 外，其於字元均可。填充題之填空空格((答案))，須以雙層小括號括起來。</li>
+                                        <li>選項(單選、複選適用)：每個選項請以 || 這四個符號 (兩個管道字元，前後再各一個空白) 隔開。</li>
+                                        <li>複選題與配合題的答案區塊前後，需以 " （雙引號）括起來。</li>
+                                        <li>英文出題時，由於題目、選項通常會有 , （逗號），故題目、選項區塊前後，需以 " （雙引號）括起來。</li>
+                                        <li>配合題則用 @@ 這四個符號 (兩個 at 字元，前後再各一個空白) 隔開前後兩組選項(提示與待選)<br>其它無選項的題型則留白。</li>
+                                        <li>詳解是解答敘述，可以留白省略。</li>
+                                        <li>分類是版、冊、章、節、段等資訊。請用減號 - 將各部份隔開。如：1-2-3-4-5。可以省略不填或<br>只填某部份。如：-2--4-5 表示『第2冊,第4節,第5段』。</li>
+                                        <li>難易度：用數字代表難易度，可以省略不填，則預設為『適中』<br>1、表示『非常簡單』<br>2、表示『簡單』<br>3、表示『適中』<br>4、表示『困難』<br>5、表示『非常困難』</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" nowrap="nowrap">作業<Br />測驗<Br />範例</td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>是非題<br>1,1,地球上最大的海域是太平洋。</li>
+                                        <li>單選題<br>2,3,以下哪一個星球是地球的天然衛星？ ,海王星 || 火星 || 月球 || 木星</li>
+                                        <li>複選題<br>3,"1,2,4",以下哪些國家位於南美洲？ ,智利 || 巴西 || 加拿大 || 阿根廷 || 薩伊</li>
+                                        <li>填充題<br>4,,床前明月光，疑似((地上霜))，舉頭望明月，低頭思((故鄉))！</li>
+                                        <li>簡答題<br>5,,學習完本課程以後，請寫下你對本課程印象最深刻的單元，並簡述你對這個單元的心得。</li>
+                                        <li>配合題<br>6,"a{2},b{3},c{4},d{1}",請將下列女主角與週爺電影配對,張敏 || 莫文蔚 || 黃聖依 || 朱茵 @@ 西遊記 || 賭聖 || 食神 || 功夫</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrOdd">
+                                <td class="cssTd" nowrap="nowrap">問卷<Br />範例</td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>是非題<br>1,,地球上最大的海域是太平洋。</li>
+                                        <li>單選題<br>2,,以下哪一個星球是地球的天然衛星？,海王星 || 火星 || 月球 || 木星</li>
+                                        <li>複選題<br>3,,以下哪些國家位於南美洲？,智利 || 巴西 || 加拿大 ||  阿根廷 || 薩伊</li>
+                                        <li>填充題<br>4,,床前明月光，疑似(())，舉頭望明月，低頭思(())！</li>
+                                        <li>簡答題<br>5,,學習完本課程以後，請寫下你對本課程印象最深刻的單元，並簡述你對這個單元的心得。</li>
+                                        <li>配合題<br>6,,請將下列女主角與周爺電影配對,張敏 || 莫文蔚 || 黃聖依 || 朱茵 @@ 西遊記 || 賭聖 || 食神 || 功夫</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" colspan="3" align="center">
+                                    <input type="button" value="關閉視窗" id="btn_close" class="cssBtn" onclick="window.close();">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

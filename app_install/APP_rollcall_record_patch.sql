@@ -1,0 +1,1 @@
+ALTER TABLE  `APP_rollcall_record` ADD  `device_status` varchar(128) NOT NULL DEFAULT  '' COMMENT  '裝置狀態' AFTER  `device_ident` ;

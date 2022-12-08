@@ -1,0 +1,589 @@
+﻿html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 14px;
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+    background-color: #ececec;
+}
+input, button, select, textarea {
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+}
+table {
+    /* font-size: 14px; */
+}
+blockquote {
+    padding: 0 0 0 20px;
+    margin: 0 0 20px;
+    border-left: 0;
+}
+
+.navbar .divider-vertical {
+    margin: 0 5px;
+}
+
+.navbar .nav>li>a {
+    padding: 10px;
+}
+
+.breakword {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.divider-horizontal {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-top-color: #DDDDDD;
+    position: relative;
+}
+
+.clearboth {
+    clear: both;
+    display: inline;
+}
+
+/* form
+-------------------------------------------------- */
+form {
+    margin-bottom: 10px;
+}
+
+.form-horizontal {
+    .control-group {
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .controls  {
+            > * {
+                margin-top: 3px;
+            }
+            > label {
+                display: inline-block;
+            }
+        }
+    }
+    .control-label {
+        font-size: 12px;
+        width: 66px;
+    }
+    .controls {
+        margin-left: 74px;
+    }
+    .form-actions {
+        padding-left: 140px;
+    }
+    .alert {
+        margin-bottom: 10px;
+    }
+}
+
+select, textarea,
+input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"],
+input[type="time"], input[type="week"],
+input[type="number"], input[type="email"],
+input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"],
+.uneditable-input {
+    font-size: 12px;
+    padding: 0 4px 1px 4px;
+    color: #666666;
+}
+
+select,
+input[type="file"] {
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+}
+
+select option {
+    height: 22px;
+    line-height: 22px;
+    padding-top: 8px;
+}
+
+header select {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #ECECEC;
+    color: black;
+}
+
+td select,
+td input[type="text"], td input[type="password"],
+td input[type="datetime"], td input[type="datetime-local"],
+td input[type="date"], td input[type="month"],
+td input[type="time"], td input[type="week"],
+td input[type="number"], td input[type="email"],
+td input[type="url"], td input[type="search"],
+td input[type="tel"], td input[type="color"],
+td .uneditable-input {
+    margin-bottom: 0;
+}
+
+td textarea {
+    margin-bottom: 0;
+    width: 90%;
+    resize: vertical;
+}
+
+td .help-block {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.checkbox {
+    color: #666;
+}
+
+textarea, input {
+    &.error, &.error:focus, &.alert-lcms-error, &.alert-lcms-error:focus {
+        border: 1px solid #FF3C00;
+        box-shadow: 0 0 4px 0 rgba(255,60,0,0.7);
+        color: black; 
+    }
+}
+
+
+/* font */
+.font-red {
+    color: #DE3716;
+    font-size: 0.85em;
+}
+.font-blue {
+    color: #0086E6;
+    font-size: 0.85em;
+}
+.font-gray {
+    color: #A4A6A7;
+    font-size: 0.85em;
+}
+.font-gray-dark {
+    color: #707070;
+    font-size: 0.9em;
+}
+.font-dark {
+    color: #3F3F3F;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.font-emeraldgreen {
+    color: #72A81F;
+    font-size: 0.7em;
+}
+.font-small {
+    font-size: 0.8em;
+}
+
+/* margin */
+.margin-top-5 {
+    margin-top: 5px;
+}
+.margin-top-10 {
+    margin-top: 10px;
+}
+.margin-top-15 {
+    margin-top: 15px;
+}
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+.margin-right-5 {
+    margin-right: 5px;
+}
+.margin-right-10 {
+    margin-right: 10px;
+}
+.margin-right-15 {
+    margin-right: 15px;
+}
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+/* padding */
+.padding-top-5 {
+    padding-top: 5px;
+}
+.padding-left-15 {
+    padding-left: 15px;
+}
+.padding-right-35{
+    padding-right: 35px;
+}
+.padding-right-15{
+    padding-right: 15px;
+}
+
+.row-15 {
+    height: 15px;
+}
+.btnNormal{
+    width: 96px;
+}
+.aNormal{
+    min-width: 73px;
+}
+
+/* 間隔線-灰色 */
+.lcms-line-gray {
+    background-color: #DBDBDB;
+    height: 1px;
+}
+
+/* 間隔線-白色 */
+.lcms-line-white {
+    background-color: #FFFFFF;
+    height: 1px;
+}
+
+/* 間隔線-綠色 */
+.lcms-line-green {
+    background-color: #6FA324;
+    height: 4px;
+}
+
+/* 紅色字文案 */
+.lcms-text-import {
+    font-size: 12px;
+    color: #FF3C00;
+}
+/* 紅色星字號 */
+.lcms-red-starmark {
+    font-size: 13px;
+    color: #FF3C00;
+}
+/* 主要灰色區塊 */
+.lcms-main-gray {
+    background-color: #DBDBDB;
+    padding: 20px 25px 20px 25px;
+}
+
+.lcms-right {
+    float: right;
+}
+
+/* 欄位文字 -深色 */
+.lcms-table-th-text_dark {
+    color: #353535;
+    font-size: 0.85em;
+}
+
+/* 欄位 -綠色底 白色文字 */
+.lcms-th-green {
+background-color: red;
+    color: #353535;
+    font-size: 0.9em;
+}
+
+/* 欄位文字 -灰色 */
+.lcms-table-td-text_gray {
+    color: #707070;
+    font-size: 0.85em;
+}
+
+/* checkbox文字 */
+.lcms-checkbox-text {
+    color: #707070;
+    font-size: 0.8em;
+    margin-right: 60px;
+    position: relative;
+    top: 2px;
+}
+
+/* radio文字 */
+.lcms-radio-text {
+    color: #707070;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/* 頁籤 */
+.lcms-tab {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: -1px;
+    margin-right: 3px;
+    position: relative;
+    z-index: 20;
+}
+/* 頁籤下方的內容 for 上傳檔案 */
+.lcms-tab-content {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    padding: 20px 20px 20px 20px;
+}
+
+/* 複寫bootstrap-responsive.min.css的.container{} */
+.container {
+    min-width: 885px;
+    width: 100%;
+    height: 52px;
+}
+.sub-container {
+    padding: 20px 25px 20px 25px;
+}
+
+.esn-container {
+    padding-top: 10px;
+    display: table;
+    overflow: auto;
+    padding-bottom: 47px;
+}
+
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.esn-container>.panel {
+    width: 620px;
+}
+
+.esn-box-main {
+    background-color: #FFFFFF;
+    border: 1px solid #BABABA;
+    padding: 20px 25px 20px 25px;
+    margin: 0;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.esn-box-append {
+    background-color: #F5F5F5;
+    border: 1px solid #C5C5C5;
+    padding: 25px 25px 20px 25px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    z-index: 0;
+    margin-top: -5px;
+    position: relative;
+}
+
+.lcms-title-table {
+    background-color: #DBDBDB;
+    height: 34px;
+}
+
+.lcms-title-box {
+    background-color: #EDEDED;
+    border: none;
+    /*border-bottom: 3px solid #6FA324;*/
+    height: 33px;
+    line-height: 35px;
+}
+
+.lcms-title-text {
+    font-size: 15px;
+    font-weight:bold;
+    color: #000000;
+    padding: 5px 5px 0 20px;
+}
+
+.lcms-title-text-no-padding {
+    font-size: 15px;
+    font-weight:bold;
+    color: #000000;
+}
+
+/* 標題: 只做top-padding */
+.lcms-title-text-top-padding {
+    font-size: 13px;
+    font-weight:bold;
+    color: #000000;
+    padding-top: 20px;
+}
+
+
+/* eSN Custom
+-------------------------------------------------- */
+.esn-text-right,
+td.esn-text-right,
+th.esn-text-right {
+    text-align: right;
+}
+
+/* table
+-------------------------------------------------- */
+.esn-box-append .table {
+    background-color: #FFFFFF;
+}
+.esn-box .table th,
+.esn-box-main .table th,
+.esn-box-append .table th {
+    color: #333;
+    font-weight: normal;
+}
+.esn-box .table thead th,
+.esn-box-main .table thead th,
+.esn-box-append .table thead th {
+    color: #FFFFFF;
+    background-color: #6DA71F;
+    font-size: 13px;
+    text-align: left;
+}
+.esn-box .table thead th {
+    background-color: #6DA71F !important;
+}
+.esn-box-append .table th .text-important {
+    font-size: 15px;
+}
+.esn-box-main .table thead th.sort,
+.esn-box-append .table thead th.sort {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* table表頭-白色文字,綠色底色*/
+.lcms-table-td-green {
+    color: #fff;
+    font-size: 13px;
+    background-color: #6DA71F;
+}
+
+/* 複寫bootstrap的進度bar */
+.progress {
+    height:20px;
+    margin-bottom:0px;
+    overflow:hidden;
+    background-color:black;
+    background-image:-moz-linear-gradient(top,#ffffff,#ffffff);
+    background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ffffff));
+    background-image:-webkit-linear-gradient(top,#ffffff,#ffffff);
+    background-image:-o-linear-gradient(top,#ffffff,#ffffff);
+    background-image:linear-gradient(to bottom,#ffffff,#ffffff);
+    background-repeat:repeat-x;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffffffff',GradientType=0);
+    -webkit-box-shadow:inset 0 0 0 0 rgba(153,153,153,0);
+    -moz-box-shadow:inset 0 0 0 0 0 rgba(153,153,153,0);
+    box-shadow:inset 0 0 0 0 0 rgba(153,153,153,0);
+
+}
+
+/* 複寫bootstrap的.well (form tr.sun) */
+.well {
+    background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    padding: 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.lcms-box-iframe {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-position: center center;
+    background-color: white;
+    border: 1px solid #BABABA;
+    padding: 10px 10px 0px 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 覆寫預設值
+-------------------------------------------------- */
+.row {
+    margin-left: -10px;
+}
+
+[class*="span"] {
+    margin-left: 12px;
+}
+
+.offset0 {
+    margin-left: 0;
+}
+
+.offset2 {
+    margin-left: 180px;
+}
+.offset3 {
+    margin-left: 280px;
+}
+
+.span3 {
+    width: 170px;
+}
+
+.span9 {
+    width: 800px;
+}
+
+/* IE8 Hack
+-------------------------------------------------- */
+.span9.bs-content {
+    margin-left: 10px \9;
+}
+
+.span12 {
+    width: 980px;
+}

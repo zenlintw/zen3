@@ -1,0 +1,252 @@
+// block
+
+
+// course list
+.lcms-items {
+    .lcms-item-selector {
+        display: inline-block;
+        .message, .func-btn {
+            display: none;
+            position: absolute;            
+            width: 100%;
+            top: 90px;
+            text-align: center;
+        }
+        .func-btn {
+            top: 245px;
+        }
+        .lcms-item {
+            /* display: inline-table; */
+            width: 236px;
+            padding: 4px;
+            margin: 0 1px 1em 1px;
+            background-color: #FFFFFF;
+            @include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+            @include border-radius($radius);
+            border: 1px solid #C4C4C4;
+            overflow: hidden;
+            text-align: left;
+            .cover {
+                width: 236px;
+                height: 133px;
+                cursor: pointer;
+                .dropbtn {
+                    position: relative;
+                    padding: 4px 5px;
+                    left: 208px;
+                    top: -130px;
+                    z-index: 20;
+                    img {
+                        width: auto;
+                        height: auto;                    
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .title {
+                height: 3.1em;
+                padding: 0.3em 1em;
+                background-color: #677284;
+                @include background-image(linear-gradient(to bottom, #677284, #384355));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FF677284', endColorstr = '#FF384355', GradientType = 0);
+                background-repeat: repeat-x;
+                color: #FFFFFF;
+                font-size: 0.9em;
+                line-height: 1.5em;
+                overflow: hidden;
+                word-break: break-all;
+                > div {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 210px;
+                }
+            }
+            .author {
+                height: 2.4em;
+                background-color: #F2F2F2;
+                border-bottom: 1px solid #E2E2E2;
+                padding: 4px;
+                .pic {
+                    float: left;
+                    position: relative;
+                    margin-right: 0.5em;
+                    padding: 3px;
+                    width: 26px;
+                    height: 26px;
+                    @include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+                    @include border-radius($radius);
+                    border: 1px solid #CACACA;
+                    background-size: cover;
+                    > img {
+                        background-size: cover;
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat no-repeat;
+                        width: 26px;
+                        height: 26px;
+                        background-color: white;
+                    }
+                }
+                .user {
+                    float: left;
+                    background-color: transparent;
+                    width: 140px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    .name {
+                        width:196px;
+                        color: #6D6D6D;
+                        font-size: 0.9em;
+                        font-weight: bold;
+                        line-height: 1.5em;
+                        > div {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 140px;
+                        }
+                    }
+                }
+                .push {
+                    position: relative;
+                    width: 26px;
+                    height: 26px;
+                    top: 2px;
+                    left: 196px;
+                    background-image: image-url('icon_share.png');
+                    cursor: pointer;
+                    &:hover {
+                        background-image: image-url('icon_share_1.png');
+                    }
+                }
+            }
+            .share {
+                height: 2.4em;
+                background-color: #F2F2F2;
+                border-bottom: 1px solid #E2E2E2;
+                padding: 4px;
+                .pic {
+                    margin-right: 0.7em;
+                    float: left;
+                    background-size: cover;
+                    width: 26px;
+                    height: 26px;
+                    position: relative;
+                    top: 2px;
+                    left: 3px;
+                    a {
+                        .icon-fb, .icon-plk, .icon-tw, .icon-ln, .icon-wct {
+                            width: 29px;
+                            height: 29px;
+                        }
+                    }
+                }
+            }
+            .info {
+                height: 2.5em;
+                background-color: #F3F3F3;
+                @include background-image(linear-gradient(to bottom, #FFFFFF, #F3F3F3));
+                background-repeat: repeat-x;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFFFFFFF', endColorstr = '#FFF3F3F3', GradientType = 0);
+                line-height: 2.5em;
+                font-size: 0.85em;
+            }
+            .font-red {
+                color: #d72b3e;
+            }
+
+            /* display */
+            .main {
+                text-align: center;
+                .logo img {
+                    margin-top: 40px;
+                }
+                .subject, .description {
+                    padding: 5px;
+                    color: #FFFFFF;
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+                .description {
+                    display: inline-block;
+                    padding: 1px;
+                    font-size: 1em;
+                }
+            }
+            .sub {
+                text-align: center;
+                div {
+                    display: inline-block;
+                }
+                .arrow {
+                    float: right;
+                }
+                .link {
+                    padding-left: 40px;
+                    padding-top: 12px;
+                    .login-lcms {
+                        padding-bottom: 1px;
+                        border: solid #fffc00;
+                        border-width: 0 0 1px 0;
+                        color: #fffc00;
+                        font: bold 14px/1.1 'Arial';
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .blue, .orange, .black {
+            height: 252px;
+        }
+        .blue {
+            background-color: #0DB6B9;
+        }
+        .orange {
+            background-color: #F3800F;
+        }
+        .black {
+            background-color: #2E2E2E;
+        }
+        .btn-type {
+            margin: 4px 5px 20px 5px;
+            border: 4px;
+            @include border-radius($radius);
+            cursor: pointer;
+            &:hover {
+                margin: 0 1px 16px 1px;
+                border: 4px solid #FFFFFF;
+                @include border-radius($radius);
+                @include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+                .main {
+                    .description {
+                        color: #FFFC00;
+                        padding: 4px 0 1px 0;
+                        margin-bottom: 2px;
+                        border: solid #fffc00;
+                        border-width: 0 0 1px 0;
+                        line-height: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .disable {
+        opacity: 0.5;
+        .message {
+            display: initial;
+        }
+        .func-btn {
+            display: initial;
+        }
+
+    }
+}
+
+
+
+.inline-ln, .inline-wct {
+    display: none;
+}

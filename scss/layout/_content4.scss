@@ -1,0 +1,21 @@
+/* message */
+.data4 {
+	@include border-radius($radius);
+	padding: 4em;
+	> .message {
+		padding: 1em 0;
+		text-align: center;
+		color: #B3B3B3;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	> .buttons {
+		text-align: center;
+		button {
+			margin: 0.4em;
+			min-width: 7em;
+			line-height: 1.4em;
+		}
+	}
+
+}

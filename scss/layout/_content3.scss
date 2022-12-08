@@ -1,0 +1,274 @@
+/* subject content */
+.data3 {
+	// subject
+	.main {
+		@include border-radius($radius);
+		padding: 1em 1.4em;
+		background: #F4F4F4;
+		> .author-pic {
+			float: left;
+		}
+		> .top-tmp {
+			margin-left: 6.5em;
+			overflow: auto;
+			line-height: 37px;
+			> .author-name {
+				display: inline;
+				font-size: 1em;
+				font-weight: bold;
+
+			}
+			> .post-time {
+				font-size: 0.86em;
+				margin-left: 1em;
+				display: inline;
+				color: #afafaf;
+			}			
+			>.operate {
+				float: right;
+				display: table-cell;
+				> .default {
+					> div {
+						vertical-align: middle;
+						display: inline-block;
+						margin-right: 0.4em;
+						> span {
+							font-size: 0.8em;
+						}
+					}
+				}
+				> .share {
+				    position: absolute;
+					right: 5.2em;
+					> .pic {
+					    margin-right: 0.7em;
+					    float: left;
+					    background-size: cover;
+					    width: 26px;
+					    height: 26px;
+					    position: relative;
+					    top: 2px;
+					    left: 3px;
+						> a {
+							> .fb {
+							    background: transparent url("/theme/default/learn_mooc/co_icon_fb.png") no-repeat;
+							    width: 29px;
+							    height: 29px;
+							    background-size: cover;
+							    &:hover {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+								    background-size: cover;
+							    }
+							    &:focus {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+								    background-size: cover;						    	
+							    }
+							}
+							> .plk {
+							    background: transparent url("/theme/default/learn_mooc/co_icon_plurk.png") no-repeat;
+							    width: 29px;
+							    height: 29px;
+							    background-size: cover;
+							    &:hover {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+								    background-size: cover;
+							    }
+							    &:focus {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+								    background-size: cover;						    	
+							    }
+							}
+							> .tw {
+							    background: transparent url("/theme/default/learn_mooc/co_icon_twitter.png") no-repeat;
+							    width: 29px;
+							    height: 29px;
+							    background-size: cover;
+							    &:hover {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_twitter_1.png") no-repeat;
+								    background-size: cover;
+							    }
+							    &:focus {
+								    background: transparent url("../learn_mooc/co_icon_twitter_1.png") no-repeat;
+								    background-size: cover;						    	
+							    }
+							}
+							> .wct {
+							    background: transparent url("/theme/default/learn_mooc/co_icon_wchat.png") no-repeat;
+							    width: 29px;
+							    height: 29px;
+							    background-size: cover;
+							    &:hover {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+								    background-size: cover;
+							    }
+							    &:focus {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+								    background-size: cover;						    	
+							    }
+							}
+							> .ln {
+							    background: transparent url("/theme/default/learn_mooc/co_icon_line.png") no-repeat;
+							    width: 29px;
+							    height: 29px;
+							    background-size: cover;
+							    &:hover {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+								    background-size: cover;
+							    }
+							    &:focus {
+								    background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+								    background-size: cover;						    	
+							    }
+							}
+						}						
+					}			
+				}
+				> .inline-ln {
+				    display: none;
+				}
+				> .inline-wct {
+				    display: none;
+				}
+			}
+		}
+		> .bottom-tmp {
+			margin-left: 6.5em;
+			> .content {
+				overflow: auto;
+				margin-bottom: -0.14em;
+				font-size: 0.86em;
+				line-height: 1.8em;
+				word-wrap: break-word;
+				float: left;
+				width: 100%;
+			}
+			> .show-content {
+				font-size: 0.86em;
+				display: block;
+				position: relative;
+				left: 0.6em;
+				margin-bottom: 0.6em;				
+			}
+			// hide content
+			> .disappear {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				height: 1.8em;
+				width: 40%;
+			}
+			> .file {
+				@include border-radius($radius);
+				margin-bottom: 0.8em;
+				background: #E1E1E1;
+				text-align: left;
+				line-height: 1.5em;
+				clear: both;
+				div:first-child {
+					padding: 0.5em 0.7em;
+					font-size: 1em;
+					font-weight: bold;
+					text-align: center;
+					// display: table-cell;
+					float: left;
+				}
+				div:first-child + div {
+					margin-left: 4em;
+					padding: 0.5em 1em;
+					color: #08B1B3;
+					font-size: 0.8em;
+					word-wrap: break-word;
+					// display: table-cell;
+					> * {
+						vertical-align: middle;
+					}
+					> a {
+						color: #08B1B3;
+					}
+
+				}
+			}
+			> .show-content {
+				color: #06A2A4;
+				display: none;
+                                margin-right: 1em;
+			}
+			> button {
+				/* width: 6em; */
+				padding-left: 2em;
+				padding-right: 2em;
+				line-height: 1em;
+			}
+		}	
+	}
+
+	.message {
+		padding: 0 1.4em;
+		font-weight: bold;
+		font-size: 0.9em;
+		line-height: 2em;
+		text-align: left;
+		clear: both;
+	}
+
+	// reply
+	.reply {
+		@extend .main;
+		background: #FFFFFF;
+		> .bottom-tmp {
+			> .show-note {
+				margin-bottom: 0.6em;
+				display: inline-block;
+				> a {
+					margin-bottom: 0.7em;
+					color: #06A2A4;
+					font-size: 0.8em;
+					> .whisper-collapse {
+					    background: transparent url("/public/images/icon_whisper_close.png") no-repeat;
+						position: relative;
+						top: 3px;
+						width: 15px;
+						height: 15px;
+						display: inline-block;						
+					}
+					> .whisper-expand {
+					    background: transparent url("/public/images/icon_whisper_open.png") no-repeat;
+						position: relative;
+						top: 3px;
+						width: 15px;
+						height: 15px;
+						display: inline-block;						
+					}
+				}
+			}
+			> .content {
+				float: none;
+			}
+		}
+	}
+	.note {
+		@extend .main;
+		padding: 0.7em 0.7em 0.7em 0;
+		background: #FFFFFF;
+		> .top-tmp, > .bottom-tmp {
+			margin-left: 3.5em;
+		}
+		> .bottom-tmp {
+			> .content {
+				float: none;
+				line-height: 1.4em;
+				> textarea {
+					width: 98%;
+				}
+			}
+			> button {
+				/* width: 5em; */
+			}
+		}
+	}
+	.more {
+		color: #06A2A4;
+		font-size: 0.8em;
+		cursor: pointer;
+	}
+}

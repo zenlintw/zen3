@@ -1,0 +1,218 @@
+/* mooc icon div css */
+// Mixin
+@mixin show-icons($aicon, $type) {
+    @each $name, $filename, $size-x, $size-y in $aicon {
+        @if just-icon == $type {
+            .icon-#{$name} {
+                background-image: image-url('#{$filename}.png');
+                background-position:top left;
+                width: #{$size-x};
+                height: #{$size-y};
+                @content;
+            }
+        } @else if can-hover == $type {
+            .icon-#{$name} {
+                background-image: image-url('#{$filename}.png');
+                background-position:top left;
+                width: #{$size-x};
+                height: #{$size-y};
+                @content;
+                &:hover {
+                    background-image: image-url('#{$filename}_1.png');
+                    cursor: pointer;
+                }
+            }
+        } @else if can-disable == $type {
+            .icon-#{$name} {
+                background: transparent image-url("#{$filename}.png") no-repeat;
+                background-position:top left;
+                width: #{$size-x};
+                height: #{$size-y};
+                &:hover {
+                    background: transparent image-url("#{$filename}_1.png") no-repeat;
+                    cursor: pointer;
+                }
+                .disabled & {
+                    background: transparent image-url("#{$filename}_2.png") no-repeat;
+                    &:hover {
+                        cursor: default;
+                    }
+                }
+            }
+        } @else if gif-icon == $type {
+            .icon-#{$name} {
+                background-image: image-url('#{$filename}.gif');
+                background-position:top left;
+                width: #{$size-x};
+                height: #{$size-y};
+                @content;
+            }
+        } @else {
+            @warn "Unfortunately, no value could be retrieved from `#{$type}`. " +
+                    "Please make sure it is defined in `$type` map.";
+        }
+    }
+}
+
+
+$aicon1: (
+    ("blue-info", "icon_blue_info", "40px", "40px"),
+);
+// parameter: $icon(name, filename, size), $type(just-icon; can-hover; can-disable)
+@include show-icons($aicon1, "just-icon"){
+    float: left;
+};
+
+/* hover icons */
+$aicon2: (
+    // forum icon
+    ("delete",      "icon_delete",      "30px", "30px"),
+    ("edit",        "icon_edit",        "30px", "30px"),
+    ("mailto",      "icon_mail",        "30px", "30px"),
+    ("share",       "icon_share",       "32px", "32px"),
+    ("share-s",     "icon_share_s",     "30px", "30px"),
+    ("unlike",      "icon_unlike",      "20px", "20px"),
+    ("insert",      "icon_insert",      "30px", "30px"),
+    // learn path
+    ("note",        "icon_note",        "32px", "32px"),
+    ("open-hr",     "icon_open_hr",     "32px", "32px"),
+    ("close-hr",    "icon_close_hr",    "32px", "32px"),
+    ("quickreview", "icon_quickreview", "32px", "32px"),
+);
+@include show-icons($aicon2, "can-hover"){
+
+};
+/* small size*/
+$aicon2-1: (
+    // forum icon
+    ("delete-s",      "icon_delete",    "20px", "20px"),
+    ("edit-s",        "icon_edit",      "20px", "20px"),
+    ("insert-s",      "icon_insert",    "20px", "20px"),
+);
+@include show-icons($aicon2-1, "can-hover"){
+    background-position: -5px;
+};
+
+$aicon3: (
+    // forum icon
+    ("more",        "icon_more",        "32px", "32px"),
+    ("new",         "icon_new",         "32px", "32px"),
+    ("file",        "icon_file",        "19px", "19px"),
+    ("subject-go",  "icon_subject_go",  "36px", "36px"),
+    ("like",        "icon_like",        "20px", "20px"),
+    ("reply",       "icon_reply",       "20px", "20px"),
+    ("theme",       "icon_theme",       "20px", "20px"),
+    ("read",        "icon_read",        "20px", "20px"),
+    ("unread",      "icon_unread",      "20px", "20px"),
+    ("a-show",      "icon_a_open",      "15px", "15px"),
+    ("a-hide",      "icon_a_close",     "15px", "15px"),
+    // learn path
+    ("expand-inc",  "icon_expand_inc",  "9px",  "9px"),
+    ("expand-dec",  "icon_expand_dec",  "9px",  "9px"),
+    // homework
+    ("user-blue",   "icon_user_blue",   "28px", "28px"),
+    // settings
+    ("check-off",   "icon_check_off",   "70px", "30px"),
+    ("check-on",    "icon_check_on",    "70px", "30px"),
+    // quickreview
+    ("collapse-s",  "icon_collapse_s",  "18px", "18px"),
+    ("expand-s",    "icon_expand_s",    "18px", "18px"),
+    ("qkreview-logo","icon_qkreview_logo","18px", "18px"),
+);
+@include show-icons($aicon3, "just-icon"){
+
+};
+
+$aicon3-1: (
+    // learn path
+    ("node",            "icon_node_1",  "30px", "20px"),
+    // ("node-progress",   "icon_node_2",  "30px", "20px"),
+    // ("node-finish",     "icon_node_3",  "30px", "20px"),
+);
+@include show-icons($aicon3-1, "just-icon"){
+    background-position: 5px 0;
+};
+
+
+/* share icons */
+$aicon4: (
+    ("fb",          "icon_fb",          "32px", "32px"),
+    ("plk",         "icon_plurk",       "32px", "32px"),
+    ("tw",          "icon_twitter",     "32px", "32px"),
+    ("ln",          "icon_line",        "32px", "32px"),
+    ("wct",         "icon_wchat",       "32px", "32px"),
+);
+@include show-icons($aicon4, "can-hover"){
+    background-size: cover;
+};
+
+/* disabled btn */
+$aicon5: (
+    // learn path
+    ("prevpage",    "icon_prevpage",    "32px", "32px"),
+    ("nextpage",    "icon_nextpage",    "32px", "32px"),
+    ("up",          "icon_up",          "32px", "32px"),
+    ("down",        "icon_down",        "32px", "32px"),
+);
+@include show-icons($aicon5, "can-disable"){
+    background-size: cover;
+};
+
+/* gif icon */
+$aicon6: (
+    ("loader",      "icon_loader",          "24px",     "24px"),
+    ("loader-lg-bk","icon_loader_lg_bk",    "100px",    "100px"),
+);
+@include show-icons($aicon6, "gif-icon"){
+    
+};
+
+/* dropdown icons */
+$aicon7: (
+    ("set-up",      "icon_set_up",          "25px", "25px"),
+);
+@include show-icons($aicon7, "can-hover"){
+    background-position: 4px 2px;
+};
+$aicon7-1: (
+    ("sign-out",    "icon_sign_out",        "25px", "25px"),
+);
+@include show-icons($aicon7-1, "can-hover"){
+    background-position: 3px 3px;
+};
+.icon-new-tag {
+    background-image: image-url('icon_new_tag.png');
+    background-position: top left;
+    width: 40px;
+    height: 20px;
+}
+.icon-new-tag-s {
+    background-image: image-url('icon_new_tag.png');
+    background-position: 0 -3px;
+    width: 40px;
+    height: 14px;
+}
+
+/* special others */
+.icon-lcms-classIng {
+    background: transparent url("/theme/default/learn/co_icon_time_1.png") no-repeat -1px -1px;
+    margin-right: 3px;
+    margin-left: 9px;
+    position: relative;
+    top: 0px;
+}
+/*
+.icon-node {
+    background-image: image-url('icon_node_1.png');
+    background-position: 5px 2px;
+    width: 30px;
+    height: 30px;
+}
+*/
+.node-progress {
+    background-image: image-url('icon_node_2.png');
+}
+
+.node-finish {
+    background-image: image-url('icon_node_3.png');
+}

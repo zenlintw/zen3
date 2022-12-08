@@ -1,0 +1,36 @@
+.group-box {
+    display:none;
+	> .group-box-content {
+	    margin:20px 20px 20px 20px; 
+	    input {
+			font-size: 2em;
+			height: 1.5em;
+	    }
+		p {
+		    text-align: center;
+		    font-size: 2em;
+		    margin: 1em 2em 0 2em;
+		    line-height: 1em;
+		}
+		> .input-note {
+		    text-align: right;
+		    color: red;
+		    font-size: 0.9em;
+		}
+	}
+	> .group-box-title {
+	    background-color:#F3800F;
+	    height:50px;
+	    line-height:50px;
+	    color:#ffffff;
+	    font-size:18px;
+	    font-weight:bold;
+	    border-top-left-radius:4px;
+	    border-top-right-radius:4px;
+	    padding-left:20px;
+	}
+	> .group-box-button {
+	    margin:20px 20px 20px 20px;
+	    float :right; 
+	}
+}

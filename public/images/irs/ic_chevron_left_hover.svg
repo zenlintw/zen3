@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="24px" viewBox="0 0 15 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_chevron_left_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="互動作答情境" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[學生]---互動作答情境---單選1" transform="translate(-32.000000, -625.000000)" fill="#BBEBDD">
+            <g id="footer" transform="translate(0.000000, 608.000000)">
+                <g id="btn-pre-disable" transform="translate(16.000000, 5.000000)">
+                    <path d="M30.7477881,15.9510482 C31.1105118,15.5883246 31.1105118,15.0079667 30.7477881,14.6452431 L28.3393031,12.2367581 C27.9765795,11.8740344 27.3962216,11.8740344 27.033498,12.2367581 L16.2678601,23.0023959 C15.9051365,23.3651196 15.9051365,23.9454774 16.2678601,24.308201 L27.033498,35.0738389 C27.3962216,35.4365625 27.9765795,35.4365625 28.3393031,35.0738389 L30.7477881,32.6653539 C31.1105118,32.3026302 31.1105118,31.7222724 30.7477881,31.3595487 L23.0435379,23.6552985 L30.7477881,15.9510482 Z" id="ic_chevron_left_hover"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

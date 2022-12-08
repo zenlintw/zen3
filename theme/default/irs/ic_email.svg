@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="註冊" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Devices:-Desktops---step2" transform="translate(-437.000000, -315.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(147.000000, 122.000000)">
+                <g id="Group-9">
+                    <g id="LoginCard" transform="translate(109.000000, 163.000000)">
+                        <g id="Group-4" transform="translate(63.000000, 30.000000)">
+                            <g id="Group" transform="translate(17.000000, 0.000000)">
+                                <g id="Group-2">
+                                    <g id="ic_email" transform="translate(101.000000, 0.000000)">
+                                        <circle id="Oval" fill="#AEDBDE" cx="74.8834951" cy="74.8834951" r="74.8834951"></circle>
+                                        <g id="Group-12" transform="translate(32.038835, 31.832524)">
+                                            <polygon id="Shape" fill="#F2F2F2" points="86.6359223 33.3956311 86.6359223 86.4927184 0.451456311 86.4927184 0.451456311 33.3956311 43.5291262 2.52184466"></polygon>
+                                            <rect id="Rectangle-path" fill="#FFFFFF" x="9.2038835" y="0.0315533981" width="68.6796117" height="79.4708738"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="5.04126214" width="24.1601942" height="20.5048544"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="40.6601942" y="5.04126214" width="33.7281553" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="40.6601942" y="10.7354369" width="26.8980583" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="40.6601942" y="16.4441748" width="33.7281553" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="40.6601942" y="22.1383495" width="29.1699029" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="27.8325243" width="61.2378641" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="33.526699" width="51.4368932" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="39.2354369" width="55.5436893" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="44.9296117" width="61.2378641" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="50.6237864" width="47.5631068" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="56.3179612" width="54.3932039" height="3.27669903"></rect>
+                                            <rect id="Rectangle-path" fill="#B4D8E0" x="13.1504854" y="62.026699" width="61.2378641" height="3.27669903"></rect>
+                                            <polygon id="Shape" fill="#F7B701" points="86.6359223 33.3956311 86.6359223 86.4927184 0.451456311 86.4927184 0.451456311 33.3956311 43.5436893 59.9441748"></polygon>
+                                            <polygon id="Shape" fill="#F7A601" points="86.6359223 86.4927184 43.5436893 52.6771845 0.451456311 86.4927184"></polygon>
+                                            <polygon id="Shape" fill="#A8A191" opacity="0.42" style="mix-blend-mode: multiply;" points="38.3446602 56.7402913 0.451456311 86.4927184 34.4563107 54.3373786"></polygon>
+                                            <polygon id="Shape" fill="#A8A191" opacity="0.42" style="mix-blend-mode: multiply;" points="86.6359223 86.4927184 48.7135922 56.7402913 52.8786408 54.1771845"></polygon>
+                                            <polygon id="Shape" fill="#A8A191" opacity="0.42" style="mix-blend-mode: multiply;" points="86.6504854 33.3956311 52.631068 54.3373786 48.7427184 56.7548544 48.7281553 56.7548544 43.5436893 52.6771845 38.3592233 56.7548544 38.3446602 56.7548544 34.4563107 54.3373786 0.451456311 33.3956311 0.451456311 33.3956311 0.451456311 33.3956311 38.3446602 55.5461165 43.5436893 51.5558252 48.7427184 55.5461165 86.6504854 33.3956311 86.6504854 33.3956311"></polygon>
+                                            <polygon id="Shape" fill="#A8A191" opacity="0.42" style="mix-blend-mode: multiply;" points="77.8834951 27.118932 77.8834951 38.5218447 81.4368932 36.4393204 81.4368932 29.6820388"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

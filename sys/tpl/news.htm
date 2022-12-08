@@ -1,0 +1,59 @@
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="119" nowrap="nowrap">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="30" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="0" hspace="0" src="<%THEME_PATH%>/news_01.gif" alt=""></td>
+					<td width="100%" nowrap="nowrap" class="cssTabs" valign="bottom" align="center" background="<%THEME_PATH%>/news_02.gif"><%MSG_NEWS_DETAIL%></td>
+					<td width="18" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="0" hspace="0" src="<%THEME_PATH%>/lesson_03.gif" alt=""></td>
+				</tr>
+			</table>
+		</td>
+		<td width="100%" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="10" hspace="0" src="<%THEME_PATH%>/lesson_hr.gif" alt=""></td>
+	</tr>
+	<tr class="fontNormal">
+		<td colspan="2">
+			<%DIV_NEWS_BEGIN%>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<!--<%NEWS_ITEM_BEGIN%>-->
+				<tr class="cssNewsList">
+					<td width="18" align="right" valign="top"><img align="absmiddle" border="0" width="12" height="12" vspace="3" hspace="0" src="<%THEME_PATH%>dot.gif" alt=""></td>
+					<td width="100%"><a href="javascript:;" id="tn<%NEWS_ID%>" class="cssAnchor" onclick="newsReadMore('n<%NEWS_ID%>'); return false;"><b>(<%NEWS_DATE%>)<%NEWS_TITLE%></b></a><br /><%NEWS_CONTENT%><br><br></td>
+				</tr>
+				<!--<%NEWS_ITEM_END%>-->
+
+				<!--<%SHOW_MORE_BEGIN%>-->
+				<tr class="fontNormal">
+					<td align="right" colspan="2"><a href="javascript:;" onclick="parent.location.replace('/learn/news/index_news.php'); return false;"><img align="absmiddle" border="0" width="33" height="8" border="0" align="absbottom" src="<%THEME_PATH%>more.gif" alt=""></a></td>
+				</tr>
+				<!--<%SHOW_MORE_END%>-->
+			</table>
+			<%DIV_NEWS_END%>
+			<%DIV_NO_NEWS_BEGIN%>
+			<div><img align="absmiddle" border="0" width="12" height="12" vspace="3" hspace="0" src="<%THEME_PATH%>dot.gif" alt=""><%MSG_NO_NEWS%></div><br />
+		<%DIV_NO_NEWS_END%>
+		</td>
+	</tr>
+</table>
+<script language="JavaScript" type="text/javascript">
+<!--
+	function newsReadMore(nid) {
+		var obj1 = document.getElementById("newsContent");
+		var obj2 = document.getElementById(nid);
+		if ((obj1 != null) && (obj2 != null)) {
+			obj1.innerHTML = obj2.innerHTML;
+		}
+
+		obj1 = document.getElementById("newsTitle");
+		obj2 = document.getElementById("t" + nid);
+		if ((obj1 != null) && (obj2 != null)) {
+			obj1.innerHTML = obj2.innerHTML;
+		}
+		layerAction("divNews", true);
+	}
+
+	function newsCloseMode() {
+		layerAction("divNews", false);
+	}
+-->
+</script>

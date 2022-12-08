@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>radio_quiz_select_phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="radio_quiz_select_phone" fill="#E8483F">
+            <circle id="Oval-2" cx="12.1121419" cy="12.5714042" r="4"></circle>
+            <path d="M12.1121419,4.07140422 C7.42464193,4.07140422 3.61214193,7.88390422 3.61214193,12.5714042 C3.61214193,17.2589042 7.42464193,21.0714042 12.1121419,21.0714042 C16.7996419,21.0714042 20.6121419,17.2589042 20.6121419,12.5714042 C20.6121419,7.88390422 16.7996419,4.07140422 12.1121419,4.07140422 Z M24.1121419,12.5714042 C24.1121419,19.1964042 18.7371419,24.5714042 12.1121419,24.5714042 C5.48714193,24.5714042 0.112141927,19.1964042 0.112141927,12.5714042 C0.112141927,5.94640422 5.48714193,0.571404219 12.1121419,0.571404219 C18.7371419,0.571404219 24.1121419,5.94640422 24.1121419,12.5714042 Z" id="circle"></path>
+        </g>
+    </g>
+</svg>

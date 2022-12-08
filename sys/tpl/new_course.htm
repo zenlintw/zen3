@@ -1,0 +1,135 @@
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="119" nowrap="nowrap">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="30" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="0" hspace="0" src="<%THEME_PATH%>/lesson_01.gif" alt=""></td>
+					<td width="100%" nowrap="nowrap" class="cssTabs" valign="bottom" align="center" background="<%THEME_PATH%>/news_02.gif"><%TITLE_NEW_COURSE%></td>
+					<td width="18" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="0" hspace="0" src="<%THEME_PATH%>/lesson_03.gif" alt=""></td>
+				</tr>
+			</table>
+		</td>
+		<td width="100%" nowrap="nowrap"><img align="absmiddle" border="0" width="100%" height="30" vspace="0" hspace="0" src="<%THEME_PATH%>/lesson_hr.gif" alt=""></td>
+	</tr>
+	<tr class="fontNormal">
+		<td colspan="2">
+			<%DIV_COURSE_BEGIN%>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<!--<%COURSE_ITEM_BEGIN%>-->
+				<tr class="cssCourseList">
+					<td width="18" align="right" valign="top"><img align="absmiddle" border="0" width="12" height="12" vspace="4" hspace="0" src="<%THEME_PATH%>dot.gif" alt=""></td>
+					<td width="100%"><%TEACHER%><%MSG_NEW_COURSE1%>[<a href="javascript:;" onclick="csDetail('<%COURSE_ID%>')" class="cssCSAnchor"><%COURSE_CAPTION%></a>]<%MSG_NEW_COURSE2%><%MSG_COURSE_WELCOME%></td>
+				</tr>
+				<!--<%COURSE_ITEM_END%>-->
+				<!--<%SHOW_MORE_BEGIN%>-->
+				<tr class="fontNormal">
+					<td align="right" colspan="2"><a href="javascript:;" onclick="parent.location.replace('/learn/mycourse/index.php'); return false;"><img align="absmiddle" border="0" width="33" height="8" border="0" align="absbottom" src="<%THEME_PATH%>more.gif" alt=""></a></td>
+				</tr>
+				<!--<%SHOW_MORE_END%>-->
+			</table>
+			<%DIV_COURSE_END%>
+		</td>
+	</tr>
+	<tr class="fontNormal">
+		<td colspan="2">&nbsp;</td>
+	</tr>
+</table>
+<script language="JavaScript" type="text/javascript" src="/lib/xmlextras.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+	function csDetail(csid) {
+		var MSG_NO_LIMIT = "<%MSG_NO_LIMIT%>";
+		var lang = "<%LANG%>";
+		var xmlHttp = null, xmlVars = null;
+		var txt = "", str = "";
+		var obj = node = null;
+
+		if ((typeof(xmlHttp) != "object") || (xmlHttp == null)) xmlHttp = XmlHttp.create();
+		if ((typeof(xmlVars) != "object") || (xmlVars == null)) xmlVars = XmlDocument.create();
+
+		txt = "<manifest><course_id>" + csid + "</course_id><lang>" + lang + "</lang></manifest>";
+		res = xmlVars.loadXML(txt);
+		if (!res) return false;
+
+		xmlHttp.open("POST", "/sys/door/course.php", false);
+		xmlHttp.send(xmlVars);
+		// alert(xmlHttp.responseText);
+		res = xmlVars.loadXML(xmlHttp.responseText);
+		if (!res) return false;
+		node = xmlVars.selectSingleNode("//course");
+		if (node == null) return false;
+		obj = document.getElementById("csID");
+		if (obj != null) {
+			txt = getNodeValue(node, "course_id");
+			obj.innerHTML = txt;
+		}
+
+		obj = document.getElementById("csName");
+		if (obj != null) {
+			str = lang;
+			lang = lang.toLowerCase();
+			txt = getCaption(node, "title");
+			obj.innerHTML = txt;
+			lang = str;
+		}
+
+		obj = document.getElementById("csTeacher");
+		if (obj != null) {
+			txt = getNodeValue(node, "teacher");
+			obj.innerHTML = txt;
+		}
+
+		obj = document.getElementById("csEnroll");
+		if (obj != null) {
+			txt = getNodeValue(node, "enroll");
+			obj.innerHTML = txt;
+		}
+
+		obj = document.getElementById("csStudy");
+		if (obj != null) {
+			txt = getNodeValue(node, "study");
+			obj.innerHTML = txt;
+		}
+
+		obj = document.getElementById("csIntroduction");
+		if (obj != null) {
+			obj.style.overflow = "auto";
+			obj.style.width    = "300px";
+			txt = getNodeValue(node, "content");
+			if (txt == "") {
+				obj.style.height   = "20px";
+				txt = "&nbsp;";
+			} else {
+				obj.style.height   = "150px";
+			}
+			obj.innerHTML = txt;
+		}
+
+		obj = document.getElementById("csNLimit");
+		if (obj != null) {
+			txt = getNodeValue(node, "n_limit");
+			if (parseInt(txt) == 0) {
+				obj.innerHTML = MSG_NO_LIMIT;
+			} else {
+				obj.innerHTML = txt;
+			}
+		}
+
+		obj = document.getElementById("csALimit");
+		if (obj != null) {
+			txt = getNodeValue(node, "a_limit");
+			if (parseInt(txt) == 0) {
+				obj.innerHTML = MSG_NO_LIMIT;
+			} else {
+				obj.innerHTML = txt;
+			}
+		}
+
+		layerAction("divNewCourse", true);
+	}
+
+	function csClose() {
+		layerAction("divNewCourse", false);
+	}
+-->
+</script>

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+    scrollbar-arrow-color: #9C98BB;
+    scrollbar-3dlight-color: #9C98BB;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-face-color: #EBEBEB;
+    scrollbar-shadow-color: #9C98BB;
+    scrollbar-track-color: #F0F0F0 ;
+    scrollbar-darkshadow-color: #FFFFFF;
+    background-color: #ececec;
+}
+
+.mooc-sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+    border-right: 1px solid #000000;
+    position: relative;
+    left: -1px;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.mooc-sidebar h2 {
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: bold;
+    height: 42px;
+    line-height: 42px;
+    margin: 0;
+    padding-left: 10px;
+    background: transparent url("./title_bg.jpg") repeat-x 0 0;
+}
+
+.mooc-sidebar ul {
+    margin: 5px 0 15px 0;
+}
+
+.mooc-sidebar li {
+    background: transparent url("./point.png") no-repeat 19px 7px;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 3px 5px 3px 37px;
+    list-style: none;
+}
+
+.mooc-sidebar li:hover {
+    background-color: #007F81;
+}
+
+.mooc-sidebar li:active,
+.mooc-sidebar li.active {
+    background-color: #39BFC2;
+}
+
+.mooc-sidebar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    outline: none;
+}

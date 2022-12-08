@@ -1,0 +1,255 @@
+/*上傳元件*/
+#uploadfileSubtitle , #uploadfileCover {
+    display: none;
+}
+
+#btnBrowse {
+    display: none;
+}
+
+/* webkit and opera */
+@media all and (min-width:0){
+    #btnBrowse {
+        display: inline-block;
+    }
+    #uploadfile {
+        display: none;
+    }
+}
+
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #btnBrowse {
+        display: inline-block;
+    }
+    #uploadfile {
+        display: none;
+    }
+}
+
+/*FireFox*/
+@-moz-document url-prefix() {
+    #btnBrowse {
+        display: inline-block;
+    }
+    #uploadfile {
+        display: none;
+    }
+}
+
+/*IE9+*/
+@media all and (min-width:0) {
+    #btnBrowse {
+        display: inline-block;
+    }
+    #uploadfile {
+        display: none;
+    }
+}
+
+/*IE10+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #btnBrowse {
+        display: inline-block;
+    }
+    #uploadfile {
+        display: none;
+    }
+}
+
+/*列表頁面標題-下方間隔*/
+#forum-page-title .left {
+    margin-bottom: 12px;
+}
+
+#forum-page-title .left span {
+    font-weight: bold;
+}
+
+/*張貼文章表單*/
+.forum {
+    border: 1px solid #ddd;
+}
+
+/*進度條上方列*/
+.title-bar {
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/*進度條上方列置左*/
+.title-bar .left {
+    float: left;
+    margin-bottom: -17px;
+}
+
+/*麵包屑*/
+.title-bar .left .now {
+    font-size: 1.8em;
+    word-wrap: break-word;
+}
+
+/*評分標準說明*/
+.forum-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.2em;
+    padding-left: 0.9em;
+    color: black;
+}
+
+/*顯示為必填*/
+.forum-require {
+    float: right;
+    top: -21px;
+    right: 15px;
+    font-size: 0.9em;
+    position: relative;
+}
+
+/*評分-表格區域*/
+.forum-write {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+/*標題*/
+.forum-write .title {
+    font-size: 1.2em;
+    padding-left: 2em;
+    line-height: 2.6em;
+    padding-right: 2em;
+}
+
+/*評分-按鈕位置*/
+.forum-write .actions {
+    position: relative;
+    top: 12px;
+    right: 50px;
+    float: right;
+}
+
+/*評分-按鈕寬度與文字尺寸*/
+.forum-write .actions button {
+    width: 96px;
+    font-size: 1em;
+}
+
+/*評分-第一個按鈕*/
+.forum-write .actions button:first-child {
+    margin-right: 0.8em;
+}
+
+/*評分-表格樣式*/
+.forum-table {
+    width: 100%;
+    color: black;
+    margin-top: 0.7em;
+}
+
+/* 討論版/回覆/主題內文 */
+#topic-content td{
+    padding-bottom: 1em;
+}
+
+/* 討論版/回覆/主題內文 */
+.forum-write .forum-table .content {
+    background-color: #F4F4F4;
+}
+
+/*評分-列高*/
+.forum-table tr {
+    line-height: 3.4em;
+}
+
+.forum-table .subject{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 500px;
+    display: block;
+}
+
+/*評分-欄位名稱寬度*/
+.forum-table>tbody>tr>th {
+    width: 88px;
+    text-align: right;
+    padding-right: 0.8em;
+    font-size: 1em;
+}
+
+/*評分-分數表格-右邊數值齊左背景色縮排*/
+.forum-table>tbody>tr>td {
+    text-align: left;
+    padding-left: 0.8em;
+}
+
+/*評分-表格內文字*/
+.forum-table tbody {
+    text-align: center;
+/*    font-size: 0.9em;*/
+}
+
+.htmleditor td,.forum-table>tbody>tr>td {
+    padding-right: 5%;
+}
+
+.esn-box .table thead th {
+    color: #FFFFFF;
+    background-color: #6DA71F;
+    font-size: 13px;
+    text-align: left;
+}
+
+/*可拖曳檔案來進行上傳*/
+.tab-pane span {
+    left: 9px;
+    position: relative;
+    top: 2px;
+}
+
+/*上傳檔案列表-位置*/
+#fileList {
+    margin-top: 1em;
+}
+
+/*上傳檔案列表-寬度*/
+#upload-result {
+    width: 100%;
+}
+
+/*上傳檔案列表-標題列*/
+#upload-result thead tr {
+    background-color: #A9A9A9;
+    color: #FFFFFF;
+    line-height: 2.4em;
+}
+
+/*上傳檔案列表-標題列-第1欄位*/
+#upload-result thead tr th:first-child {
+    padding-left: 4em;
+}
+
+/*上傳檔案列表-標題列-最後欄位*/
+#upload-result thead tr th:last-child {
+    text-align: center;
+    width: 4em;
+}
+
+/*上傳檔案列表-結果列-第1.2欄位*/
+#upload-result tbody td:nth-child(1),#upload-result tbody td:nth-child(2) {
+    text-align: left;
+}
+#upload-result tbody td:last-child {
+    text-align: center;
+    width: 4em;
+}
+
+/*上傳檔案列表-結果列*/
+#upload-result tbody tr {
+    border-bottom: 1px solid #dddddd;
+}

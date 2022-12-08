@@ -1,0 +1,145 @@
+/* subject list */
+.data2 {
+	@include border-radius($radius);
+	background: #FFFFFF;
+	// selected articles - override bootstrap table
+	.special {
+		// solved breakword can't effect problem.
+		table-layout: fixed;
+		background-color: transparent;
+		border-spacing: 0px;
+		border-color: gray;
+		border-collapse: separate;
+		th, td {
+			padding: 0.6em 0.7em;
+			border-top: 0px;
+			border-bottom: 1px solid #DDDDDD;
+			> div {
+				// word-wrap: break-word;
+				overflow : hidden;
+  				text-overflow : ellipsis;
+  				white-space : nowrap;
+			}
+			> .title {
+				font-size: 1em;
+				font-weight: bold;
+				color: #06A2A4;
+				> .class {
+					color: #F3800F;
+				}
+			}
+			> .summary, > .author, > .date {
+				font-size: 0.86em;
+				color: #707070;	
+			}
+			> .hits, > .readed, > .like {
+				display:table-cell;
+				font-size: 0.8em;
+				color: #afafaf;
+				> span {
+					vertical-align: bottom;
+				}
+			}
+			> button {
+				line-height: 1em;
+				padding: 3px;
+				font-size: 0.8em;
+			}
+		}
+		tr {   
+	   		&:hover {
+	    		cursor: pointer;
+	    	}
+	   	}
+		.t1 {
+			width: 7em;
+		}
+	}
+
+	// subject - override bootstrap table
+	.subject {
+		table-layout: fixed;
+		border-color: #FFFFFF;
+		border: 3px;
+		tr {
+			background: #F4F4F4;
+			border-bottom: 0.3em solid #FFFFFF;
+			&:hover {
+				background: #E5E5E5;
+				cursor: pointer;
+				& .icon-subject-go {
+					background-image: image-url('icon_subject_go_1.png');
+				}
+			}
+			&:last-child {
+				border-bottom: 0 solid #FFFFFF;
+			}
+		}
+		// radius
+		th, td {
+			border: 0px;
+	 		vertical-align: middle;
+			&:first-child {
+				@include border-radius($radius 0 0 $radius);
+			}
+			&:last-child { //, &:first-child + td + td + td + td + td {
+				@include border-radius(0 $radius $radius 0);
+			}
+			> div {
+				// word-wrap: break-word;
+				overflow : hidden;
+				text-overflow : ellipsis;
+				white-space : nowrap;
+			}
+			> .status {
+				// width: 8px;
+				// height: 8px;
+				// background-color: #E5E5E5;
+				// margin-left: 0.36em;
+				// @include border-radius(4px);
+				background-image: image-url('icon_read.png');
+				background-position:top left;
+				height: 20px;
+				width: 20px;
+				
+			}
+			> .new {
+					// background: #06A2A4;
+					background-image: image-url('icon_unread.png');
+			}
+			> .title {
+				font-size: 1.1em;
+				color: #353535;
+				line-height: 3em;
+				font-weight: bold;
+			}
+			> .amount, > .like, > .date, > .reply {
+				display:table-cell; 
+				color: #353535;
+				font-size: 0.8em;
+				> span {
+					vertical-align: bottom;
+				}
+			}
+			> button {
+				line-height: 1em;
+				padding: 3px;
+				font-size: 0.8em;
+			}
+		}
+		.t1 {
+			width: 4em;
+		}
+		.t2 {
+			text-align: center;
+			width: 1em;
+		}
+		.t3 {
+			text-align: center;
+			width: 2em;
+		}
+		.t4 {
+			width: 6.6em;
+		}
+	}
+}

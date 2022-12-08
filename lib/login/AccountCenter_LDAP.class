@@ -1,0 +1,170 @@
+<?php
+/**
+ * AccountCenter_LDAP 利用LDAP作為帳號中心
+ * author: jeff
+ * date:
+ */ 
+
+class AccountCenter_LDAP extends AccountCenter
+{
+	var $ldap_host;		//LDAP HOST
+	var $ldap_port;		//LDAP Port
+	var $bn;			//LDAP Base Domain Name
+	var $dn;			//Admin User Domain Name
+	var $dnpasswd;		//Admin Password
+	
+	function AccountCenter_LDAP()
+	{
+		$this->ldap_host=LDAP_SERVER_ADDR;
+   		$this->ldap_port=LDAP_SERVER_PORT;
+   		$this->bn = LDAP_BASEDN;
+   		$this->dn = LDAP_USERDN;
+   		$this->dnpasswd = LDAP_PASSWORD;
+	}
+
+	/**
+	*   取得使用者的資料
+	*   @Access public : 類別函式
+	*   @param string $user : 使用者帳號
+	*   @return object : userinfo 物件
+	*/
+	
+	function &getUserInfo($user)
+	{
+		global $_POST;
+		$rtnArray = false;
+   		if ($this->isLDAPServerAlive())
+   		{
+   			$userobj = $this->&getLDAPUserdataNode();
+   			if (is_null($userobj))	exit_func('/sys/login_fault.php');
+   			$pwd = $this->getRestorePassword();
+   			if ($pwd == '') exit_func('/sys/login_fault.php');
+   			if (!$this->validPassword($user, $pwd)) exit_func('/sys/login_fault.php');
+   			$rtnArray = $this->transUserinfoArray($LDAPuserdata);
+   		}else{
+   			die("Can't connect to LDAP SERVER:".$this->ldap_host.":".$this->ldap_port);
+   		}
+   		return $rtnArray;
+	}
+
+	/**
+	*   判別LDAP Server是否Alive
+	*   @Access private
+	*   @return bool 
+	*/
+	function isLDAPServerAlive()
+	{
+		return @fsockopen($this->ldap_host, $this->ldap_port);
+	}
+	
+	/**
+	*   由LDAP取得使用者的節點資料
+	*   @Access private
+	*   @return object : LDAP node
+	*/
+	function &getLDAPUserdataNode()
+	{
+		$LDAPuserdata = null;
+		// Connecting to LDAP
+   		$ldap_conn = ldap_connect($this->ldap_host,$this->ldap_port);
+	    ldap_set_option($ldap_conn, LDAP_OPT_PROTOCOL_VERSION, 150);
+
+     	//  傳 帳號 密碼 到 Active Directory 認證
+   		$result=@ldap_bind($ldap_conn,$this->dn,$this->dnpasswd);	
+   		if (! $result){
+  			die("<h1>Forbidden ldap server</h1>");
+   		}
+
+   		// cn -> 表示 使用者的帳號 ps: * 表示 列出所有的資料
+   		$filter = '(uid='.$username.')';
+   		$sr = @ldap_search($ldap_conn, $this->bn, $filter);
+
+     	//LDAP的全部傳回資料
+   		$info = @ldap_get_entries($ldap_conn, $sr);
+   		if($info["count"]==0){
+      		return null;
+   		}
+
+   		for ($i=0; $i<$info["count"]; $i++) {
+   			if(strpos(serialize($info[$i]),'aliasedobjectname') === false || strpos(serialize($info[$i]),'alias') === false)
+   			{
+          		$LDAPuserdata = $info[$i];
+          		break;
+          	}
+   		}
+   		ldap_close($ldap_conn);
+
+   		return $LDAPuserdata;
+	}
+	
+	
+	/**
+	*   將LDAP的資料轉成userinfo的格式
+	*   @Access private
+	*   @param  array $userdata : LDAP傳回的資料內容
+	*   @return array : 同wm3的userinfo陣列格式
+	*/
+	function transUserinfoArray(&$data)
+	{
+		//取得空白的使用者資訊陣列
+		$rtnArray = $this->getEmptyUserinfoArray();
+		
+		//將ldap的資料填入 UserinfoArray: $rtnArray
+		//todo: 撰寫ldap 資料轉成  userinfo Array型態
+		
+		return $rtnArray;
+	}
+	
+	/**
+	*   將前端的所輸入的密碼 => 解密為明碼
+	*   @Access private
+	*   @return string : 明碼
+	*/
+	function getRestorePassword()
+	{
+		$rtns = '';
+		//todo:
+		return $rtns;
+	}
+	
+	/**
+	*   驗證帳密
+	*   @Access public : 類別函式
+	*   @param  string $user : 使用者帳號
+	*   @param  string $pwd  : 使用者密碼
+	*   @return bool : true=>通過，false=>不通過
+	*/
+	function validPassword($user, $pwd)
+	{
+		global $_POST;
+		$login_key = $_POST['login_key'];
+		
+		$userdn = $this->getUserDomainName($user);
+		$ldap_conn = ldap_connect($this->ldap_host,$this->ldap_port);
+    	ldap_set_option($ldap_conn, LDAP_OPT_PROTOCOL_VERSION, 150);
+   		$result1=@ldap_bind($ldap_conn,$userdn,$pwd);	
+   		if (!$result1){
+     		return false;
+   		}
+   		return true;
+	}
+	
+	/**
+	*   依username取得user domain name,
+	*   @Access private
+	*   @param  string $user : 使用者帳號
+	*   @return string
+	*/
+	function getUserDomainName($user)
+	{
+		$rtns = '';
+		
+		//Example 1:
+		//$rtns = "uid={$user} ,ou=noustud,ou=PEOPLE,dc=nou,dc=edu,dc=tw";
+		//todo: 填寫如何取得user domain name
+		
+		return $rnts;
+	}
+}
+
+?>

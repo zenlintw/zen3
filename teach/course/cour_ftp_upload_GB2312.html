@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>如何使用 FTP</title>
+    <link href="./image/bootstrap.min.css" rel="stylesheet" />
+    <link href="./image/application.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full">
+    <div class="nav-adv-course">
+        <div class="fix-narrow">
+            <div class="title">
+                <div class="main-title"><br><br><br>如何使用 FTP</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-adv-course-bottom">
+    </div><div class="clearboth-block"></div>
+    <div class="main">
+        <div class="fix-narrow">
+            <div class="basic">
+                <div class="left">
+                    <div class="intro padding-left-15 padding-right-35">
+                        <div class="title">Windows 使用者</div>
+                        <div class="content">
+							<ol>
+								<li><b>在「开始」微软图示按「滑鼠右键」，点选「打开 Windows 资源管理器」</b><br><img src="./image/ftp_win7_zh-cn_01.png">
+								</li>
+								<br><br>
+								<li><b>并于「地址栏」上，直接输入 ftp://<span id="p_ftp"></span>，例如下图，并按键盘「Enter」键。</b>
+									<div id="div_ftp" style="padding-top: 36px; padding-left:110px; background:url(./image/ftp_win7_zh-cn_02.png) no-repeat;width:550px;height:320px;">	
+								</div>	
+								</li>
+								<br><br>
+								<li><b>出现「登录身份」后</b><br>
+								在「用户名」：输入登录WMPro平台时所使用的帐号<br>在「密码　」：输入登录的密码，或「教材上传」画面所提供的「动态密码」<br>并点选「登录」<p><img src="./image/ftp_win7_zh-cn_03.png">
+								</li>
+								<br><br>
+								<li><b>登录后，就会出现下图画面，显是课程内的教材档案</b>
+									<img src="./image/ftp_win7_zh-cn_04.png">
+								</li>
+							</ol>
+						</div>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="reference padding-left-15 padding-right-35">
+                        <div class="title">注意事项</div>
+                        <div class="content">
+							<ul>
+								<li>您必须先登录学习网站，并进入课程的「教师办公室」中，在点选「课程管理」的「教材上传」，必须停留在此，才能使用FTP软体上传档案到课程之中；若您尚未登录学习网站，只开启FTP软体，是无法用FTP上传教材的。<p>
+								<li>您以FTP登录的路径将会是您目前所在的课程教材目录，若要将教材上传到其他课程，请先关闭开启FTP连线中的「打开 Windows 资源管理器」，再切换到其他课程「教师办公室」中的「教材上传」，重新进行FTP连线即可。
+							</ul>
+						</div>
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+	  <script type="text/javascript">			
+			document.getElementById('div_ftp').innerText = 'ftp://'+location.hostname;
+			document.getElementById('p_ftp').innerText = location.hostname;
+	  </script>
+</body>
+</html>

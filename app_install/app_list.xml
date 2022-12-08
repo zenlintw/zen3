@@ -1,0 +1,50 @@
+<item id="APP_01_01" system="true" hidden="false" env="31" role="14336">
+		<title>
+			<big5>行動學習</big5>
+			<gb2312>行动学习</gb2312>
+			<en>empty</en>
+			<euc-jp>empty</euc-jp>
+			<user-define>empty</user-define>
+		</title>
+		<href target="default" kind="0">about:blank</href>
+		<item id="APP_01_01_001" system="true" hidden="false" env="31" role="14336">
+			<title>
+				<big5>課程圖片設定</big5>
+				<gb2312>课程图片设定</gb2312>
+				<en>empty</en>
+				<euc-jp>empty</euc-jp>
+				<user-define>empty</user-define>
+			</title>
+			<href target="default" kind="1">/academic/App_course/course_list.php</href>
+		</item>
+		<item id="APP_01_01_002" system="true" hidden="false" env="31" role="14336">
+			<title>
+				<big5>演講廳</big5>
+				<gb2312>演讲厅</gb2312>
+				<en>empty</en>
+				<euc-jp>empty</euc-jp>
+				<user-define>empty</user-define>
+			</title>
+			<href target="default" kind="1">/academic/App_course/experience_list.php</href>
+		</item>
+		<item id="APP_01_01_003" system="true" hidden="false" env="31" role="14336">
+			<title>
+				<big5>開場圖片</big5>
+				<gb2312>开场图片</gb2312>
+				<en>empty</en>
+				<euc-jp>empty</euc-jp>
+				<user-define>empty</user-define>
+			</title>
+			<href target="default" kind="1">/academic/App_course/app_property.php</href>
+		</item>
+		<item id="APP_01_01_004" system="true" hidden="false" env="31" role="14336">
+				<title>
+					<big5>登入次數統計</big5>
+					<gb2312>登入次数统计</gb2312>
+					<en>empty</en>
+					<euc-jp>empty</euc-jp>
+					<user-define>empty</user-define>
+				</title>
+				<href target="default" kind="1">/academic/App_course/app_sch_login_statistics.php</href>
+			</item>
+	</item>

@@ -1,0 +1,272 @@
+#mycourse-container {
+  padding: 10px;
+}
+#mycourse-container .paginate {
+  width: 100%;
+  background-color: white;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+#mycourse-container .teach-edit {
+  position: absolute;
+  top: 224px;
+}
+#mycourse-container .teach-prepare {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+}
+#mycourse-container .checkbox_style {
+  margin-left: 5px;
+  line-height: 31px;
+  vertical-align: middle;
+  display: inline-block;
+}
+#mycourse-container .checkbox_style .teach-checkbox {
+  height: 18px;
+}
+#mycourse-container .checkbox_style .teach-checkbox-title {
+  margin: 0 5px;
+}
+#mycourse-container .checkbox_style .teach-checkbox-disabled {
+  margin: 0 5px;
+  color: #333;
+}
+#mycourse-container #listtype_list_container .teach-prepare {
+  left: 53px;
+}
+#mycourse-container #listtype_list_container .teach-edit {
+  left: auto;
+  right: 20px;
+  top: 75px;
+  width: 80px;
+}
+#mycourse-container #listtype_list_container .checkbox_style {
+  position: absolute;
+}
+#mycourse-container .groupOtherBtn {
+  color: white;
+}
+#mycourse-container .lcms-nav-bottom {
+  padding-left: 17px;
+}
+
+#inputKeyword {
+  height: 28px;
+}
+#inputKeyword::-ms-clear {
+  display: none;
+}
+
+#searchBtn {
+  position: relative;
+  right: 25px;
+  top: 3px;
+}
+
+.mycouse-searchbar {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.mycourse {
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.mycourse table {
+  margin-bottom: 0;
+}
+.mycourse thead tr {
+  background-color: #BCC0C3;
+}
+.mycourse thead th {
+  font-size: 14pt;
+  color: white;
+}
+.mycourse thead .dropbtn, .mycourse thead .disablebtn {
+  color: #7d0000;
+}
+.mycourse tbody td {
+  padding: 2px;
+  border: 0;
+}
+.mycourse tbody td.courseimgTd {
+  padding: 10px 18px 10px 18px;
+  width: 170px;
+}
+.mycourse tfoot tr td {
+  font-size: 16pt;
+  text-align: right;
+  border-left: 0;
+}
+.mycourse tfoot a {
+  color: #FF951A;
+}
+.mycourse .instructor {
+  position: absolute;
+  margin-left: 70px;
+  font-size: 14pt;
+  height: 25px;
+}
+.mycourse .student_number {
+  position: absolute;
+  margin-left: 70px;
+  font-size: 14pt;
+  top: 35px;
+}
+.mycourse .student_number .label-warning {
+  vertical-align: top;
+}
+.mycourse .openingperiod {
+  margin-right: 30px;
+  font-size: 14pt;
+  position: absolute;
+  right: 0;
+}
+.mycourse .openingperiod .icon-lcms-classIng {
+  vertical-align: middle;
+}
+.mycourse .progress-container {
+  margin-top: 30px;
+  position: absolute;
+  padding-left: 115px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mycourse .progess-text {
+  color: #f78b0d;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  font-size: 12pt;
+}
+.mycourse .courseimg {
+  width: 165px;
+  height: 93px;
+}
+.mycourse .teacherimg img {
+  width: 50px;
+  height: 50px;
+}
+.mycourse .coursecaption {
+  margin-right: 40px;
+  font-size: 20pt;
+  color: #07A2A4;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+  display: inline-block;
+}
+.mycourse .icon_share {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url("/public/images/icon_share.png") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.mycourse .share {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.mycourse .share > .pic {
+  margin-right: 0.7em;
+  float: left;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+.mycourse .share > .pic > a > .fb {
+  background: transparent url("/theme/default/learn_mooc/co_icon_fb.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .fb:hover {
+  background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .fb:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .plk {
+  background: transparent url("/theme/default/learn_mooc/co_icon_plurk.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .plk:hover {
+  background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .plk:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .tw {
+  background: transparent url("/theme/default/learn_mooc/co_icon_twitter.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .tw:hover {
+  background: transparent url("/theme/default/learn_mooc/co_icon_twitter_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .tw:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_twitter_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .wct {
+  background: transparent url("/theme/default/learn_mooc/co_icon_wchat.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .wct:hover {
+  background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .wct:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .ln {
+  background: transparent url("/theme/default/learn_mooc/co_icon_line.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .ln:hover {
+  background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+  background-size: cover;
+}
+.mycourse .share > .pic > a > .ln:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+  background-size: cover;
+}
+
+.cover .checkbox_style {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+.no-course {
+  position: static;
+  margin: 0 auto;
+}
+.no-course .remind > span {
+  display: inline-block;
+  margin-top: 70px;
+}

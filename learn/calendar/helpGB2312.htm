@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>行事历上传格式说明</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link id="csslnk" rel="stylesheet" type="text/css" href="/theme/default/learn/wm.css" >
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="550" cellspacing="0" cellpadding="0" align="center" border="0" name="school">
+  <tr valign="bottom">
+    <td height="30" align="left" colspan="3">
+	  <table border="0" cellspacing="0" cellpadding="0" >
+			<tr class=cssTrEvn class="cssTr">
+				<td class="cssTd"><img onselectstart="return false;" id="ImgL1" MyAttr="1" tabsIdx="1" src="/theme/default/learn/title_on_01.gif" width="25" height="30" border="0" align="absbottom"> </td>
+				<td align="center" valign="bottom" nowrap="NoWrap" id="TitleID1" MyAttr="1" tabsIdx="1" style="cursor: default; background-image: url('/theme/default/learn/title_on_02.gif');" class="cssTabs" onselectstart="return false;" >行事历上传格式说明</td>
+				<td class="cssTd"><img onselectstart="return false;" id="ImgR1" MyAttr="1" tabsIdx="1" src="/theme/default/learn/title_on_03.gif" width="28" height="30" border="0" align="absbottom"> </td>
+			</tr>
+		</table>
+	</td>
+  </tr>
+  <tr bgcolor="#5176D2">
+    <td colspan="3" height="1"><b class="banner_01"><img src="images/sp.gif" width="1" height="1"></b></td>
+  </tr>
+  <tr class=cssTrEvn>
+    <td class="cssTd" bgcolor="#5176D2" width="1"><b class="banner_01"><img src="images/sp.gif" width="1" height="1"></b>
+    </td>
+    <td bgcolor="#E3E9F2" width="100%">
+      <table width="100%" cellpadding="5" border="0" cellspacing="1" align="center" class=cssTable>
+        <tr class=cssTrHead bgcolor="#BCD0F3">
+          <td class="cssTd" align="left" colspan=2>若您要将您已经编辑好的行事历内容上传到本行事历中，请依照以下的格式编辑，并在储存时，储存成为.csv格式的档案，便可上传到本行事历中。
+		  </td>
+        </tr>
+        <tr class=cssTrEvn bgcolor="#FFFFFF" align="left">
+          <td width=10% align=center>范例</td>
+		  <td class="cssTd">
+					<code>
+					2004-4-1%% 08:30%% 09:00%% week%%2004-5-1%%login%%   2%%  测试1%% 行事历测试1
+					2004-4-2%% 10:00%% 11:00%%     %%        %%     %%   0%%  测试2%% 行事历\n测试2
+					</code>
+		  </td>
+        </tr>
+        <tr class=cssTrOdd bgcolor="#ECF1F7" align="left">
+          <td align=center>说明</td>
+		  <td class="cssTd">
+			    <font color=blue>
+				年-月-日<font color=red>%%</font>起始时间<font color=red>%%</font>结束时间<font color=red>%%</font>周期发生<font color=red>%%</font>周期结束日<font color=red>%%</font>通知方式<font color=red>%%</font>几天前通知<font color=red>%%</font>主旨<font color=red>%%</font>内容
+				</font></td>
+        </tr>
+        <tr class=cssTrEvn align="left" bgcolor=ffffff>
+          <td align=center>备注</td>
+		  <td class="cssTd">
+				<OL>
+					<LI>[年-月-日]：事件(起始)日期, 年为四位整数西元年, 月与日为整数值, 年月日中间以减号"-"区隔( YYYY-MM-DD )<BR>
+				<LI>[起始时间]，[结束时间]：事件时间范围, 格式为 HH:MM (H 与 M 皆为整数)<BR>
+				<LI>[周期发生]的值可以是：[空白],day,week,month<BR>
+				<LI>[周期结束日]：格式与事件日期格式相同，当[周期发生]为空白时，此栏无效<BR>
+				<LI>[通知方式]的值可以是：[空白],login, email , login|email (login 表示登入时提醒, email 表示以 EMail 寄发提醒, login|email 表示二者皆要)<BR>
+				<LI>[几天前通知]的值为：0 (含)以上整数, 0 表当天通知 ( 当通知方式为空白时, 此栏无效 )<BR>
+				<LI>[内容]中：需换行者请以"\n"取代
+				</OL>
+		  </td>
+		  <tr class=cssTrOdd align="left" bgcolor="#ECF1F7">
+			  <td colspan=2 class="cssTd"><form><input class="cssBtn" type="button" VALUE="关闭视窗" onClick="window.close()"></form></td>
+          </tr>
+      </table>
+    </td>
+    <td bgcolor="#5176D2" width="1"><b class="banner_01"><img src="images/sp.gif" width="1" height="1"></b></td>
+  </tr>
+  <tr class=cssTrEvn bgcolor="#5176D2">
+    <td colspan="3"><b class="banner_01"><img src="images/sp.gif" width="1" height="1"></b></td>
+  </tr>
+</table>
+</body>
+</html>

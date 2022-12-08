@@ -1,0 +1,181 @@
+.bgColor01 {
+	background-color : #9BB3E9;
+	height : 25px;
+}
+
+.bgColor02 {
+	background-color : #EBF0F5;
+	height : 30px;
+}
+
+.bgColor03 {
+	background-color : #BCD0F3;
+}
+
+.bgColor04 {
+	background-color : #E6EEFB;
+}
+
+.bgColor05 {
+	background-color : #D9E4F8;
+}
+
+.font01 {
+	font-size : 15px;
+	color : #FFFFFF;
+	font-family : "Arial", "Helvetica", "sans-serif";
+	font-weight : bold;
+	text-decoration : none;
+	line-height : 20px;
+	letter-spacing : 1px;
+	padding-left : 1px;
+}
+
+.font02 {
+	font-size : 12px;
+	line-height : 17px;
+	color : #000000;
+	text-decoration : none;
+	letter-spacing : 2px
+}
+
+.font03 {
+	font-size : 12.5px;
+	line-height : 17px;
+	color : #000000;
+	text-decoration : none ;
+	letter-spacing : 2px;
+	font-family : "Arial", "Helvetica", "sans-serif"
+}
+
+.font04 {
+	font-size : 13.5px;
+	color : #FF6600;
+	font-weight : bolder;
+}
+
+.font05 {
+	font-size : 12px;
+	line-height : 17px;
+	color : #006699;
+	text-decoration : none;
+	font-family : "Arial", "Helvetica", "sans-serif";
+}
+
+.font06 {
+	color: #003366;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 13.5px;
+	letter-spacing: 2px;
+	line-height: 17px;
+	text-decoration: none;
+}
+/*chrome*/
+a.font06:hover {
+	color: #993399;
+	text-decoration: none;
+}
+/*chrome*/
+a.font06:active {
+	text-decoration: none;
+}
+
+.cssBtn2 {
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: hand;
+	width: 100px;
+	height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11.5px;
+	border: 0px none #FFFFFF;
+	padding-top : 4px;
+	color: #000000;
+}
+
+.menu {
+	background-color : #6F8DD9;
+	border-bottom-style : solid;
+	border-bottom-color : #63659C;
+	border-bottom-width : 1px;
+}
+
+.menu_item {
+	font-size : 13px;
+	line-height : 20px;
+	color : #FFFFFF;
+	letter-spacing : 2px;
+	font-family : "Arial", "Helvetica", "sans-serif";
+	text-decoration : none;
+}
+
+.menu_item:hover {
+	color : #993399;
+	text-decoration : none;
+}
+
+.menu_item:active {
+	text-decoration: none;
+}
+
+.foot{
+	background-color : #6F8DD9;
+	font-size : 12px;
+	line-height : 15px;
+	color : #FFFFFF;
+	font-family : "Arial", "Helvetica", "sans-serif";
+	text-decoration : none;
+}
+.bgFoot {
+	background-color: #5176D2;
+}
+.fontFoot {
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 22px;
+	height: 22px;
+}
+.bgTools {
+	background-color: #8CAAE6;
+}
+.box01 {
+	font-size : 12px;
+	height : 20px;
+	width : 110px;
+	border : 1px #333333 solid;
+	background-position : 10px;
+}
+
+.box02 {
+	font-size: 13px;
+	height: 22px;
+}
+
+.box03 {
+	font-size: 12px;
+	border: 1px #666699 solid;
+}
+
+
+.cssBtn {
+	font-size: 12px;
+	height: 20px;
+	color: #484884;
+	background-color: #E6EEF3;
+	border: 1px solid #A0B5D3;
+	padding-top: 2px;
+}
+.bgHead {
+	background-color: #5176D2;
+}
+
+.cssBtn1 {
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	background-color : #EBF0F5;
+	padding: 4px 0px 0px 0px;
+	border: 0px none #000000;
+	height: 25px;
+	width: 82px;
+}

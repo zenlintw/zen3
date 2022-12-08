@@ -1,0 +1,352 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>xmlapi test</title>
+	<!-- show log 使用 (B) -->
+	<style>
+		.box {
+			width: 726px; border: 1px solid #000; background-color: #EEE; border-radius: 4px; padding: 1em;
+		}
+		.box form {
+			display: inline-block;
+		}
+		.box .paper {
+			height: 200px; background-color: #FFF; overflow: auto;
+		}
+	</style>
+	<script>
+		function showLog() {
+			var logString = "",
+				logInput = document.getElementById("log-input"),
+				logPaper = document.getElementById("log-paper");
+
+			if (logInput.value !== "") {
+				// 過濾 script
+				logString = stripscript(logInput.value);
+				logPaper.innerHTML = logString;
+			} else {
+				alert("請輸入 Log !");
+			}
+		}
+		function stripscript(s) {
+			return s.replace(/<script.*?>.*?<\/script>/ig, '');
+		}
+	</script>
+	<!-- show log 使用 (E) -->
+</head>
+
+<body>
+
+<h2>Web Service Test <span id="hg-version"></span><span id="hg-rev" style="color: #ccc">
+</span></h2>
+<table border="1">
+	<tr>
+		<td>Action Name</td>
+		<td>功能</td>
+		<td>參數</td>
+		<td>範例</td>
+	</tr>
+	<tr>
+		<td>login</td>
+		<td>登入</td>
+		<td>
+		<ul>
+			<li>action:login</li>
+			<li>username:帳號</li>
+			<li>password：密碼</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=login&username=appleapp&password=app1234">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>logout</td>
+		<td>登出</td>
+		<td>
+		<ul>
+			<li>action:logout</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=logout&ticket={ticket}">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>valid-session</td>
+		<td>驗證 Ticket</td>
+		<td>
+		<ul>
+			<li>action:valid-session</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=valid-session&ticket={ticket}">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>my-profile</td>
+		<td>取得我的基本資料</td>
+		<td>
+		<ul>
+			<li>action:my-profile</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=my-profile&ticket={ticket}">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>news</td>
+		<td>最新消息</td>
+		<td>
+		<ul>
+			<li>action:news</li>
+			<li>page:第幾頁</li>
+			<li>pagesize:每頁筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=news&offset=0&size=20">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>media-category</td>
+		<td>取得演講廳分類</td>
+		<td>
+		<ul>
+			<li>action:media-category</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=media-category">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>media-node</td>
+		<td>取得演講廳影片列表</td>
+		<td>
+		<ul>
+			<li>action:media-node</li>
+			<li>category_id:分類編號</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=media-node&category_id=50">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>get-server-time</td>
+		<td>取得WM伺服器的日期時間</td>
+		<td>
+		<ul>
+			<li>action:get-server-time</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-server-time">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>my-course-list</td>
+		<td>取得我的課程列表（僅顯示可以閱讀的課程）</td>
+		<td>
+		<ul>
+			<li>action:my-course-list</li>
+			<li>ticket:SessionId</li>
+			<li>offset:起始位置</li>
+			<li>pagesize:筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=my-course-list&ticket={ticket}&offset=0&pagesize=10">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>my-course-path-info</td>
+		<td>取得我的課程學習路徑 (改良)</td>
+		<td>
+		<ul>
+			<li>action:my-course-path-info</li>
+			<li>ticket:SessionId</li>
+			<li>cid:課程編號</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=my-course-path-info&ticket={ticket}&cid={課程編號}">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>course-announce</td>
+		<td>取得課程公告</td>
+		<td>
+		<ul>
+			<li>action:course-announce</li>
+			<li>ticket:SessionId</li>
+			<li><a href="cid:課程編號" style="text-decoration: none">
+			<font color="#000000">cid:課程編號</font></a></li>
+			<li>offset:起始位置</li>
+			<li>size:筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=course-announce&ticket={ticket}&cid={課程編號}&offset=0&size=10">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-course-forum</td>
+		<td>取得課程討論板主題列表</td>
+		<td>
+		<ul>
+			<li>action:get-course-forum</li>
+			<li>ticket:SessionId</li>
+			<li><a href="cid:課程編號" style="text-decoration: none">
+			<font color="#000000">cid:課程編號</font></a></li>
+			<li>offset:起始位置</li>
+			<li>size:筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-course-forum&ticket={ticket}&cid={課程編號}&offset=0&size=10">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-course-exam-list</td>
+		<td>取得課程測驗列表</td>
+		<td>
+		<ul>
+			<li>action:get-course-exam-list</li>
+			<li>ticket:SessionId</li>
+			<li><a href="cid:課程編號" style="text-decoration: none">
+			<font color="#000000">cid:課程編號</font></a></li>
+			<li>offset:起始位置</li>
+			<li>size:筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-course-exam-list&ticket={ticket}&cid={課程編號}&offset=0&size=10">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>my-course-history</td>
+		<td>取得我的課程列表 (包含所有已經修過的課程)</td>
+		<td>
+		<ul>
+			<li>action:my-course-history</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=my-course-history&ticket={ticket}">
+		Example</a>
+        </td>
+	</tr>
+	<tr>
+		<td>get-notification</td>
+		<td>取得推播訊息</td>
+		<td>
+		<ul>
+			<li>action:get-notification</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-notification&ticket={ticket}">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-notes</td>
+		<td>取得筆記本與筆記</td>
+		<td>
+		<ul>
+			<li>action:get-notes</li>
+			<li>ticket:SessionId</li>
+			<li>type:notes | notebook</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-notes&type={notes|notebook}&ticket={ticket}">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-questionnaire-list</td>
+		<td>取得問卷清單</td>
+		<td>
+		<ul>
+			<li>action:get-questionnaire-list</li>
+			<li>ticket:SessionId</li>
+			<li>offset:起始位置</li>
+			<li>size:筆數</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-course-exam-list&ticket={ticket}&cid={課程編號}&offset=0&size=10">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-logo</td>
+		<td>取得首頁logo圖片</td>
+		<td>
+		<ul>
+			<li>action:get-questionnaire-list</li>
+			<li>ticket:SessionId</li>
+			<li>device:PHONE|TABLET</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-logo&device={PHONE|TABLET}&ticket={ticket}">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-splash</td>
+		<td>取得過場動畫圖片</td>
+		<td>
+		<ul>
+			<li>action:get-questionnaire-list</li>
+			<li>ticket:SessionId</li>
+			<li>device:PHONE|TABLET</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-splash&device={PHONE|TABLET}&ticket={ticket}">
+		Example</a></td>
+	</tr>
+	<tr>
+		<td>get-background-logo</td>
+		<td>取得背景logo</td>
+		<td>
+		<ul>
+			<li>action:get-background-logo</li>
+			<li>ticket:SessionId</li>
+		</ul>
+		</td>
+		<td>
+		<a target="_blank" href="../../../xmlapi/index.php?action=get-background-logo&device={PHONE|TABLET}&ticket={ticket}">
+		Example</a></td>
+	</tr>
+</table>
+<h2>Log 轉換</h2>
+<div class="box">
+	<form>
+		<input type="text" id="log-input"/>
+	</form>
+	<button onclick="showLog();">轉換</button>
+	<div class="paper" id="log-paper"></div>
+</div>
+</body>
+
+</html>

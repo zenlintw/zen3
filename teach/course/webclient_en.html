@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Step by step to use Web Folder (WebDAV)</title>
+    <link href="./image/bootstrap.min.css" rel="stylesheet" />
+    <link href="./image/application.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full">
+    <div class="nav-adv-course">
+        <div class="fix-narrow">
+            <div class="title">
+                <div class="main-title"><br><br><br>Step by step to use Web Folder (WebDAV)</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-adv-course-bottom">
+    </div><div class="clearboth-block"></div>
+    <div class="main">
+        <div class="fix-narrow">
+            <div class="basic">
+                <div class="left">
+                    <div class="intro padding-left-15 padding-right-35">
+                        <div class="title">For Window 7 / Window 8 user</div>
+                        <div class="content">
+							<ol>
+								<li><b>Install registration file</b>
+									<ul>
+										<li>Please download <a href="./WebClient.reg">WebClient.reg</a></li><br>
+										<li>Click【Run】<br><img src="./image/webclient_en_00.png"></li><br>
+										<li>Then please click【Yes】under your permission.<br><img src="./image/webclient_en_01.png"></li><br>
+										<li>Then press【Yes】to continue<br><img src="./image/webclient_en_02.png"></li><br>
+										<li>The system prompts Registry Editor. Please press【OK】<br><img src="./image/webclient_en_03.png"></li><br>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>Add to your “Trusted sites”</b>
+									<ul>
+										<li>Open IE Explorer. Please click “Tools” > “Internet Options” > “Security” </li><br>
+										<li>Click “Trusted sites” , and then “Sites” <br><img src="./image/webclient_en_04.png"></li><br>
+										<li>
+										At "Add this website to the zone", please input your site http://<span id="p_dav"></span> .<br>
+										Remember to unselect "Require server verification (https:) for all sites in these zone".
+										<div id="div_dav" style="padding-top: 123px; padding-left:30px; background:url(./image/webclient_en_05.png) no-repeat;width:367px;height:227px;"></div>
+										</li>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>Please restart your computer</b></li>
+								<br><br>
+								<li><b>Start to use</b>
+									<ul>
+										<li>First login on your learning system.</li>
+										<li>Use Office environment >course management >content upload>Web Folder, and then click【Open】</li>
+										<li>The web folder lists you content of the course in the learning system. Please drag and drop your local files to this web folder window.<br><img src="./image/webclient_en_06.png"></li>
+									</ul>							
+								</li>
+							</ol>
+						</div>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="reference padding-left-15 padding-right-35">
+                        <div class="title">PS.</div>
+                        <div class="content">
+							<ul>
+								<li>Client Requirement<br>Browser: IE8 (And Above)<br>OS：Windows 7、Windows 8
+								
+								</li><br>
+								<li>The max file size: 4GB</li><br>
+								<li>Please do not set InPrivate mode of IE Browser<br><img src="./image/webclient_en_07.png"></li><br>
+								<li>If there is no response when clicking 【Open】Web folder. Please close all IE Explorers /restart your computer, and retry.</li><br>
+								<li>When you encounter “Error 0x80070780: The file cannot be accessed by the system.” ,Please close all your  Explorers /restart your computer, and retry. This error occurs when session is timeout.<br><img src="./image/webclient_en_08.png"></li>
+							</ul>
+						</div>
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+	  <script type="text/javascript">			
+			document.getElementById('div_dav').innerText = 'http://'+location.hostname;
+			document.getElementById('p_dav').innerText = location.hostname;
+	  </script>
+</body>
+</html>

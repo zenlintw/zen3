@@ -1,0 +1,75 @@
+<?php
+/**
+ * AccountCenter 抽象類別，定義帳號中心必備屬性與行為
+ * author: jeff
+ * date:
+ */ 
+
+class AccountCenter
+{
+	
+	/**
+	*   取得使用者的資料
+	*   @Access public : 類別函式
+	*   @param string $user : 使用者帳號
+	*   @return object : userinfo 物件
+	*/
+	function &getUserInfo($user){}
+	
+	/**
+	*   驗證帳密
+	*   @Access public : 類別函式
+	*   @param  string $user : 使用者帳號
+	*   @param  string $pwd  : 使用者密碼
+	*   @return bool : true=>通過，false=>不通過
+	*/
+	function validPassword($user, $pwd){}
+	
+	/**
+	*   取得一個空的使用陣列
+	*   @Access private : 呼叫函式為
+	*   @param  string $user : 使用者帳號
+	*   @param  string $pwd  : 使用者密碼
+	*   @return array reference
+	*/
+	function &getEmptyUserinfoArray()
+	{
+		return array('username'       => '',
+					 'password'       => '',
+					 'enable'         => '',
+					 'first_name'     => '',
+					 'last_name'      => '',
+					 'gender'         => '',
+					 'birthday'       => '',
+					 'personal_id'    => '',
+					 'email'          => '',
+					 'homepage'       => '',
+					 'home_tel'       => '',
+					 'home_fax'       => '',
+					 'home_address'   => '',
+					 'office_tel'     => '',
+					 'office_fax'     => '',
+					 'office_address' => '',
+					 'cell_phone'     => '',
+					 'company'        => '',
+					 'department'     => '',
+					 'title'          => '');
+	}
+	
+	/**
+	*   將LDAP的資料轉成userinfo的格式
+	*   @Access private
+	*   @param  string $userdata : LDAP傳回的資料內容
+	*   @return array : 同wm3的userinfo陣列格式
+	*/
+	function transUserinfoArray(&$data){}
+	
+	/**
+	*   將前端的所輸入的密碼 => 解密為明碼
+	*   @Access private
+	*   @return string : 明碼
+	*/
+	function getRestorePassword(){}
+}
+
+?>

@@ -1,0 +1,6 @@
+/* fix 避免資源名稱過長時擠壓到版面*/
+.classInfoGroup .discript{
+	padding: 6px;
+   /* white-space:nowrap;*/
+    overflow:hidden;
+}

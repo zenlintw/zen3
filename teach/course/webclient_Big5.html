@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>如何設定使用 Web 資料夾</title>
+    <link href="./image/bootstrap.min.css?1" rel="stylesheet" />
+    <link href="./image/application.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full">
+    <div class="nav-adv-course">
+        <div class="fix-narrow">
+            <div class="title">
+                <div class="main-title"><br><br><br>如何設定使用 Web 資料夾</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-adv-course-bottom">
+    </div><div class="clearboth-block"></div>
+    <div class="main">
+        <div class="fix-narrow">
+            <div class="basic">
+                <div class="left">
+                    <div class="intro padding-left-15 padding-right-35">
+                        <div class="title">Windows 7 與 Windows 8 使用者</div>
+                        <div class="content">
+							<ol>
+								<li><b>安裝 WebClient 登入檔</b>
+									<ul>
+										<li>下載 <a href="./WebClient.reg">WebClient.reg</a> 登入檔</li><br>
+										<li>直接點選【執行】<br><img src="./image/webclient_00.png"></li><br>
+										<li>允許變更這部電腦，點【是】<br><img src="./image/webclient_01.png"></li><br>
+										<li>是否確定要繼續，點【是】<br><img src="./image/webclient_02.png"></li><br>
+										<li>已經成功加入登入中，點【確定】<br><img src="./image/webclient_03.png"></li><br>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>新增『信任的網站』</b>
+									<ul>
+										<li>開啟IE，點選『工具』>『網際網路選項』>『安全性』</li><br>
+										<li>點選『信任的網站』，再點『網站』<br><img src="./image/webclient_07.png"></li><br>
+										<li>
+										取消【勾選】『此區域內的所有網站需要伺服器驗證(https:)』<br>
+										輸入平台網址，http://<span id="p_dav"></span><br>
+										點【新增】
+										<div id="div_dav" style="padding-top: 123px; padding-left:30px; background:url(./image/webclient_08.png) no-repeat;width:367px;height:227px;"></div>
+										</li>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>重新開機電腦</b></li>
+								<br><br>
+								<li><b>開始使用 Web 資料夾</b>
+									<ul>
+										<li>到課程辦公室＞課程管理＞教材上傳，於 Web 資料夾，點【開啟】</li><br>
+										<li>當開啟檔案總管後，則可以將所需檔案複製、貼上或拖拉方式上傳<br><img src="./image/webclient_04.png"></li>
+									</ul>							
+								</li>
+							</ol>
+						</div>
+                    </div>                    
+                    <div class="hr">
+                    </div>
+                    <div class="reference padding-left-15 padding-right-35">
+                        <div class="title">注意事項</div>
+                        <div class="content">
+							<ul>
+								<li>目前 Web資料夾，只限定使用 IE 瀏覽器<br>支援瀏覽器　：IE8 (含)以上<br>支援作業系統：Windows 7、Windows 8
+								
+								</li><br>
+								<li>Web 資料夾上傳檔案，單一最大檔案限制 4GB</li><br>
+								<li>不可以使用 InPrivate 方式瀏覽，此會造成 Web 資料夾無法開啟<br><img src="./image/webclient_05.png"></li><br>
+								<li>若發生在 Web 資料夾，點【開啟】無反應，請嘗試關閉所有 IE 瀏覽器後，再重新開啟 IE 或重開機。</li><br>
+								<li>若複製檔案時，出現『錯誤 0x80070780: 系統無法存取該檔案。』<br>表示 Web資料夾 已與平台失去連線，請關閉 IE 與 Web資料夾後，再重新執行一次<br><img src="./image/webclient_06.png"></li>
+							</ul>
+						</div>
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+	  <script type="text/javascript">			
+			document.getElementById('div_dav').innerText = 'http://'+location.hostname;
+			document.getElementById('p_dav').innerText = location.hostname;
+	  </script>
+</body>
+</html>

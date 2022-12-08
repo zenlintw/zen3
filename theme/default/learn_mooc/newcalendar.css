@@ -1,0 +1,238 @@
+.fancybox-close{
+    background: transparent url("./fancybox-close.png") no-repeat;
+    top: -30px;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+}
+.fc-day{
+    position: relative;
+}
+.fc-day.hover{
+    background-color: #D8F4F6;
+}
+.fc-row.fc-rigid{
+    overflow: visible;
+}
+.icon_add{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.fc-basicWeek-view .icon_add,.fc-agendaDay-view .icon_add{
+    top: -18px;
+}
+.fc-content-skeleton{
+    pointer-events:none
+}
+.fc-more-cell,.fc-event,.fc-more{
+    pointer-events:auto; /*events*/
+    cursor: pointer;
+}
+.icon_calendar{
+    background: transparent url("./icon_calendar.png") no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+    border-width: 2px;
+}
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .icon_calendar{
+        border-width: 0px;
+    }
+}
+.icon_bell{
+    background: transparent url("./icon_bell.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.icon_calendartype{
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+}
+.fc-icon-left-single-arrow,
+.fc-icon-right-single-arrow,
+.fc-today-button,
+.fc-center,
+.fc-month-button,
+.fc-basicWeek-button,
+.fc-basicDay-button{
+    color: #218B85;
+}
+.icon_calendartype.person{
+    background-color: #218B85;
+}
+.icon_calendartype.course{
+    background-color: #D95155;
+}
+.icon_calendartype.school{
+    background-color: #F39C1C;
+}
+.alert-error{
+    display: none;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#newcalendar_container{
+    padding:10px 180px 0 10px;
+    position: relative;
+}
+#newcalendar_leftNav{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width:150px;
+}
+#newcalendar_leftNav table{
+    margin-bottom: 10px;
+}
+#newcalendar_leftNav ul{
+    list-style: none;
+    margin-left: 10px;
+}
+#newcalendar_leftNav li{
+    cursor: pointer;
+}
+#newcalendar_leftNav li.grey{
+    color: grey;
+}
+#newcalendar_leftNav li.grey .icon_calendartype{
+    background-color: grey;
+}
+#newcalendar_leftNav button{
+    width: 100%;
+}
+
+#calendar_info{
+    min-width: 550px;
+    padding:0 20px;
+}
+#calendar_edit{
+    min-width: 450px;
+    padding:0 10px;
+}
+#calendar_repeat_edit{
+    min-width: 250px;
+    padding:0 40px;
+}
+#calendar_time_edit{
+    min-width: 500px;
+    padding:0 20px;
+}
+#calendar_info .header-div{
+    font-weight: bolder;
+}
+#calendar_info hr,#calendar_edit hr,#calendar_repeat_edit hr{
+    margin: 5px 0;
+}
+#calendar_edit,#calendar_repeat_edit,#calendar_time_edit{
+    display: none;
+}
+#calendar_edit .simple{
+    display: none;
+}
+#calendar_edit.simple .simple{
+    display: inline-block;
+}
+#calendar_edit.simple .advanced{
+    display: none;
+}
+#calendar_edit form,#calendar_repeat_edit form{
+    margin-bottom: 0px;
+}
+#calendar_edit input[type="radio"]{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#calendar_type_btngroup{
+    margin-left: 159px;
+}
+#calendar_type_btngroup li{
+    cursor: pointer;
+}
+#calendar_type_btngroup button.type{
+    height: 26px;
+    padding: 0px 5px;
+    text-align: left;
+}
+#calendar_type_btngroup button.dropdown-toggle{
+    height: 26px;
+}
+#calendar_type_btngroup .caret{
+    margin-top: 0px;
+    margin-top: 8px \9;
+}
+#calendar_type_btngroup .dropdown-menu li{
+    padding: 0px 5px;
+}
+#calendar_delete_modal{
+    z-index: 8050;
+}
+#header-type{
+    position: absolute;
+    top:0;
+    left:0;
+}
+#header-icon{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#calendar_info.person .type-color{
+    color: #218B85;
+}
+#calendar_info.course .type-color{
+    color: #D95155;
+}
+#calendar_info.school .type-color{
+    color: #F39C1C;
+}
+#calendar_info .icon-refresh,#calendar_info .icon-bell{
+    cursor: pointer;
+}
+#btn_memo_date,#btn_memo_repeat_date,#btn_memo_repeat_end{
+    cursor: pointer;
+}
+.calendar{
+    z-index: 8050;
+}
+#repeat_frequency_span{
+    margin-left: 5px;
+}
+
+.form-control-static {
+    padding-top: 3px;
+}
+#timerowTable{
+    margin-top: 40px;
+}
+#timerowTable td.seleted{
+    background-color: #d9edf7;
+}
+#timerowTable .ui-selecting,#timerowTable .ui-selected{
+    background: #bce8f1;
+}
+
+#calendar_time_edit .relativebar{
+    position: fixed;
+    top: 35px;
+    width: 500px;
+    background: #f9f9f9;
+}
+
+#calendar_time_edit .timeinput{
+    margin: 8px 0 0 5px;
+}

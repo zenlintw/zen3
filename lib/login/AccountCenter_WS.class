@@ -1,0 +1,114 @@
+<?php
+/**
+ * AccountCenter_WS 利用WebServices作為帳號中心
+ * author: jeff
+ * date:
+ */ 
+
+DEFINE ("LDAPExKeysize","PortalEx");
+
+class AccountCenter_WS extends AccountCenter
+{
+	/**
+	*   取得使用者的資料
+	*   @Access public : 類別函式
+	*   @param string $user : 使用者帳號
+	*   @return object : userinfo 物件
+	*/
+	function &getUserInfo($user)
+	{
+		$rtnArray = false;
+		$posts = sprintf("op=userdata&user=%s&pwd=%s",urlencode($user), urlencode($pwd));
+		$res = Server_Request_POST($Post_Str);
+		$rtnArray = $this->$transUserinfoArray($res);
+		if (strpos($res,"200 ok") === false)	return false;
+		return $rtnArray;
+	}
+	
+	/**
+	*   驗證帳密
+	*   @Access public : 類別函式
+	*   @param  string $user : 使用者帳號
+	*   @param  string $pwd  : 使用者密碼
+	*   @return bool : true=>通過，false=>不通過
+	*/
+	function validPassword($user, $pwd)
+	{
+		$posts = sprintf("op=valid&user=%s&pwd=%s",urlencode($user), urlencode($pwd));
+		$res = Server_Request_POST($Post_Str);
+		if (strpos($res,"200 ok") === false)	return false;
+		return true;
+	}
+	
+	/**
+	*   將WS的資料轉成userinfo的格式
+	*   @Access private
+	*   @param  string $userdata : WS傳回的資料內容
+	*   @return array : 同wm3的userinfo陣列格式
+	*/
+	function transUserinfoArray(&$data)
+	{
+		//取得空白的使用者資訊陣列
+		$rtnArray = $this->getEmptyUserinfoArray();
+		
+		//將ws的資料填入 UserinfoArray: $rtnArray
+		//todo: 撰寫 Webservices 回傳的資料轉成  userinfo Array型態
+		
+		return $rtnArray;
+	}
+
+	//編碼
+	function other_enc($data)
+	{
+	   $crypttext = @mcrypt_encrypt (MCRYPT_DES, LDAPExKeysize, $data, 'ecb');
+	   $hextext=bin2hex($crypttext);
+	   return $hextext;
+	}
+	
+	//解碼
+	function other_dec($data)
+	{
+	   $dectext = @mcrypt_decrypt (MCRYPT_DES, LDAPExKeysize, hex2bin($data), MCRYPT_MODE_ECB);
+	   $dectext=chop($dectext);
+	   return $dectext;
+	}
+	
+	//16進位轉成2進位
+	function hex2bin($data)
+	{
+		$len = strlen($data);
+		return pack("H" . $len, $data);
+	}
+	
+	//2進位轉成16進位
+	function bin_hex($data)
+	{
+	   $hextext = bin2hex($data);
+	   return $hextext;
+	}
+	
+	function Server_Request_POST($Post_Str)
+	{
+	    $header = "POST /".WS_Path." HTTP/1.0\r\n";
+	    $header .= "Content-Type: application/x-www-form-urlencoded\r\n";
+	    $header .= 'Content-Length: ' . strlen($Post_Str) . "\r\n\r\n";
+
+	    $fp = @fsockopen (WS_Host, WS_Port, $errno, $errstr, 5);
+	
+	    if (!$fp) {
+
+	        return false;
+	    }else{
+	    	fputs ($fp, $header . $Post_Str);
+	        $res='';
+            while (!feof($fp)) {
+	        	$res .= fgets ($fp, 128);
+	        }
+	        $result = substr(strstr($res, "\r\n\r\n"),4);
+	        fclose ($fp);
+	    }
+	    return $result;
+	}
+}
+
+?>

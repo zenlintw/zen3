@@ -1,0 +1,13 @@
+/*
+*刪除
+*/
+.lcms-icon-delete {
+    background: transparent url('/images/file_delete.png') no-repeat;
+    width: 29px;
+    height: 25px;
+}
+.lcms-icon-delete:hover {
+    background-image: url('/images/file_delete_1.png');
+    width: 29px;
+    height: 25px;
+}

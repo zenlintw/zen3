@@ -1,0 +1,204 @@
+// nav component
+// override bootstrap tabs
+.nav-tabs {
+	@include border-radius($radius);
+	background-color: #B5B5B5;
+	margin-bottom: 0.4em;
+	> li {
+		margin: 4px 0 -1px 4px;
+		> a {
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: 0.3em 2.5em;
+			color: #FFFFFF;
+			&:hover, &:focus {
+				color: #06A2A4;
+			}
+			@media screen and (max-width: $mobilesize) {
+				padding: 0.5em 1em;
+			}
+		}
+	}
+	> .active {
+		> a {
+			color: #06A2A4;
+			&:hover, &:focus {
+				color: #06A2A4;
+			}
+		}
+	}
+}
+
+.nav-pills {
+	margin-bottom: 0.4em;
+	> li {
+		margin: 4px 0 -1px 4px;
+		> a {
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: 0.5em 2.5em;
+			color: #FFFFFF;
+			text-shadow: 1px 1px #B5B5B5;
+			&:hover, &:focus {
+				color: #06A2A4;
+			}
+			@media screen and (max-width: $mobilesize) {
+				padding: 0.5em 1em;
+			}
+		}
+	}
+	> .active {
+		> a {
+			color: #FFFFFF;
+			background-color: #B5B5B5;
+			&:hover, &:focus {
+				color: #FFFFFF;
+				background-color: #B5B5B5;
+			}
+		}
+	}
+}
+
+.nav-orange {
+	margin-bottom: 0em;
+	background-color: transparent;
+	border-radius: 0;
+	border-bottom: 0;
+	> li {
+		margin: 4px 0 0 4px;
+		> a {
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: 0.5em 1.8em;
+			color: #FFFFFF;
+			text-shadow: 0;
+			&:hover, &:focus {
+				color: #F3800F;
+
+			}
+			@media screen and (max-width: $mobilesize) {
+				padding: 0.5em 1em;
+			}
+		}
+	}
+	> .active {
+		> a {
+			color: #F3800F;
+			background-color: #FFFFFF;
+			&:hover, &:focus {
+				color: #F3800F;
+				background-color: #FFFFFF;
+			}
+		}
+	}
+}
+%forum_icon {
+    background-position:top left;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-forum-orange {
+	margin-bottom: 0em;
+	background-color: transparent;
+	border-style: solid;
+	border-bottom-color: #ff9e14;
+	border-radius: 0;
+	border-width: 0 0 3px 0;
+	border-color: #FF9E14;
+	> li {
+		margin: 4px 8px 0 0;
+		> a {
+			.icon_news{
+                @extend %forum_icon;
+                background-image: image-url('forum_news.png');
+			}
+            .icon_calendar{
+                @extend %forum_icon;
+                background-image: image-url('forum_calendar.png');
+            }
+            .icon_activity{
+                @extend %forum_icon;
+                background-image: image-url('forum_activity.png');
+            }
+			background-color: #CCCCCC;
+			color: #5C5C5C;
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: 0.5em 1.8em;
+			color: #5C5C5C;
+			text-shadow: 0;
+			&:hover, &:focus {
+				background-color: #FFD294;
+				color: #FFFFFF;
+
+			}
+			@media screen and (max-width: $mobilesize) {
+				padding: 0.5em 1em;
+			}
+		}
+	}
+	> .active {
+		> a {
+			.icon_news{
+				background-image: image-url('forum_news_1.png');
+			}
+            .icon_calendar{
+                background-image: image-url('forum_calendar_1.png');
+            }
+            .icon_activity{
+                background-image: image-url('forum_activity_1.png');
+            }
+			
+			color: #FFFFFF;
+			background-color: #FF9E14;
+			&:hover, &:focus {
+				color: #FFFFFF;
+				background-color: #FF9E14;
+			}
+		}
+	}
+}
+
+.nav-noborder {
+	border-bottom: 0px;
+}
+
+
+.mooc-nav-list {
+	@include border-radius($radius);
+	@include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+	border: 1px solid #C4C4C4;
+	background: #FFFFFF;
+	> li {
+		> a {
+			padding: 0.5em 1.5em;
+			border-top: 1px solid #DDDDDD;
+			color: #333333;
+		}
+		&:first-child {
+			> a {
+				@include border-top-radius($radius);
+				border-top: 0px solid #DDDDDD;
+			}
+		}
+		&:last-child {
+			> a {
+				@include border-bottom-radius($radius);
+			}
+		}
+	}
+	> .active {
+		> a {
+			background-color: #06A2A4;
+			&:hover, &:focus {
+				background-color: #06A2A4;
+			}
+		}
+
+	}
+
+}

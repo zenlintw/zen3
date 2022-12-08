@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<sco>
+	<cmi _version="1.0">
+		<comments_from_learner _children="comment,location,timestamp" _count="0">
+			<item>
+				<comment />
+				<location />
+				<timestamp />
+			</item>
+		</comments_from_learner>
+		<comments_from_lms _children="comment,location,timestamp" _count="0">
+			<item>
+				<comment />
+				<location />
+				<timestamp />
+			</item>
+		</comments_from_lms>
+		<completion_status>unknown</completion_status>
+		<completion_threshold />
+		<credit />
+		<entry>_</entry>
+		<exit />
+		<interactions _children="id,type,objectives,timestamp,correct_responses,weighting,learner_response,result,latency,description" _count="0">
+			<item>
+				<id />
+				<type />
+				<objectives _count="0">
+					<item>
+						<id />
+					</item>
+				</objectives>
+				<timestamp />
+				<correct_responses _count="0">
+					<item>
+						<pattern />
+					</item>
+				</correct_responses>
+				<weighting></weighting>
+				<learner_response />
+				<result />
+				<latency />
+				<description />
+			</item>
+		</interactions>
+		<launch_data />
+		<learner_id />
+		<learner_name />
+		<learner_preference _children="audio_level,language,delivery_speed,audio_captioning">
+			<audio_level>0</audio_level>
+			<language />
+			<delivery_speed>0</delivery_speed>
+			<audio_captioning>0</audio_captioning>
+		</learner_preference>
+		<location />
+		<max_time_allowed />
+		<mode />
+		<objectives _chidren="id,score,success_status,completion_status,progress_measure,description" _count="0">
+			<item>
+				<id />
+				<score _children="scaled,raw,min,max">
+					<scaled />
+					<raw />
+					<min />
+					<max />
+				</score>
+				<success_status>unknown</success_status>
+				<completion_status>unknown</completion_status>
+				<progress_measure />
+				<description />
+			</item>
+		</objectives>
+		<progress_measure />
+		<scaled_passing_score />
+		<score _children="scaled,raw,min,max">
+			<scaled />
+			<raw />
+			<min />
+			<max />
+		</score>
+		<session_time />
+		<success_status>unknown</success_status>
+		<suspend_data />
+		<time_limit_action />
+		<total_time />
+	</cmi>
+	<adl>
+		<nav>
+			<request />
+			<request_valid>
+				<continue />
+				<previous />
+				<choice target="" />
+			</request_valid>
+		</nav>
+	</adl>
+	<TrackingModel>
+		<ActivityProgressInformation
+			ActivityProgressStatus="False"
+			ActivityAbsoluteDuration="0.0"
+			ActivityExperiencedDuration="0.0"
+			ActivityAttemptCount="0"
+		/>
+		<ObjectiveProgressInformation>
+			<item
+				ObjectiveProgressStatus=""
+				ObjectiveSatisfiedStatus=""
+				ObjectiveMeasureStatus=""
+				ObjectiveNormalizedMeasure=""
+			/>
+		</ObjectiveProgressInformation>
+		<AttemptProgressInformation>
+			<item
+				AttemptProgressStatus="False"
+				AttemptCompletionAmount="0.0"
+				AttemptCompletionStatus="False"
+				AttemptAbsoluteDuration="0.0"
+				AttemptExperiencedDuration="0.0"
+			/>
+		</AttemptProgressInformation>
+		<ActivityStateInformation
+			ActivityisActive="False"
+			ActivityisSuspended="False"
+			AvailableChildren=""
+		/>
+	</TrackingModel>
+</sco>

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>預覽課程目錄</title>
+		<link rel="stylesheet" href="/idea/theme/style.css">
+			<body leftmargin="10" topmargin="10" style="font: 10pt verdana" background="/idea/theme/image/centerbgframe.gif">
+				<br>
+				<script language="javascript" src="ftiens4_pure.js"></script>
+				<script language="javascript">
+USETEXTLINKS = 1
+level_0 = gFld("課程目錄瀏覽", "")
+level_02 = insFld(level_0, gFld("Group", ""))
+level_021 = insFld(level_02, gFld("test", ""))
+level_0211 = insFld(level_021, gFld("test", ""))
+level_02111 = insFld(level_0211, gFld("test", "http://www.kimo.com.tw"))
+insDoc(level_02111, gLnk(0,"bbb", "getdesc.aspx?materialid=10001"))
+level_022 = insFld(level_02, gFld("xxx", ""))
+insDoc(level_022, gLnk(0,"333", "getdesc.aspx?materialid=10002"))
+level_04 = insFld(level_0, gFld("xxx", ""))
+level_041 = insFld(level_04, gFld("111", ""))
+insDoc(level_041, gLnk(0,"ttt", "getdesc.aspx?materialid=10006"))
+initializeDocument()
+				</script>
+				<base target="display">
+			</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=en">
+        <meta http-equiv="Content-Language" content="en">
+        <title>CSV example</title>
+        <link rel="stylesheet" type="text/css" href="/theme/default/academic/wm.css">
+    </head>
+    <body>
+        <!--英文版-->
+        <div align="center">
+            <table width="760" border="0" cellspacing="0" cellpadding="0" id="ListTable">
+                <tr class="cssTr">
+                    <td class="cssTd">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr class="cssTr">
+                                <td class="cssTd">
+                                    <img onselectstart="return false;" id="ImgL1" MyAttr="1" tabsIdx="1" src="/theme/default/academic/title_on_01.gif" width="25" height="30" border="0" align="absbottom">
+                                </td>
+                                <td align="center" valign="bottom" nowrap="NoWrap" id="TitleID1" MyAttr="1" tabsIdx="1" style="cursor: default; background-image: url('/theme/default/academic/title_on_02.gif');" class="cssTabs" onselectstart="return false;">Exemples</td>
+                                <td class="cssTd">
+                                    <img onselectstart="return false;" id="ImgR1" MyAttr="1" tabsIdx="1" src="/theme/default/academic/title_on_03.gif" width="28" height="30" border="0" align="absbottom">
+                                </td>
+                                <td class="cssTd" width="100%">&nbsp;</td>
+                                <td class="cssTd">
+                                    <a href="/wmhelp.php?url=%2Facademic%2Fstud%2Fstud_import_csvhelp.php" target="_blank"><img src="/theme/default/academic/help.gif" width="21" height="21" border="0" align="middle" alt="Help" title="Help"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="cssTr">
+                    <td class="cssTd" valign="top">
+                        <table width="100%" border="0" cellspacing="1" cellpadding="3" class="cssTable" style="display:inline">
+                            <tr class="cssTrHead">
+                                <td class="cssTd" colspan="3">Follow the following format to edit your quiz, one line each.</td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" nowrap="nowrap">
+                                    <font face="Times New Roman" size="2">Format</font>
+                                </td>
+                                <td class="cssTd">
+                                    <font face="Times New Roman" size="2">
+                                        <table border="0" cellspacing="1" cellpadding="3" style="display:inline">
+                                            <tr class="cssTrEvn">
+                                                <td align="right">homework and exam : </td>
+                                                <td><font color="blue">type,answer,question,choice,answer_detail,category </font>(partitioned by comma, &quot;,&quot;)</td>
+                                            </tr>
+                                            <tr class="cssTrEvn">
+                                                <td align="right">questionnaire : </td>
+                                                <td><font color="blue">type,,question,choice,answer_detail,category </font>(partitioned by comma, &quot;,&quot;)</td>
+                                            </tr>
+                                        </table>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr class="cssTrOdd">
+                                <td class="cssTd" nowrap="nowrap">
+                                    <font face="Times New Roman" size="2">Illustration</font>
+                                </td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>Type: shown as number, i.e., 1 for True/False Questions, 2 for Multiple-choice Questions, 3 for Multiple-answer Questions, 4 for Cloze Test, 5 for Short-answer Questions, and 6 for Matching Questions.</li>
+                                        <li>
+                                            Model answer:
+                                            <ul>
+                                                <li>True/False Questions: 1 stands for true and 0 for false.</li>
+                                                <li>Multiple-choice Questions: Answer with the number of choice, e.g., 2.</li>
+                                                <li>Multiple-answer Questions: Answer as above, but separate answers by	a comma, e.g., 1,2,5.</li>
+                                                <li>Cloze Test: No need to fill in the blanks as the answers are shown in the questions. You&#39;ll figure it out when you scroll down.</li>
+                                                <li>Short-answer Questions: No model answers.</li>
+                                                <li>Matching Questions: Answer with a{2},b{1},c{3} to indicate that a matched 2, b matches 1, and c matched 3.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Question description: Except for double colons &quot;,&quot;, any characters can be acceptable. But in Cloze Test, the answers must be embraced by double parentheses, i.e., ((answer)).</li>
+                                        <li>Choice (valid for either Multiple-choice Questions or Multiple-answer Questions): Every choice must be separated by &quot; || &quot; with &quot;||&quot; embraced by two spaces.</li>
+                                        <li>Multiple-choice questions and matching questions, must &quot;"&quot; (double quotes) around the whole answer block. </li>
+                                        <li>When writing a question in English, due to the sentences of question description and choice(s) usually has a comma &quot;,&quot;, so the question description and the choice(s) block should be marked with double quotes &quot;"&quot;. </li>
+                                        <li>Matching Questions: Use two @s embraced by two spaces, i.e., &quot; @@ &quot;, to separate two group of choices, i.e., suggestions and choices. Keep empty for those question types without choices.</li>
+                                        <li>answer_detail : It is the detail of answer description. The field can be ignore.</li>
+                                        <li>category : It means the version, volume, chapter, paragraph and section. Please use dash sign (-) to combine them. example: 1-2-3-4-5. The field can be ignore or just use partial. example: -2--4-5.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" nowrap="nowrap">
+                                    <font face="Times New Roman" size="2">Homework<Br />Exam<Br />Examples</font>
+                                </td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>True/False Questions<br>1,1,"The largest ocean in the world is the Pacific Ocean."</li>
+                                        <li>Multiple-choice Questions<br>2,3,"Which planet is the natural satellite of the earth?",Neptune || Mars || Moon || Jupiter"</li>
+                                        <li>Multiple-answer Questions<br>3,"1,2,4","Which country is located in South America?","Chile || Brazil || Canada || Argentina || Zaire"</li>
+                                        <li>Cloze Test<br>4,,"Ask ((not)) what your country can do for you, ((but)) what you can do for your country."</li>
+                                        <li>Short-answer Questions<br>5,,"After finishing this training programme, please write down what part of this programme impressed you the most and how it influenced you."</li>
+                                        <li>Matching Questions<br>6,"a{2},b{3},c{4},d{1}","Please match the following actresses on the left with the films on the right","Nicole Kidman || Meg Ryne || Renee Zelwiger || Julie Delpy @@ Before Sunset || The Others || In the Cut || Bridget Jones&#39; Diary"</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrOdd">
+                                <td class="cssTd" nowrap="nowrap">
+                                    <font face="Times New Roman" size="2">Questionnaire<Br />Examples</font>
+                                </td>
+                                <td class="cssTd">
+                                    <ol>
+                                        <li>True/False Questions<br>1,,"The largest ocean in the world is the Pacific Ocean."</li>
+                                        <li>Multiple-choice Questions<br>2,,"Which planet is the natural satellite of the earth?","Neptune || Mars || Moon || Jupiter"</li>
+                                        <li>Multiple-answer Questions<br>3,,"Which country is located in South America?","Chile || Brazil || Canada || Argentina || Zaire"</li>
+                                        <li>Cloze Test<br>4,,"Ask (()) what your country can do for you, (()) what you can do for your country."</li>
+                                        <li>Short-answer Questions<br>5,,"After finishing this training programme, please write down what part of this programme impressed you the most and how it influenced you."</li>
+                                        <li>Matching Questions<br>6,,"Please match the following actresses on the left with the films on the right","Nicole Kidman || Meg Ryne || Renee Zelwiger || Julie Delpy @@ Before Sunset || The Others || In the Cut || Bridget Jones&#39; Diary"</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr class="cssTrEvn">
+                                <td class="cssTd" colspan="3" align="center">
+                                    <input type="button" value="close window" id="btn_close" class="cssBtn" onclick="window.close();">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

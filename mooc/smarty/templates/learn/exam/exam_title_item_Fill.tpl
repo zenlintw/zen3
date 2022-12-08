@@ -1,0 +1,1 @@
+<strong style="color: #000000;font-size: 17.5px">%item_desc%</strong> %item_input%

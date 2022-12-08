@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>如何使用 FTP</title>
+    <link href="./image/bootstrap.min.css" rel="stylesheet" />
+    <link href="./image/application.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full">
+    <div class="nav-adv-course">
+        <div class="fix-narrow">
+            <div class="title">
+                <div class="main-title"><br><br><br>如何使用 FTP</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-adv-course-bottom">
+    </div><div class="clearboth-block"></div>
+    <div class="main">
+        <div class="fix-narrow">
+            <div class="basic">
+                <div class="left">
+                    <div class="intro padding-left-15 padding-right-35">
+                        <div class="title">Windows 使用者</div>
+                        <div class="content">
+							<ol>
+								<li><b>在『開始』微軟圖示按「滑鼠右鍵」，點選『檔案總管』</b><br><img src="./image/ftp_win7_zh-tw_01.png">
+								</li>
+								<br><br>
+								<li><b>並於『網址列』上，直接輸入 ftp://<span id="p_ftp"></span>，例如下圖，並按鍵盤『Enter』鍵。</b>
+									<div id="div_ftp" style="padding-top: 36px; padding-left:110px; background:url(./image/ftp_win7_zh-tw_02.png) no-repeat;width:550px;height:320px;">	
+								</div>	
+								</li>
+								<br><br>
+								<li><b>出現『登入身分』後</b>
+								<br>在「使用者名稱」：輸入登入WMPro平台時所使用的帳號<br>在「密碼　　　」：輸入登入的密碼，或『教材上傳』畫面所提供的『動態密碼』<br>並點選『登入』<p><img src="./image/ftp_win7_zh-tw_03.png">
+								</li>
+								<br><br>
+								<li><b>登入後，就會出現下圖畫面，顯示課程內的教材檔案</b>
+									<img src="./image/ftp_win7_zh-tw_04.png">
+								</li>
+							</ol>
+						</div>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="reference padding-left-15 padding-right-35">
+                        <div class="title">注意事項</div>
+                        <div class="content">
+							<ul>
+								<li>您必須先登入學習網站，並進入課程的『教師辦公室』中，在點選『課程管理』的『教材上傳』，必須停留在此，才能使用FTP軟體上傳檔案到課程之中；若您尚未登入學習網站，只開啟FTP軟體，是無法用FTP上傳教材的。<p>
+								<li>您以FTP登入的路徑將會是您目前所在的課程教材目錄，若要將教材上傳到其他課程，請先關閉開啟FTP連線中的『檔案總管』，再切換到其他課程『教師辦公室』中的『教材上傳』，重新進行FTP連線即可。
+							</ul>
+						</div>
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+	  <script type="text/javascript">			
+			document.getElementById('div_ftp').innerText = 'ftp://'+location.hostname;
+			document.getElementById('p_ftp').innerText = location.hostname;
+	  </script>
+</body>
+</html>

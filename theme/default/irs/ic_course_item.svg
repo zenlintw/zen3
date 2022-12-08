@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_course_item</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="課中教學_切" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[老師]---課程列表_1_多行" transform="translate(-131.000000, -227.000000)" fill="#7DD8BD">
+            <g id="course-list-copy" transform="translate(112.000000, 213.000000)">
+                <path d="M21.5,16.216 L21.5,24.9 L24.204,23.262 L26.934,24.9 L26.934,16.216 L21.5,16.216 Z M34.5,14.084 C35.0893363,14.084 35.6006645,14.2919979 36.034,14.708 C36.4673355,15.1240021 36.684,15.6266637 36.684,16.216 L36.684,33.584 C36.684,34.1733363 36.4673355,34.6759979 36.034,35.092 C35.6006645,35.5080021 35.0893363,35.716 34.5,35.716 L21.5,35.716 C20.9106637,35.716 20.3993355,35.5080021 19.966,35.092 C19.5326645,34.6759979 19.316,34.1733363 19.316,33.584 L19.316,16.216 C19.316,15.6266637 19.5326645,15.1240021 19.966,14.708 C20.3993355,14.2919979 20.9106637,14.084 21.5,14.084 L34.5,14.084 Z" id="ic_course_item"></path>
+            </g>
+        </g>
+    </g>
+</svg>

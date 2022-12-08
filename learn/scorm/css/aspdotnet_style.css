@@ -1,0 +1,78 @@
+body {	
+    font-family: "Times New Roman", "Times", "serif";
+	scrollbar-3dlight-color: #C9CBB6;
+	scrollbar-arrow-color: #817E6D;
+	scrollbar-base-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-face-color: #EAEBDF;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #817E6D;
+	}
+.title-top {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 20px;
+	line-height: 120%;
+	font-weight: bold;
+	color: #ffffff;
+}
+.title-16 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: bold;
+	color: #009999;
+}
+.txt-12 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	line-height: 150%;
+	color: #56584D;
+	list-style-type: square;
+	letter-spacing: 1px;
+}
+.menu-txt-title {
+	font-family: "Times New Roman", "Times", "serif";
+	font-size: 12px;
+	line-height: 150%;
+	color: #333333;
+	font-weight: bold;
+}
+.menu-txt-stitle {
+	font-family: "Times New Roman", "Times", "serif";
+	font-size: 12px;
+	line-height: 150%;
+	color: #996633;
+}
+.answer {
+	font-family: "Times New Roman", "Times", "serif";
+	font-size: 12px;
+	line-height: 150%;
+	color: #0099FF;
+}
+.page-num {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	line-height: 150%;
+	color: #666666;
+}
+.txt-9 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 9px;
+	line-height: 150%;
+	color: #56584D;
+	letter-spacing: 0px;
+
+}
+.3d-button {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	color: #333333;
+	background-color: #CCCCCC;
+	padding: 2px;
+	border: 1px solid #999999;
+}
+
+.div-trans{
+	filter:Alpha(Opacity=50, FinishOpacity=50, Style=2)
+
+}

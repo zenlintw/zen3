@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*MOOCS-首頁搜尋區塊*/
+.nav-adv-search {
+  background: transparent url("../learn_mooc/banner_bg.png") repeat;
+  min-width: 885px;
+  width: 100%;
+  height: 226px;
+}
+.nav-adv-search > .narrow {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-adv-search > .narrow > .section-search {
+  width: 514px;
+  top: 43px;
+  z-index: 2;
+  position: absolute;
+  left: 50px;
+}
+.nav-adv-search > .narrow > .section-search > .title {
+  position: relative;
+  left: -8px;
+}
+.nav-adv-search > .narrow > .section-search > .title > .h1 {
+  font-size: 3em;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #242424;
+}
+.nav-adv-search > .narrow > .section-search > .title > .h2 {
+  font-size: 2em;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #242424;
+  margin-left: 5px;
+}
+.nav-adv-search > .narrow > .section-search > .h4 {
+  font-size: 1.1em;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #242424;
+  margin-left: 5px;
+  position: relative;
+  top: 41px;
+  left: -11px;
+}
+.nav-adv-search > .narrow > .section-search > .search {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #DCDCDC;
+  display: inline-block;
+  box-shadow: inset 0 0 0 1px #555, 0 0 0 4px rgba(255, 255, 255, 0.5), 0 0 4px 6px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 20px;
+}
+.nav-adv-search > .narrow > .section-search > .search > .input-append {
+  margin-bottom: 0;
+}
+.nav-adv-search > .narrow > .section-search > .search > .input-append > input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  line-height: 19px;
+  height: 25px;
+  box-shadow: 0 0 0 0;
+  width: 399px;
+  font-size: 10pt;
+  color: #000000;
+}
+.nav-adv-search > .narrow > .section-search > .search > .input-append > button {
+  padding: 3px 23px;
+}
+.nav-adv-search > .narrow > .section-adv {
+  /*background: transparent url("../learn_mooc/banner_logo.png") no-repeat;*/
+  width: 950px;
+  height: 226px;
+  z-index: 1;
+  right: 0;
+  position: absolute;
+  top: 0;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>塗鴉板</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+
+<body onbeforeunload="SaveAndUpload()" onload="loadwbdata()" bgcolor="#B9B9B9">
+<table border="0" cellspacing="0" cellpadding="0" id="tabContent">
+  <tr>
+    <td valign="top">
+		<OBJECT
+	  	classid="clsid:765321B7-4C0D-4165-93DC-D6442B065BA1"
+	  	codebase="/lib/anicamWB/AnicamWBProj.cab#version=-1,-1,-1,-1"
+	  	width="630"
+	  	height="500"
+	  	align="center"
+	  	hspace="0"
+	  	vspace="0"
+	  	id="AnicamWB">
+	  </OBJECT>    
+		<script langauge="JavaScript">
+		<!--//
+			var paraObj = window.dialogArguments;
+			document.AnicamWB.PostURI = "http://" + document.location.host + "/lib/anicamWB/wb_upload.php";
+			if (paraObj.isEdit == 1)
+			{
+				if (paraObj.EditFile != 'undefined')
+				{
+					document.AnicamWB.PostURI += "?isEdit=1&EditFile="+paraObj.EditFile;
+				}
+			}
+			document.AnicamWB.WM_BoardID = paraObj.WM_BoardID;
+			document.AnicamWB.WM_CourseID = paraObj.WM_CourseID;
+			document.AnicamWB.WM_Cookie = document.cookie;
+			
+			//SetLangCode("eng")
+					
+			function loadwbdata()
+			{
+				try{
+					progressui.style.visibility="visible";
+					if (paraObj.preloaddata != "")
+					{						
+						if (!paraObj.blocked)
+						{
+							document.AnicamWB.LoadURL(paraObj.preloaddata);
+						}else{
+							document.AnicamWB.LoadURL2(paraObj.preloaddata, 1);
+						}						
+					}else{
+						document.AnicamWB.LoadDefault();						
+					}
+					progressui.style.visibility="hidden";
+				}
+				catch (e)
+				{
+					alert("Anicam White Board Error: " + e.description);
+				}				
+			}
+			
+			function SaveAndUpload()
+			{
+				try
+				{
+					if ( document.AnicamWB.IsUsed )
+					{
+						if ( confirm("whiteboard changed, do you want to upload it to server?") )
+						{
+							
+							progressui.style.visibility="visible";
+							document.AnicamWB.UploadFile();
+							if ( document.AnicamWB.UploadResult == "" )
+							{
+								alert("Upload Failed.");
+								throw "";
+							}
+							paraObj.openerdocument.forms[0].wbpath.value = document.AnicamWB.UploadResult;
+						}
+						else
+						{
+							document.AnicamWB.SaveDefault();												
+						}
+					}
+				}
+				catch (e)
+				{
+					alert("Anicam White Board Error: " + e.description);
+				}
+			}
+		//-->
+		</script>
+    </td>
+  </tr>
+</table>
+<div id="progressui" style="position:absolute; left:150px; top:250px; width:350px; height:50px; z-index:2; visibility: hidden;" align="center">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="350" height="50" id="progress" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="progress.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<embed src="progress.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="350" height="50" name="progress" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</div>
+</body>
+</html>

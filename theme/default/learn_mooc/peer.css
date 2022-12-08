@@ -1,0 +1,1172 @@
+/*以下供共用*/
+/*注意-粗體、紅色*/
+.strong-note {
+    color: red;
+    font-weight: bold;
+}
+
+/*寬度-33%*/
+.part-trisection {
+    width: 33%;
+}
+
+/*表單輸入錯誤提示*/
+.error {
+    display: inline-block;
+}
+
+/*表單輸入錯誤提示*/
+.alert-lcms-error,.error {
+    color: #FF3C00;
+}
+
+/*表單輸入錯誤提示*/
+.alert.alert-lcms-error {
+    border: 1px solid #FF3C00;
+    background-color: #FFF;
+    box-shadow: 0 0 4px 0 rgba(255,60,0,0.7);
+}
+
+/*表單輸入錯誤提示*/
+textarea.error,textarea.error:focus,
+input.error,input.error:focus,
+textarea.alert-lcms-error,textarea.alert-lcms-error:focus,
+input.alert-lcms-error,input.alert-lcms-error:focus {
+    border: 1px solid #FF3C00;
+    box-shadow: 0 0 4px 0 rgba(255,60,0,0.7);
+    color: black;
+}
+
+/*僅上方圓弧，無邊框*/
+.top-radius {
+    background-color: white;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+/*僅下方圓弧，無邊框*/
+.bottom-radius {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.all-radius {
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -ms-border-radius: 4px 4px 4px 4px;
+    -o-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+/*深灰色*/
+.color-darkgray {
+    color: #737373;
+}
+
+/*白色*/
+.color-white {
+    color: white;
+}
+
+/*底色-白色*/
+.bkcolor-white {
+    background-color: white;
+}
+
+/*底色-橘色*/
+.bkcolor-orange {
+    background-color: #F4800F;
+}
+
+/*底色-淺藍色*/
+.bkcolor-lightblue {
+    background-color: #BDCBD4;
+}
+
+/*底色-墨綠色*/
+.bkcolor-darkgreen {
+    background-color: #4C6061;
+}
+
+/*底色-粉藍色*/
+.bkcolor-paleblue {
+    background-color: #F3F4F6;
+}
+
+/*底色-粉灰色*/
+.bkcolor-palegray {
+    background-color: #F4F4F4;
+}
+
+/*底色-藍綠色*/
+.bkcolor-cyanblue {
+    background-color: #07A2A4;
+}
+
+/*移除區塊所產生的空間*/
+.clear-both {
+	clear: both;
+}
+
+/*內陰影-上*/
+.shadow-inset-top{
+    box-shadow: inset 0px 2px 12px rgba(20%,20%,40%,0.5);
+}
+
+.margin-bottom--15 {
+    margin-bottom: -15px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.box-padding-b-3 {
+    padding-bottom: 3em;
+}
+/* 對齊左 */
+.left {
+    text-align: left;
+}
+
+/* mooc 圖片div css */
+.icon-rating-info {
+    background-image: url(/theme/default/learn_mooc/icon_rating_info.png);
+    background-position:top left;
+    height: 40px;
+    width: 40px;
+    float:left;
+}
+
+.icon-rating-2 {
+    background-image: url(/theme/default/learn_mooc/icon_rating_2.png);
+    background-position:top left;
+    height: 40px;
+    width: 40px;
+    float:left;
+}
+
+.icon-rating-detail {
+    background-image: url(/theme/default/learn_mooc/icon_rating_detail.png);
+    background-position:top left;
+    height: 40px;
+    width: 40px;
+    float:left;
+}
+
+.icon-self {
+    background-image: url(/theme/default/learn_mooc/icon_self.png);
+    background-position:top left;
+    height: 19px;
+    width: 19px;
+}
+
+.icon-teacher {
+    background-image: url(/theme/default/learn_mooc/icon_teacher.png);
+    background-position:top left;
+    height: 19px;
+    width: 19px;
+}
+
+.icon-announcement-info {
+    background-image: url(/theme/default/learn_mooc/icon_announcement_info.png);
+    background-position:top left;
+    height: 40px;
+    width: 40px;
+    float:left;
+}
+
+.icon-delete {
+    background-image: url(/theme/default/learn_mooc/co_icon_delete.png);
+    background-position:top left;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-delete:hover {
+    background-image: url(/theme/default/learn_mooc/co_icon_delete_1.png);
+    background-position:top left;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-edit {
+    background-image: url(/theme/default/learn_mooc/co_icon_edit.png);
+    background-position:top left;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-edit:hover {
+    background-image: url(/theme/default/learn_mooc/co_icon_edit_1.png);
+    background-position:top left;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-more {
+    background-image: url(/theme/default/learn_mooc/co_icon_more.png);
+    background-position:top left;
+    height: 32px;
+    width: 32px;
+}
+
+.icon-new {
+    background-image: url(/theme/default/learn_mooc/co_icon_new.png);
+    background-position:top left;
+    height: 32px;
+    width: 32px;
+}
+
+.icon-file {
+    background-image: url(/theme/default/learn_mooc/co_icon_file.png);
+    background-position:top left;
+    height: 19px;
+    width: 19px;
+}
+
+/*以下多不共用*/
+/*列表頁面標題*/
+#peer-page-title {
+    font-size: 2.1em;
+    margin-top: 35px;
+}
+
+/*列表頁面-新增作業按鈕文字大小*/
+#peer-page-title button{
+    font-size: 16px;
+}
+
+/*列表頁面標題-下方間隔*/
+#peer-page-title .left {
+    margin-bottom: 12px;
+}
+#peer-page-title .left span {
+    font-weight: bold;
+}
+
+/*微調位置-成績起迄日期*/
+#ck_score_begin_time, #ck_score_close_time {
+    margin-left: 73px;
+}
+
+/*微調位置-老師自評*/
+#lb_teacher_assessment {
+    left: 5px;
+    position: relative;
+    line-height: 2em;
+}
+
+/*微調底部空間-互評列表表格*/
+.table {
+    margin-bottom: 0;
+}
+
+/*進度列表文字置中*/
+.lcms-table-td-text_gray.pull-center {
+    text-align: center;
+}
+
+/*進度條上方列*/
+.bar {
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+/*進度條上方列置左*/
+.bar .left {
+    float: left;
+    margin-bottom: -17px;
+}
+
+/*進度條上方列-圖片*/
+.bar .left img {
+    margin-right: 6px;
+}
+
+/*進度條上方列-群組圖示*/
+.bar .left img {
+    float: left;
+}
+
+/*比重圓餅圖位置*/
+.bar .left .sparkpie {
+    position: relative;
+    left: -187px;
+    top: 2px;
+    padding-top: 3px;
+    padding-top: 12px\9;
+}
+
+/*進度條左上角-粗體*/
+.bar .left div {
+    font-weight: bold;
+}
+
+/*進度條左上角-名稱文字大小*/
+.bar .left div.title {
+    font-size: 1.5em;
+    position: relative;
+    top: -25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 20em;
+    left: 70px;
+    text-align: left;
+    padding-top: 0.1em;
+}
+
+/*進度條上方列置右*/
+.bar .right {
+    float: right;
+    position: relative;
+    top: -5px;
+}
+
+/*上內縮1em*/
+.box-padding-t-1 {
+    padding-top: 1em;
+}
+
+/*左右內縮3emx*/
+.box-padding-lr-3 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*同儕互評列表-功能列-文字大小*/
+.peer-func-list {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/*同儕互評列表-功能列-列高*/
+.peer-func-list tr td div {
+    line-height: 0.8em;
+}
+
+/*進度列表-進度名稱*/
+.process-title {
+    line-height: 1.7em;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+/*進度列表-日期起迄*/
+.process-period {
+    font-size: 1em;
+}
+
+/*進度列表-下方間隔*/
+.mooc-process {
+    margin-bottom: 40px;
+}
+
+/*進度列表-列表高度*/
+.mooc-process tr {
+    height: 89px;
+}
+
+/*繳交期間*/
+.mooc-process td.pay.active {
+    background-color: #06A2A4;
+    color: white;
+}
+
+/*繳交期間-啟用時-滑過變手*/
+.mooc-process td.pay.active:hover {
+    cursor: pointer;
+}
+
+/*評分期間*/
+.mooc-process td.rating.active {
+    background-color: #F3800F;
+    color: white;
+}
+
+/*繳交期間-啟用時-滑過變手*/
+.mooc-process td.rating.active:hover {
+    cursor: pointer;
+}
+
+/*成績公告期間*/
+.mooc-process td.score.active {
+    background-color: #2EB7EE;
+    color: white;
+}
+
+/*成績公告期間-啟用時-滑過變手*/
+.mooc-process td.score.active:hover {
+    cursor: pointer;
+}
+
+/*功能列-預設灰底*/
+.peer-func-list .pull-center {
+    background-color: #E5E5E5;
+    color: #C4C4C4;
+}
+
+/*功能列-有功能則白底黑字*/
+.peer-func-list .pull-center.active {
+    background-color: #FFF;
+    color: #000;
+}
+
+/*功能列-啟用時-滑過變手*/
+.peer-func-list .pull-center.active:hover {
+    cursor: pointer;
+}
+
+/*進入評分第一層與第二層按鈕-預設消失*/
+.rating .level1,.rating .level2 {
+    display: none;
+}
+
+/*進入評分第一層與第二層按鈕-顯示*/
+.rating .level1.active,.rating .level2.active {
+    display: block;
+}
+
+/*進入評分第二層按鈕-文字強調*/
+.rating  a .strong {
+    font-size: 2em;
+}
+
+/*進入評分第二層按鈕*/
+.btn-orange {
+    background-image: linear-gradient(to bottom, #FEBC24 1px, #F9AF1A 1px, #F5A210);
+    background-color: #F5A210;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+/*進入評分第二層按鈕-滑鼠*/
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.disabled,
+.btn-orange[disabled] {
+    color: white;
+    background-position: 0;
+    background-image: none;
+    background-color: #F79916;
+}
+
+/*進入評分第二層按鈕*/
+.level2 button {
+    height: 55px;
+    margin-top: 9px;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 43%;
+}
+
+.level2 a {
+    height: 45px;
+    margin-top: 9px;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 2.7em;
+    width: 38%;
+}
+
+/*進入評分第二層按鈕-已評按鈕*/
+.level2 a:first-child{
+    margin-left: 16px;
+    min-width: 7.4em;
+}
+
+/*表單與頁尾間隔*/
+.form-footer-space {
+    height: 2em;
+}
+
+/*成績-區域高度*/
+.final  {
+    height: 105px;
+}
+
+/*成績-圖示定位*/
+.final .final-logo {
+    position: absolute;
+    left: 81px;
+    top: 24px;
+}
+
+/*成績-文字區域定位*/
+.final .final-text {
+    position: absolute;
+    left: 3.6em;
+    color: #707070;
+    line-height: 7.6em;
+    top: 1em;
+}
+
+/*成績-文字區域樣式*/
+.final .final-text span {
+    line-height: 1.7em;
+}
+
+/*成績-總分區塊*/
+.final .final-text .total {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.final .final-text .total>span{
+    font-size: 2.7em;
+    position: relative;
+    top: 2px;
+}
+
+/*成績-加權公式區塊*/
+.final .final-text>span:first-child+span {
+    font-size: 1em;
+    margin-left: 2.2em;
+}
+
+/*加權公式-強調*/
+.final .final-text>span:first-child+span>.strong {
+    color: orange;
+    font-weight: bold;
+    font-size: 2.2em;
+    position: relative;
+    top: 5px;
+}
+
+/*徽章*/
+.final-text .award {
+    position: relative;
+    top: -0.9em;
+    margin-right: 1.6em;
+}
+
+/*評分標準說明-說明區域高度*/
+.note  {
+    height: 185px;
+}
+
+/*評分標準說明-圖示定位*/
+.note .note-logo {
+    position: absolute;
+    left: 45px;
+    top: 24px;
+}
+
+/*評分標準說明*/
+.rating-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.2em;
+    padding-left: 0.9em;
+    color: black;
+}
+
+/*評分標準說明-說明區域定位*/
+.note .note-text {
+    width: 98%;
+    margin: auto;
+    top: 9px;
+    color: #707070;
+    position: relative;
+}
+
+/*評分標準說明*/
+.note  .scrollbar {
+    height: 167px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*評分標準說明-捲軸高度、位置*/
+.note  .force-overflow {
+	min-height: 150px;
+}
+
+/*評分標準說明-卷軸寬度*/
+.note  .thin::-webkit-scrollbar {
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+/*評分標準說明-卷軸端點與顏色*/
+.note  .thin::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #8F8F8F;
+}
+
+/*評分明細-圖片區域*/
+.score-figure{
+    width: 255px;
+    text-align: center;
+    top: 30px;
+    float: left;
+    position: relative;
+}
+
+/*評分明細-圖片區域-總結*/
+.score-summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 3em;
+    color: white;
+}
+
+/*評分明細-圖片區域-總結-強調*/
+.strong-score {
+    font-size: 1.8em;
+}
+
+/*評分明細-分數列表*/
+.score .score-text {
+    color: white;
+    font-weight: bold;
+    width: 98%;
+    margin: auto;
+    margin-top: 0.4em;
+}
+
+/*評分明細-標題*/
+.score-text .title {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+/*評分-圖片區域*/
+.rating-figure{
+    width: 255px;
+    text-align: center;
+    top: 30px;
+    float: left;
+    position: relative;
+}
+
+/*評分-表格區域*/
+.rating .rating-text {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+/*評分-區塊間距*/
+.rating .rating-text>div{
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+/*評分-最後一個區塊間距*/
+.rating .rating-text>div:last-child{
+    margin-bottom: 1.6em;
+}
+
+/*評分-表格樣式*/
+.rating-table  {
+    width: 100%;
+    color: black;
+    margin-top: 0.7em;
+}
+
+/*評分-列高*/
+.rating-table tr {
+    line-height: 2.4em;
+}
+
+/*評分-欄位名稱寬度*/
+.rating-table>tbody>tr>th {
+    width: 88px;
+    text-align: right;
+    padding-right: 0.8em;
+}
+
+/*評分-分數表格-右邊數值齊左背景色縮排*/
+.rating-table>tbody>tr>td {
+    text-align: left;
+    padding-left: 0.8em;
+}
+
+/*評分-表格內文字*/
+.rating-table tbody {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*標題*/
+.rating-text .title {
+    font-size: 1.2em;
+    padding-left: 1.3em;
+    line-height: 2.6em;
+}
+
+/*評分-分數表格-最後列高度*/
+.rating-table>tbody>tr:nth-child(3) {
+    height: 120px;
+}
+
+/*評分-按鈕位置*/
+.rating-text .actions {
+    position: relative;
+    top: 12px;
+    right: 50px;
+    float: right;
+}
+
+/*評分-按鈕寬度與文字尺寸*/
+.rating-text .actions button {
+    width: 96px;
+    font-size: 1em;
+}
+
+/*評分-第一個按鈕*/
+.rating-text .actions button:first-child {
+    margin-right: 0.8em;
+}
+
+/*顯示為必填*/
+.rating-require {
+    float: right;
+    top: -21px;
+    right: 15px;
+    font-size: 0.9em;
+    position: relative;
+}
+
+/*附件檔案-附件本身高度*/
+.attach td>div{
+    line-height: 1.5em;
+}
+
+/*附件檔案-上下預設間距*/
+.attach td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/*參考檔案-參考檔案本身高度*/
+.reference-file td>div:first-child  div{
+    line-height: 1.5em;
+}
+
+.reference-file td>div:last-child{
+    margin-top: 0.9em;
+    margin-bottom: 0.4em;
+}
+
+.reference-file td>div:first-child  div a{
+    position: relative;
+    top: 3px;
+}
+
+.rating-table .best td>span {
+    position: relative;
+    top: 3px;
+}
+
+/*評量表說明--說明區域高度*/
+.point-note  {
+    height: 207px;
+    position: relative;
+    text-align: center;
+}
+
+/*評量表說明--說明區域定位*/
+.point-note .point-note-text {
+    position: relative;
+    top: 9px;
+    margin: auto;
+    background-color: #F4F4F4;
+}
+
+/*評分標準說明*/
+.point-note  .scrollbar {
+    height: 192px;
+    width: 98%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*評分標準說明-捲軸高度、位置*/
+.point-note  .force-overflow {
+	min-height: 158px;
+}
+
+/*評分標準說明-卷軸寬度*/
+.point-note  .thin::-webkit-scrollbar {
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+/*評分標準說明-卷軸端點與顏色*/
+.point-note  .thin::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #8F8F8F;
+}
+
+/*評量表說明-表格樣式*/
+.point-note-table  {
+    border-spacing: 0px;
+    border-collapse: separate;
+    width: 99%;
+    color: #707070;
+}
+
+/*評量表說明-表格上的一條橫線*/
+.point-note-table tbody td,.point-note-table tbody th{
+    border-top: 1px solid #dddddd;
+    line-height: 1.9em;
+}
+/*第二列不要上橫線*/
+.point-note-table tbody  tr:first-child td,.point-note-table tbody tr:first-child th{
+    border-top: 0px;
+}
+
+/*評量表說明-值文字大小*/
+.point-note-table tbody td {
+    font-size: 0.8em;
+}
+
+/*評量表說明-第一列欄位名稱最左邊圓弧*/
+.point-note-table thead th:first-child {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+/*評量表說明-第一列欄位名稱最右邊圓弧*/
+.point-note-table thead th:last-child {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/*評量表說明-第一列欄位名稱文字樣式及底色*/
+.point-note-table thead th{
+    font-size: 0.9em;
+    color: white;
+    background-color: #B5B5B5;
+    line-height: 2.4em;
+}
+
+/*垂直欄位名稱樣式*/
+.point-note-table tbody th {
+    font-size: 0.9em;
+    color: black;
+}
+
+/*評分-評量表樣式*/
+/*評量表說明-表格樣式*/
+.point-table  {
+    border-spacing: 0px;
+    border-collapse: separate;
+    width: 95%;
+    color: #707070;
+    margin-bottom: 1em;
+}
+
+/*評量表說明-表格上的一條橫線*/
+.point-table tbody td,.point-table tbody th{
+    border-bottom: 1px solid #dddddd;
+    line-height: 1.9em;
+}
+/*第二列不要上橫線*/
+.point-table tbody  tr:first-child td,.point-table tbody tr:first-child th{
+    border-top: 0px;
+}
+
+/*評量表說明-值文字大小*/
+.point-table tbody td {
+    font-size: 0.8em;
+}
+
+/*評量表說明-第一列欄位名稱最左邊圓弧*/
+.point-table thead th:first-child {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+/*評量表說明-第一列欄位名稱最右邊圓弧*/
+.point-table thead th:last-child {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/*評量表說明-第一列欄位名稱文字樣式及底色*/
+.point-table thead th{
+    font-size: 0.9em;
+    color: white;
+    background-color: #FFBC1C;
+    line-height: 2.4em;
+}
+
+/*垂直欄位名稱樣式*/
+.point-table tbody th {
+    font-size: 1em;
+    color: black;
+    line-height: 2.2em;
+}
+
+/*評語*/
+.rating-table textarea {
+    width: 95%;
+}
+
+.rating-table .attach td{
+    font-size: 0.9em;
+    color: #08B1B3;
+}
+
+.rating .rating-text form>div, .div-border {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/*評分明細-表格樣式*/
+.score-table  {
+    width: 99%;
+    color: #707070;
+    position: relative;
+}
+
+/*評分明細-表格上的一條橫線*/
+.score-table tbody td,.score-table tbody th{
+    border-bottom: 1px solid #dddddd;
+    line-height: 2.5em;
+}
+/*第二列不要上橫線*/
+.score-table tbody  tr:first-child td,.score-table tbody tr:first-child th{
+    border-top: 0px;
+}
+
+/*評分明細-值文字大小*/
+.score-table tbody td {
+    font-size: 0.8em;
+}
+
+/*評分明細-第一列欄位名稱底色*/
+.score-table thead div {
+    background-color: #B5B5B5;
+    width: 104%;
+}
+
+/*評分明細-第一列欄位名稱最左邊圓弧*/
+.score-table thead th:first-child div {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+/*評分明細-第一列欄位名稱最右邊圓弧*/
+.score-table thead th:last-child  div {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/*評分明細-第一列欄位名稱文字樣式*/
+.score-table thead th{
+    font-size: 0.9em;
+    color: white;
+    line-height: 2.4em;
+}
+
+/*垂直欄位名稱樣式*/
+.score-table tbody th {
+    font-size: 0.9em;
+    color: black;
+}
+
+/*內文置中*/
+.score-table tbody {
+    text-align: center;
+}
+
+.score-table thead tr th:nth-child(3){
+    width: 58%;
+}
+
+/*評語、時間置左*/
+.score-table thead tr th:nth-child(3),.score-table thead tr th:nth-child(4),.score-table tr td:nth-child(2),.score-table tr td:nth-child(4),.score-table tr td:nth-child(5){
+    text-align: left;
+}
+
+/*第一欄位*/
+.score-table tbody tr td:nth-child(1) {
+    padding-left: 1.3em;
+}
+
+/*評分標準說明*/
+.score-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.2em;
+    padding-left: 0.9em;
+    color: black;
+}
+
+/*顯示為必填*/
+.score-require {
+    float: right;
+    top: -21px;
+    right: 15px;
+    font-size: 0.9em;
+    position: relative;
+    font-weight: bold;
+}
+
+.score-require span:first-child{
+    position: relative;
+    top: -2px;
+    margin-right: 0.4em;
+}
+
+/* 附搜尋icon input (ie8 無法使用before，待修改)*/
+/*
+form.form-search:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(/theme/default/bootstrap/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:6px;
+    right:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+*/
+.search-query:focus + button {
+    z-index: 3;
+}
+
+/* 課程公告 未來移至 forum.css?*/
+.board-annt {
+    padding-bottom: 20px;
+    position: relative;
+    height: auto;
+}
+
+.board-manage{
+    top: -34px;
+    right: 0;
+    height: 30px;
+    width: 65px;
+}
+
+.board-manage > div{
+    cursor: pointer;
+}
+
+.board-annt .date {
+    font-size: 0.8em;
+    position: absolute;
+    right: 40px;
+    top: 20px;    
+}
+
+.board-annt .content {
+    word-wrap: break-word;
+    font-size: 1em;
+    top: 0;
+    margin: 0 40px 10px 40px;
+    padding-top: 40px;
+    line-height: 2.2em;
+    overflow: auto;
+    width: 93%;
+}
+
+.board-annt .content p {
+    width: 100%;
+}
+
+.board-annt .file {
+    text-align: left;
+    padding: 0 15px;
+    line-height: 2em;
+}
+
+.board-annt .file div:first-child {
+    display: table-cell;
+    width: 2%;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    background-color: #E1E1E1;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.board-annt .file div:first-child+div {
+    display: table-cell;
+    width: 40%;
+    color: #08B1B3;
+    font-size: 0.8em;
+    height: 30px;
+    padding: 5px;
+    background-color: #E1E1E1;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.board-annt .file div:first-child+div > span {
+    margin-right: 2em;
+}
+
+.bttable{
+    border-spacing: 0px;
+    border-collapse: separate;
+    width: 100%;
+    color: #707070;
+    line-height: 1.5em;
+    empty-cells: show;
+}
+.bttable thead{
+    background-color: #F4800F;
+    color: white;
+    font-weight: bold;
+}
+.bttable thead th .icon-arrow-up,.bttable thead th .icon-arrow-down{
+    display: none;
+    vertical-align: middle;
+}
+.bttable thead th.sorting-asc .icon-arrow-up,.bttable thead th.sorting-desc .icon-arrow-down{
+    display: inline-block;
+}
+.bttable tbody{
+    background-color: #F4F4F4;
+}
+.bttable tbody tr{
+}
+.bttable tbody td{
+    border-top: 1px solid #dddddd;
+}

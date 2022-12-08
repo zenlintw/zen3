@@ -1,0 +1,54 @@
+ul li {
+	/* padding: 25px 25px; */
+}
+
+span {
+	border-radius: 5px;  
+}
+
+.item {
+	padding: 10px 18px;
+}
+
+.item:hover {
+    background-color: #ECECEC;
+}
+
+.multi_item {
+	padding: 10px 18px;
+}
+
+.multi_item:hover {
+    background-color: #ECECEC;
+}
+
+.option {
+	display: inline-block;
+ 	margin-left: 12px;
+}
+
+.option > input {
+	display: none;
+}
+
+.r-select {
+	background-image: url('/theme/default/learn_mooc/circle_r.png');
+	background-repeat: no-repeat;
+}
+
+.r-select-non {
+	background-image: url('');
+}
+
+.g-select {
+	background-image: url('/theme/default/learn_mooc/circle_g.png');
+	background-repeat: no-repeat;
+}
+
+.g-select-non {
+	background-image: url('');
+}
+
+.borderless td, .borderless th {
+    border: none;
+}

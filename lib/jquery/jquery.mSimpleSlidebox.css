@@ -1,0 +1,61 @@
+/*
+Slidebox jQuery banner rotator and image slideshow plugin styling
+*/
+
+/* basic/minimum styling */
+.slidebox{position:relative; background:#ccc; margin:0 auto; overflow:hidden;}
+.slidebox,.slidebox .slideboxSlide{
+    width:909px;
+}
+@media (min-width: 1024px) {
+    .slidebox,.slidebox .slideboxSlide{
+        width:950px;
+    }
+}
+.slidebox,.slidebox .slideboxSlides,.slidebox .slideboxSlide{height:226px;}
+.slidebox ul{position:relative; overflow:hidden; margin:0; padding:0; border:0; list-style-type:none;}
+.slidebox ul li{float:left;}
+.slidebox ul li img{width:950px;height:226px;}
+.slidebox ul li .slideboxCaption{ font-family:Verdana,Geneva,sans-serif; font-size:13px;}
+.slideboxContainer{position:relative;}
+.slideboxContainer .slideboxNext,.slideboxContainer .slideboxPrevious{position:absolute; display:block; width:21px; height:21px; top:50%; margin-top:-11px;}
+.slideboxContainer .slideboxNext{right:0; margin-right:10px; background:url(slidebox_next.png) no-repeat;}
+.slideboxContainer .slideboxNext:hover{background:url(slidebox_next_hover.png) no-repeat;}
+.slideboxContainer .slideboxPrevious{margin-left:10px; background:url(slidebox_previous.png) no-repeat;}
+.slideboxContainer .slideboxPrevious:hover{background:url(slidebox_previous_hover.png) no-repeat;}
+
+//.slideboxContainer .slideboxThumbs{position:absolute; width:200px; height:25px; bottom:1px; left:390px; text-align:center;background:url(black_bg.png) no-repeat;}
+.slideboxContainer .slideboxThumbs{position:absolute; width:200px; height:25px; bottom:1px; left:390px; text-align:center;}
+
+.slideboxContainer .slideboxThumbs .slideboxThumb{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	background:url(point_1.png) no-repeat 0 0px;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 1px; 
+}
+.slideboxContainer .slideboxThumbs .slideboxThumb{
+_height: 15px;height:15px\9\0;line-height:20px;
+_width:15px;width:15px\9\0;
+}
+.slideboxContainer .slideboxThumbs .slideboxThumb:hover,.slideboxContainer .slideboxThumbs .selectedSlideboxThumb{background:url(point.png) no-repeat 0 0px;}
+
+/* classic/additional styling */
+#slidebox_1{border:5px solid #fff; background:#eee; box-shadow:0 0 40px rgba(0,0,0,0.3); border-radius:6px;}
+#slidebox_1 ul li .slideboxCaption{display:block; position:relative; padding:0; width:15px; height:5px; color:#666; text-decoration:none;}
+#slidebox_1 ul li .slideboxCaption span{display:block; position:absolute; padding:5px 10px; background:#fff; border-radius:4px;}
+#slidebox_1 ul .slideboxSlide_1 .slideboxCaption span,#slidebox_1 ul .slideboxSlide_5 .slideboxCaption span{left:20px; bottom:20px;}
+#slidebox_1 ul .slideboxSlide_2 .slideboxCaption span{left:20px; top:20px;}
+#slidebox_1 ul .slideboxSlide_3 .slideboxCaption span{right:20px; top:20px;}
+#slidebox_1 ul .slideboxSlide_4 .slideboxCaption span{right:20px; bottom:20px;}
+.slideboxContainer #slidebox_1+.slideboxThumbs{position:relative; margin-top:30px;}
+.slideboxContainer #slidebox_1+.slideboxThumbs .slideboxThumb{border-radius:10px; background:#ccc; box-shadow:inset 0 0 5px rgba(0,0,0,0.3);}
+.slideboxContainer #slidebox_1+.slideboxThumbs .slideboxThumb:hover,.slideboxContainer #slidebox_1+.slideboxThumbs .selectedSlideboxThumb{background:#fff; box-shadow:inset 0 0 4px rgba(0,0,0,0.2),0 0 2px rgba(0,0,0,0.2);}
+.slideboxContainer #slidebox_1+.slideboxThumbs .slideboxThumb:active{background:#eee;}
+.slideboxContainer #slidebox_1~.slideboxNext,.slideboxContainer #slidebox_1~.slideboxPrevious{width:30px; height:30px; border-radius:21px; margin:-35px 0 0 0; background-color:#ccc; background-image:url(slidebox_icons.png); background-repeat:no-repeat; background-position:0px 0px; box-shadow:inset 0 0 10px rgba(0,0,0,0.2);}
+.slideboxContainer #slidebox_1~.slideboxNext{background-position:-30px 0px;}
+.slideboxContainer #slidebox_1~.slideboxPrevious:hover,.slideboxContainer #slidebox_1~.slideboxNext:hover{background-color:#fff; background-position:0px -30px; box-shadow:inset 0 0 10px rgba(0,0,0,0.2),0 0 3px rgba(0,0,0,0.2);}
+.slideboxContainer #slidebox_1~.slideboxNext:hover{background-position:-30px -30px;}
+.slideboxContainer #slidebox_1~.slideboxPrevious:active,.slideboxContainer #slidebox_1~.slideboxNext:active{background-color:#eee;}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <setting>
+        <order/>
+    </setting>
+    <folder id="sys_notebook">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>我的筆記本</big5>
+            <gb2312>我的笔记本</gb2312>
+            <en>My Notebook</en>
+            <euc-jp>My Notebook</euc-jp>
+            <user-define>My Notebook</user-define>
+        </title>
+        <help>
+            <big5>我的筆記本</big5>
+            <gb2312>我的笔记本</gb2312>
+            <en>My Notebook</en>
+            <euc-jp>My Notebook</euc-jp>
+            <user-define>My Notebook</user-define>
+        </help>
+        <folder id="sys_notebook_trash">
+            <setting>
+                <order/>
+            </setting>
+            <title>
+                <big5>回收筒</big5>
+                <gb2312>回收筒</gb2312>
+                <en>Trash</en>
+                <euc-jp>Trash</euc-jp>
+                <user-define>Trash</user-define>
+            </title>
+            <help>
+                <big5>回收桶</big5>
+                <gb2312>回收筒</gb2312>
+                <en>Trash</en>
+                <euc-jp>Trash</euc-jp>
+                <user-define>Trash</user-define>
+            </help>
+        </folder>
+    </folder>
+    <folder id="sys_inbox">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>收件匣</big5>
+            <gb2312>收件匣</gb2312>
+            <en>Inbox</en>
+            <euc-jp>Inbox</euc-jp>
+            <user-define>Inbox</user-define>
+        </title>
+        <help>
+            <big5>收件匣</big5>
+            <gb2312>收件匣</gb2312>
+            <en>Inbox</en>
+            <euc-jp>Inbox</euc-jp>
+            <user-define>Inbox</user-define>
+        </help>
+    </folder>
+    <folder id="sys_sent_backup">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>寄件匣備份</big5>
+            <gb2312>寄件匣备份</gb2312>
+            <en>Sent Backup</en>
+            <euc-jp>Sent Backup</euc-jp>
+            <user-define>Sent Backup</user-define>
+        </title>
+        <help>
+            <big5>寄件匣備份</big5>
+            <gb2312>寄件匣备份</gb2312>
+            <en>Sent Backup</en>
+            <euc-jp>Sent Backup</euc-jp>
+            <user-define>Sent Backup</user-define>
+        </help>
+    </folder>
+    <folder id="sys_online_msg_backup">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>線上訊息備份</big5>
+            <gb2312>线上讯息备份</gb2312>
+            <en>Online Message Backup</en>
+            <euc-jp>Online Message Backup</euc-jp>
+            <user-define>Online Message Backup</user-define>
+        </title>
+        <help>
+            <big5>線上訊息備份</big5>
+            <gb2312>线上讯息备份</gb2312>
+            <en>Online Message Backup</en>
+            <euc-jp>Online Message Backup</euc-jp>
+            <user-define>Online Message Backup</user-define>
+        </help>
+    </folder>
+    <folder id="sys_trash">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>刪除的訊息</big5>
+            <gb2312>删除的讯息</gb2312>
+            <en>Trash</en>
+            <euc-jp>Trash</euc-jp>
+            <user-define>Trash</user-define>
+        </title>
+        <help>
+            <big5>刪除的訊息</big5>
+            <gb2312>删除的讯息</gb2312>
+            <en>Trash</en>
+            <euc-jp>Trash</euc-jp>
+            <user-define>Trash</user-define>
+        </help>
+    </folder>
+    <folder id="app_push_message">
+        <setting>
+            <order/>
+        </setting>
+        <title>
+            <big5>APP推播訊息</big5>
+            <gb2312>APP推播讯息</gb2312>
+            <en>App Server Push</en>
+            <euc-jp/>
+            <user-define/>
+        </title>
+        <help>
+            <big5>APP推播訊息</big5>
+            <gb2312>APP推播讯息</gb2312>
+            <en>App Server Push</en>
+            <euc-jp/>
+            <user-define/>
+        </help>
+    </folder>
+</manifest>

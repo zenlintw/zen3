@@ -1,0 +1,252 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<title>Wisdom Master</title>
+<style type="text/css">
+	.border { border : 1px solid #000000; }
+
+	.lay0 { position: absolute; left: 11px; top: 11px; }
+	/*.lay1 { position: absolute; left: 20px; top: 255px; width: 510; height: 160; overflow: hidden; clip: auto; visibility: visible; position: absolute; z-index: 20; border: 1px solid #000000; }*/
+	.lay1 { position: absolute; left: 20px; top: 255px; width: 510; height: 160; overflow: hidden; clip: auto; visibility: visible; position: absolute; z-index: 20; }
+	.lay4 { position: absolute; left: 11px; top: 11px; z-index: 20; visibility: hidden; }
+	.sty1 { padding: 13px 0px 19px 15px; }
+	.sty2 { padding: 10px 20px 0px 0px; }
+	.sty3 { padding: 8px 55px 10px 0px; }
+	.sty4 { color: #7E7E7E; font-size: 12px; padding: 165px 20px 8px 0px; }
+	.sty5 { color: #7E7E7E; font-size: 12px; padding: 165px 20px 8px 0px; }
+
+	.font0 {color: #7E7E7E; font-size: 12px;}
+	.font1 { font-size: 13px; line-height: 17px; color: #006699; text-decoration: none ; font-family : 冼极; }
+	.font2 { font-size: 13px; line-height: 17px; color: #006699; text-decoration: none ; }
+	.font3 { font-size: 13px; line-height: 17px; color: #666666; text-decoration: none ; }
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+	var Timer = null;
+	var idx = 1;
+	var imgArray = new Array("", "./img/gild.jpg", "./img/wiseguy.jpg", "./img/lst.jpg", "./img/saly.jpg", "./img/girl.gif", "./img/girl.gif", "", "", "./img/girl.gif", "./img/girl.gif", "./img/gwoming.jpg", "./img/wen.jpg", "./img/boy.gif", "./img/all.jpg");
+	function exit(e) {
+		//alert(typeof(e));
+		self.close();
+	}
+
+	function insertImg() {
+		if (idx > 14) return false;
+		var obj = null;
+		var node = null;
+		for (i = 1;  i < imgArray.length - 1; i++, idx++) {
+			obj = document.getElementById("member" + i);
+			if (obj != null) {
+				node = document.createElement("br");
+				obj.appendChild(node);
+				node = document.createElement("img");
+				node.id = "mmImg" + idx;
+				node.style.border = "1px solid #FFFFFF";
+				node.border = 1;
+				node.align = "middle";
+				if (imgArray[i] != "") {
+					node.src = imgArray[i];
+					obj.appendChild(node);
+				}
+			}
+		}
+	}
+
+	function displayTeam() {
+		var obj = null;
+		obj = document.getElementById("lay0");
+		if (obj != null) obj.style.visibility = "hidden";
+		obj = document.getElementById("lay1");
+		if (obj != null) obj.style.visibility = "hidden";
+		obj = document.getElementById("lay4");
+		if (obj != null) obj.style.visibility = "visible";
+	}
+
+	function displayLaw() {
+		var node = document.getElementById("lay3");
+		if (node != null) {
+			node.stop();
+			node.scrollTop = 160;
+			//setTimeout('displayTeam()', 10000);
+		}
+	}
+
+	function displayImg() {
+		var node = document.getElementById("lay3");
+		if (node != null) {
+			node.stop();
+			node.scrollTop = 160;
+			node.onfinish = displayLaw;
+			setTimeout('document.getElementById("lay3").start()', 6000);
+		}
+		insertImg();
+	}
+
+	function init() {
+		var txt = "";
+		var node = document.getElementById("lay3");
+		if (node != null) {
+			node.stop();
+			node.onfinish = displayImg;
+			node.scrollTop = 160;
+			setTimeout('document.getElementById("lay3").start()', 5000);
+		}
+	}
+
+	document.onclick = exit;
+	window.onload = init;
+//-->
+</script>
+</head>
+<body>
+<div class="lay0" id="lay0">
+	<table width="528" border="0" cellspacing="0" cellpadding="0" class="border" name="course">
+		<tr valign="bottom"> 
+			<td align="left" class="sty1"><img src="./img/about_01.gif" alt="" width="100" height="35" border="0"></td>
+		</tr>
+		<tr valign="bottom"> 
+			<td align="left"><img src="./img/about_02.gif" alt="" width="528" height="96" border="0"></td>
+		</tr>
+		<tr valign="bottom"> 
+			<td align="right" class="sty2"><img src="./img/about_03.gif" alt="" width="283" height="35" border="0"></td>
+		</tr>
+		<tr valign="bottom"> 
+			<td align="right" class="sty3"><img src="./img/about_04.gif" alt="" width="77" height="17" border="0"><span class="font0">&nbsp;&nbsp;&nbsp;V3.0</span></td>
+		</tr>
+		<tr valign="bottom"> 
+			<td align="right" class="sty5">Copyright &copy; 1999~2004 SUNNET Co. All rights reserved.</td>
+		</tr>
+	</table>
+</div>
+<div id="lay1" class="lay1">
+	<div id="lay2">
+	<marquee direction="up" loop="1" scrollamount="2" scrolldelay="50" id="lay3">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td colspan="2" valign="top" class="font1">本網站中之各程序受著作權法及國際公約之保護，未經授權重複複製散佈本程序之全部或部份，將可能導致嚴重的民事及刑事處分且被依法提起最嚴厲的告訴。</td>
+			</tr>
+			<tr>
+				<td colspan="2" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" valign="top" class="font1">This computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program, or any portion of it, may result in seuere civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.</td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr size="1" color="#999999"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 總監:</td>
+			</tr>
+			<tr>
+				<td width="20px" align="right">&nbsp;</td>
+				<td class="font3">沈紋正 (Gild)<span id="member1"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 產品研發 (Wisdom Master Development):</td>
+			</tr>
+			<tr>
+				<td width="20px" align="right">&nbsp;</td>
+				<td class="font3">梁政良 (Wisguy Liang)<span id="member2"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">林顯庭 (ShenTing Lin)<span id="member3"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">林秀芬 (Saly Lin)<span id="member4"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">李佩芳 (Amm)<span id="member5"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 品管人員 (Wisdom Master Quality Assurance):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">林耀仁 (Zenlin)<span id="member7"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">許大功<span id="member7"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">琴雪莉 (ShowLi)<span id="member8"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 視覺設計 (Wisdom Master Designer):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">張莉敏 (Anita)<span id="member9"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 產品規劃 (Wisdom Master Product Engineering):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">戴子雯 (Baggie Dai)<span id="member10"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 教育訓練 (Wisdom Master Instructional Media):</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 使用手冊 (Wisdom Master Instructional Media):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">曹國明 (Gwoming)<span id="member11"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 專案經理 (Project Management):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">郭雯翬 (Wen kuo)<span id="member12"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">林優仁 <span id="member12"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="font2"> 技術支援 (Tech Support):</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">李復孝 (Bill Li)<span id="member13"></span></td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td class="font3">張書榜<span id="member13"></span></td>
+			</tr>
+		</table>
+	</marquee>
+	</div>
+</div>
+<div id="lay4" style="z-index: 20; visibility: hidden; position: absolute; left: 11px; top: 11px;"><span id="member14"></span></div>
+</body>
+</html>

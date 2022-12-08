@@ -1,0 +1,671 @@
+﻿/* LCMS Header
+-------------------------------------------------- */
+@charset "UTF-8";
+.container {
+  min-width: 885px;
+  width: 100%;
+  height: 52px;
+}
+.lcms-header {
+    .title {
+        position: relative;
+        background-color: $header-bg-color;
+        height: 52px;
+        border-width: 0;
+        // border-style: solid;
+        // border-width: 0 0 1px 0;
+        // border-color: $header-br-color;
+        z-index:10;
+        .narrow {
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            min-width: 885px;
+            width: 100%;
+            height: 52px;
+        }
+        .fix-narrow {
+            width: 1170px;
+        }
+    }
+    .logo, .banner, .tools {
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        background: transparent url("./logo.png") no-repeat;
+        width: 300px;
+        height: 52px;
+        a {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 52px;
+            display: block;
+        }
+    }
+    .banner {
+        background: transparent url("./banner.jpg") no-repeat center;
+        width: 450px;
+        height: 87px;
+    }
+    .tools {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        .profile {
+            color: #292929;
+            font-size: 0.9em;
+            border: none;
+            .nav {
+                margin-bottom: 0;
+                height: 52px;
+                >li {
+                    display: inline-block;
+                    float: left;
+                    line-height: 52px;
+                    padding-left: 14px;
+                    &.setting{
+                        border: 1px solid #707070;
+                        box-sizing: border-box;
+                        vertical-align: top;
+                        max-height: 49px;
+                        display: inline-block;
+                        padding: 0 16px;
+                    }
+                    >span {
+                        font-size: 1.1em;
+                        margin-right: 10px;
+                        color: $header-txt-color;
+                    }
+                    > #lang{
+                        top: 2px;
+                        position: relative;
+                        margin-left: 5px;
+                        width: 80px;
+                    }
+                    >a {
+                        display: inline-block;
+                        color: $header-txt-color;
+                        font-size: 1.1em;
+                        &:hover, &:focus {
+                            background: transparent;
+                            text-decoration: underline;
+                            color: #19CED0;
+                            // font-weight: bold;
+                        }
+                        .personal-setup {
+                            height: 32px;
+                            width: 32px;
+                            background-image: url(/theme/default/learn_mooc/setup_b.png);
+                            margin-top: 10px;
+                        }
+                        .icon-gear{
+                            vertical-align: middle;
+                            height: 25px;
+                            width: 25px;
+                            background: url('/public/images/icon_gear.png') 3px 3px no-repeat;
+                        }
+                    }
+                }
+                >.divider {
+                    border-right: 1px solid $header-br-color2;
+                    height: 100%;
+                }
+            }
+            // 偏上 
+            .nav-up, .nav-down {
+                display: inline;
+                height: 53px;
+                > li {
+                    line-height: 31px;
+                    background-color: #FB9504;
+                    border-bottom: 4px solid #FCAE3F;
+                    &:hover{
+                        border-bottom: 4px solid #FF7F7E;
+                        //border-top: 0px solid #e55756;
+                        background-color: #e55756;
+                    }
+                    padding: 0;
+                    &:first-child {
+                        margin-left: 20px;
+                    }
+                    &:first-of-type {
+                        border-bottom-left-radius: 4px;
+                    }
+                    &:last-of-type {
+                        border-bottom-right-radius: 4px;
+                    }
+                    > a {
+                        > img {
+                            padding-right: 5px;
+                            padding-bottom: 4px;
+                        }
+                        padding: 0 20px;
+                        color: #FFFFFF;
+                        &:hover {
+                            color: #FFFFFF;
+                        }
+                    }
+                    > span {
+                        margin-right: 0;
+                    }
+                }
+                > .user {
+                    border-width: 0px;
+                    background-color: #626262;
+                    overflow: hidden;
+                    max-height: 35px;
+                    &:hover{
+                        border-bottom: 0px solid;
+                        border-top: 0px solid;
+                        background-color: #CCCCCC;
+                    }
+                    img {
+                        height: 35px;
+                        width: 35px;
+                        float: left;
+                    }
+                    > .name {
+                        padding: 0 20px;
+                        margin-left: 34px;
+                        color: $header-txt-color;
+                    }
+                }
+                > .dropdown {
+                    border: 0;
+                    background-color: transparent;
+                    &:hover{
+                        border-bottom: 0px solid;
+                        border-top: 0px solid;
+                        background-color: #CCCCCC;
+                    }
+                    > a {
+                        height: 33px;
+                        padding: 0 12px;
+                        &:hover {
+                            background-color: #ECECEC;
+                            color: initial;
+                        }
+                    }
+                    .dropdown-toggle {
+                        .personal-setup {
+                            margin: 0 auto;
+                        }
+                    }
+                    .dropdown-menu {
+                        min-width: 58px;
+                        max-width: 58px;
+                        margin-top: 0;
+                        padding: 0;
+                        background-color: #CCCCCC;
+                        li {
+                            text-align: center;
+                            border-top: 1px solid #898989;
+                            &:first-of-type {
+                                border-top-width: 0;
+                            }
+                            .icon-set-up, .icon-sign-out {
+                                margin: 3px auto;
+                            }
+                        }
+                    }
+                }
+                >.divider {
+                    border-right: 1px dashed #FFFFFF;
+                    height: 31px;
+                }
+            }
+            // 偏下
+            .nav-down {
+                > li {
+                    margin-top: 18px;
+                    border-top: 4px solid #FCAE3F;
+                    border-bottom: 0;
+                    &:hover{
+                        border-bottom: 0px solid #e55756;
+                        border-top: 4px solid #FF7F7E;
+                        background-color: #e55756;
+                    }
+                    &:first-of-type {
+                        border-bottom-left-radius: 0px;
+                        border-top-left-radius: 4px;
+                    }
+                    &:last-of-type {
+                        border-bottom-right-radius: 0px;
+                        border-top-right-radius: 4px;
+                    }
+                }
+            }
+            .nav-btn {
+                > li {
+                    margin: 0 5px;
+                    background-color: #242424;
+                    border: 1px solid #5A5A5A;
+                    border-top-width: 0;
+                    line-height: 35px;
+                    &, &:first-of-type, &:last-of-type {
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &:hover {
+                        //background-color: #03A385;
+                        border-bottom: 0px solid;
+                        border-top: 0px solid;
+                        //background-color: #CCCCCC;
+                    }
+                    > a {
+                        padding: 0px 10px;
+                    }
+                }
+                > .active {
+                    background-color: #03A385;
+                }
+            }
+            li {
+                &.realname {
+                    float: none;
+                }
+            }
+            .realname {
+                > a {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    max-width: 75px;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .search {
+            background-color: #DCDCDC;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            padding: 4px;
+            > .input-append {
+                margin-bottom: 0;
+            }
+            input[type="text"] {
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border-radius: 0;
+                line-height: 19px;
+                height: 25px;
+                width: 190px;
+            }
+            .btn {
+                color: #FFFFFF;
+                border: 1px solid #868686;
+                padding: 3px 23px;
+            }
+        }        
+        .adv-search {
+            position: relative;
+            margin-top: 10px;
+            z-index: 1;
+            a {
+                color: #292929;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+.wm-content {
+    .toggle-arrow {
+        height: 0px;
+        width: 0px;
+        border-color: transparent transparent transparent #ffffff;
+        border-width: 8px 0 8px 8px;
+        border-style: solid;
+        float: left;
+        margin-top: 17px;
+    }
+    .sidebar-toggle {
+        float: left;
+        width: 50px;
+        height: 50px;
+        .icon-toggle {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 5px 5px;
+            background: transparent image-url("icon_toggle_opacityb.png") no-repeat center;
+            &:hover {
+                background: transparent image-url("icon_toggle_opacityb_1.png") no-repeat center;
+            }
+        }
+    }
+    .container {
+        min-width: 600px;
+    }
+    .lcms-header {
+        .title, .logo, .title .narrow, .logo a, .tools .profile .nav {
+            height: 49px;
+        }
+        .title {
+            background-color: white;
+            .narrow {
+                min-width: 400px;
+            }
+        }
+        .logo {
+            background-position: left;
+            float: left;
+            display:none;
+        }
+        .tools {
+            .profile {
+                .nav {
+                    > li {
+                        float: right;
+                        line-height: 50px;
+                        vertical-align: middle;
+                        &.setting{
+                            border: 0;
+                        }
+                        &.dropdown{
+                            padding: 0;
+                        }
+                        >a {
+                            color: #707070;
+                            &:hover, &:focus {
+                                background: transparent;
+                                text-decoration: underline;
+                                color: #19CED0;
+                                // font-weight: bold;
+                            }
+                            .personal-setup {
+                                height: 32px;
+                                width: 32px;
+                                background-image: url(/theme/default/learn_mooc/setup_b.png);
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    .user-info {
+                      color: $header-txt-color;
+                      line-height: 50px;
+                      height: 50px;
+                      white-space: nowrap;
+                    }
+                    > .user {
+                        padding: 0;
+                        position: relative;
+                        left: -1px;
+                        max-height: 49px;
+                        >.user-inner{
+                            vertical-align: top;
+                            padding: 0 10px;
+                            max-height: 49px;
+                            display: inline-block;
+                            box-sizing: border-box;
+                            border-left: 0;
+                            >.name{
+                                color: #707070;
+                                font-size: 12px;
+                                display: inline-block;
+                            }
+                        }
+                        img {
+                            vertical-align: top;
+                            height: 40px;
+                            width: 40px;
+                            margin-top: 4px;
+                        }
+                        >.home{
+                            padding: 0 16px;
+                            max-height: 49px;
+                            box-sizing: border-box;
+                            border-left: 0;
+                            .icon-home{
+                                height: 18px;
+                                width: 21px;
+                                min-width: 21px;
+                                background: url('/public/images/icon_home_grey.png') no-repeat;
+                            }
+                        }
+                        >.divider{
+                            border-right: 1px dashed #707070;
+                            height: 31px;
+                            margin-top: 8px;
+                            vertical-align: top;
+                            display: inline-block;
+                        }
+                    }
+                    >.divider{
+                        border-right: 1px dashed #707070;
+                        height: 31px;
+                        margin-top: 8px;
+                        &.logout{
+                            padding: 0;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    &.personal{
+        .lcms-header {
+            .title {
+                background-color: #07A2A4;
+            }
+            .tools{
+                .profile{
+                    .nav {
+                        > li{
+                            &.setting{
+                                border: 1px solid #008789;
+                                @include background-image(linear-gradient(to bottom, #67D2D1, #027072));
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#67D2D1', endColorstr = '#07A2A4', GradientType = 0);
+                            }
+                            > a{
+                                color: white;
+                                &:hover, &:focus {
+                                    color: #19CED0;
+                                }
+                                .icon-gear{
+                                    background: url('/public/images/icon_gear_white.png') 3px 3px no-repeat;
+                                }
+                            }
+                        }
+                        .user{
+                            background: url('/public/images/bg_linear_gradient_green.png') repeat-x;
+                            >.user-inner{
+                                border-left: 1px solid #008789;
+                                >.name{
+                                    color: white;
+                                }
+                            }
+                            >.home{
+                                border-left: 1px solid #008789;
+                                .icon-home{
+                                    background: url('/public/images/icon_home_white.png') no-repeat;
+                                }
+                            }
+                            >.divider{
+                                display: none;
+                            }
+                        }
+                        >.divider {
+                            border-right: 1px dashed #FFFFFF;
+                            &.logout{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-toggle {
+            .icon-toggle {
+                background: transparent image-url("icon_toggle_opacity.png") no-repeat center;
+                &:hover {
+                    background: transparent image-url("icon_toggle_opacity_1.png") no-repeat center;
+                }
+            }
+        }
+        .logo {
+            display:block;
+        }
+    }
+}
+
+/* header 導覽列陰影 */
+.nav-bottom-line {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-top-color: #b8b8b8;
+    overflow: hidden;
+    top: -2px;
+    position: relative;
+}
+
+/* 課程迷失BAR */
+.courseinfo {
+    margin-top: -2px;
+    height: 40px;
+    overflow:hidden;
+    > .left {
+        max-width: 50%;
+        line-height: 55px;
+        margin-top: -1px;
+    }
+    > .right {
+        min-width: 450px;
+        max-width: 40%;
+        line-height: 40px;
+        margin: 40px 5px 0 0;
+        text-align: right;
+        height: 40px;
+        top: -40px;
+        position: relative;
+    }
+    .coursename {
+        overflow: hidden;
+        font-size: 15px;
+        font-weight: bold;
+        color: #242424;
+        -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90,color='#242424');
+    }
+    .coursenum {
+        width: 200px;
+        font-size: 16px;
+        .push {
+            cursor: pointer;
+            background: url('/theme/default/learn_mooc/co_icon_push_1.png');
+            margin: 7px 0 0 10px;
+            width: 26px;
+            height: 26px;
+        }
+        .coursecount {
+            font-size: 12px;
+            color: #707070;
+        }
+    }
+    .share {
+        width: 200px;
+        display: none;
+        top: 0.3em;
+        position: relative;
+        >.pic {
+            >a {
+                >.fb {
+                    background: transparent url("/theme/default/learn_mooc/co_icon_fb.png") no-repeat;
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    &:hover, &:focus {
+                        background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                >.plk {
+                    background: transparent url("/theme/default/learn_mooc/co_icon_plurk.png") no-repeat;
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    &:hover, &:focus {
+                        background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                >.tw {
+                    background: transparent url("/theme/default/learn_mooc/co_icon_twitter.png") no-repeat;
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    &:hover, &:focus {
+                        background: transparent url("/theme/default/learn_mooc/co_icon_twitter_1.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                >.wct {
+                    background: transparent url("/theme/default/learn_mooc/co_icon_wchat.png") no-repeat;
+                    background-size: cover;
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    &:hover, &:focus {
+                        background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                >.ln {
+                    background: transparent url("/theme/default/learn_mooc/co_icon_line.png") no-repeat;
+                    background-size: cover;
+                    width: 29px;
+                    height: 29px;
+                    background-size: cover;
+                    &:hover, &:focus {
+                        background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+                        background-size: cover;
+
+                    }
+                }
+            }
+        }
+    }
+    .courseteacher {
+        max-width: 250px;
+        overflow: hidden;
+        font-size: 12px;
+        text-align: right;
+        color: #707070;
+    }
+    .pic{
+        margin-right: 0.7em;
+        float: right;
+        background-size: cover;
+        width: 26px;
+        height: 26px;
+        position: relative;
+        top: 2px;
+        left: 3px;
+    }
+}
+
+/* 課程迷失底線 */
+.courseinfo-bottom-line {
+    > div:first-child {
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        border-top-color: #DDDDDD;
+        position: relative;
+        & + div {
+            border-style: solid;
+            border-width: 1px 0 0 0;
+            border-top-color: #FFFFFF;
+            position: relative;
+        }
+    }
+}
+.personal-setup {
+    height: 32px;
+    width: 32px;
+    background-image: url(/theme/default/learn_mooc/setup_b.png);
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>radio_quiz_phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="radio_quiz_phone">
+            <circle id="Oval-2" fill="#FFFFFF" cx="12.1121419" cy="12" r="10"></circle>
+            <path d="M12.1121419,3.5 C7.42464193,3.5 3.61214193,7.3125 3.61214193,12 C3.61214193,16.6875 7.42464193,20.5 12.1121419,20.5 C16.7996419,20.5 20.6121419,16.6875 20.6121419,12 C20.6121419,7.3125 16.7996419,3.5 12.1121419,3.5 Z M24.1121419,12 C24.1121419,18.625 18.7371419,24 12.1121419,24 C5.48714193,24 0.112141927,18.625 0.112141927,12 C0.112141927,5.375 5.48714193,0 12.1121419,0 C18.7371419,0 24.1121419,5.375 24.1121419,12 Z" id="" fill="#E8483F"></path>
+        </g>
+    </g>
+</svg>

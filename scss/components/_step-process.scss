@@ -1,0 +1,151 @@
+// process
+.step-process {
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    li {
+        display: table;
+        padding-bottom: 20px;
+        margin: 0 0 0 1em;
+        border-color: #B3B3B3;
+        border-left-style: solid;
+        border-left-width: 1px;
+        color: #B3B3B3;
+        font-size: 14px;
+        cursor: pointer;
+        &:last-child {
+            border-width: 0px;
+            padding: 0 1px 11px 1px;
+        }
+        .point {
+            display: inline-block;
+            background: transparent image-url('icon_node_1.png') no-repeat;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 0;
+            left: -11px;
+            vertical-align: top;
+        }
+        .data {
+            display: inline-block;
+            .section, .title {
+                word-wrap: break-word;
+            }
+            .section {
+                display: inline-block;
+                font-size: 0.85em;
+                color: #939393;
+                line-height: 0.85em;
+
+            }
+            .title {
+                font-size: 1em;
+                color: #707070;
+                font-weight: bold;
+            }
+            .time {
+                display: inline-block;
+                padding: 0 0.3em;
+                margin: 3px 0;
+                @include border-radius(3px);
+                background: #9D9D9D;
+                color: #FFFFFF;
+                font-size: 0.8em;
+                line-height: 1.4em;
+            }
+            .operate {
+                display: none;
+                button {
+                    line-height: 1em;
+                    padding: 0 1.3em;
+                }
+            }
+        }
+    }
+    .selected, li:hover {
+        .data {
+            .section, .title {
+                color: #FF7800;
+            }
+            .operate {
+                display: block;
+            }
+        }
+    }
+    .selected, .finish {
+        .point {
+            background: transparent image-url('icon_node_3.png') no-repeat;
+        }
+    }
+    .active {
+        .point {
+            background: transparent image-url('icon_node_2.png') no-repeat;
+        }
+    }
+}
+
+.step-process2 {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+    > li {
+        line-height: 2em;
+        @include border-radius($radius);
+        > span {
+            word-break: break-all;
+            word-wrap: break-word;
+            a {
+                font-size:  0.85em;
+                color: #707070;
+            }
+        }
+    }
+    > .selected, > li:hover { //, > .title ul > li:hover {
+        background-color: #FFFFFF;
+        > span {
+            a {
+                font-weight: bold;
+                color: #FF7800;
+            }
+        }
+    }
+    > .title {
+        background-color: #ECECEC;
+        > span {
+            a {
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+        &:hover {
+            background-color: #ECECEC;
+            > span {
+                a {
+                    font-size:  1em;
+                    color: #707070;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            > li {
+                padding-left: 1em;
+                > span {
+                    a {
+                        
+                    }
+                }
+                &:hover {
+                    
+                    > span {
+                        a {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

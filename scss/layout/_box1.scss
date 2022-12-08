@@ -1,0 +1,126 @@
+.box1 {
+	width: auto;
+	margin: auto;
+	padding: 0.8em;
+	max-width: 1000px;
+	@media screen and (max-width: $mobilesize) {
+		margin: 0;
+	}
+	> .title {
+		font-size: 1.8em;
+		font-weight: bold;
+		line-height: 1.5em;
+		word-wrap: break-word;
+		display: inline-block;
+		> .bread-crumb {
+			display: inline-block;
+			font-size: 0.6em;
+			> .path {
+				&:hover {
+					cursor: pointer;
+					text-decoration: underline;
+				}
+			}
+			> .now {
+				font-size: 1.8em;
+				word-wrap: break-word;
+				&:hover {
+					cursor: pointer;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	> .operate {
+		float: right;
+		display: inline-block;
+		display: table; 
+		> div, > span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		> button {
+			margin-left:0.5em;
+			height: 2.2em;
+			width: 8em;
+		}
+		> select {
+			margin: 0.6em 0 0.6em 0.5em;
+			height: 2.4em;
+			width: 3.5em;
+			line-height: 2.4em;
+		}
+		> .message {
+			padding: 0.5em 0;
+			@include border-radius($radius);
+			background-color: #F8F8F8;
+			div {
+			    width: 95%;
+				height: 2.5em;
+				padding: 0 1em;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+				color: #08B1B3;
+				font-size: 0.92em;
+				line-height: 2.5em;
+			}
+		}
+		.component {
+			display: table-cell;
+			white-space: nowrap;
+			padding: 0 0.35em;
+			button {
+				height: 2.2em;
+				width: 8em;
+			}
+		}
+		a.btn {
+			font-size: 1.1em;
+		}
+		/* override bootstrap progress */
+		.progress {
+			width: 100%;
+			margin-bottom: 0.7em;
+			margin-top: 0.7em;
+		}
+		> .add-article {
+			cursor: pointer;
+			> .add-article-text {
+				float: right;
+				line-height: 2.5em;
+			}
+		}
+	}
+	> .components {
+		width: 100%;
+		margin-bottom: 0.7em;
+	}
+	> .content {
+		clear: both;
+		@include border-radius($radius);
+		@include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+		padding: 1em 4em 2em 4em;
+		position: relative;
+		height: auto;
+		border: 1px solid #C4C4C4;
+		background: #FFFFFF;
+		text-align: left;
+		@media screen and (max-width: $mobilesize) {
+			padding: 1em 1em;
+		}
+	}
+	.abreast {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		vertical-align: top;
+		.abreast-cell {
+			display: table-cell;
+			height: 100%;
+			padding: 0.85em;
+		 	border-right: 1px solid #b3b3b3;
+			vertical-align: top;
+		}
+	}
+}

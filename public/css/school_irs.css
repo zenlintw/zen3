@@ -1,0 +1,432 @@
+/** school site header (begin) **/
+body {
+    background-color: #FFFFFF;
+}
+
+.bgWhite {
+	background-color: #FFFFFF;
+}
+
+.navbar {
+    height: 80px;
+    background-color:#333333;
+    color:#ABABAB;
+}
+
+.dropdown-menu > li > a{
+    display: block;
+    color: #393939;
+    white-space: nowrap;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #0088D2;
+}
+
+.siteHeaderOuterTable {
+    height:80px;
+}
+
+.siteLogo {
+    
+}
+
+.btnLogin {
+	color:#FFFFFF;
+}
+
+.boxshadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-return-portal {
+    color: #ffffff;
+    background-color: #DB5200;
+    border-color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-return-portal:hover,
+.btn-return-portal:focus,
+.btn-return-portal:active,
+.btn-return-portal.active,
+.open .dropdown-toggle.btn-return-portal {
+    color: #ffffff;
+    background-color: #B05621;
+    border-color: #FFFFFF;
+}
+
+.btn-return-portal:active,
+.btn-return-portal.active,
+.open .dropdown-toggle.btn-return-portal {
+    background-image: none;
+}
+
+.btn-return-portal.disabled,
+.btn-return-portal[disabled],
+fieldset[disabled] .btn-return-portal,
+.btn-return-portal.disabled:hover,
+.btn-return-portal[disabled]:hover,
+fieldset[disabled] .btn-return-portal:hover,
+.btn-return-portal.disabled:focus,
+.btn-return-portal[disabled]:focus,
+fieldset[disabled] .btn-return-portal:focus,
+.btn-return-portal.disabled:active,
+.btn-return-portal[disabled]:active,
+fieldset[disabled] .btn-return-portal:active,
+.btn-return-portal.disabled.active,
+.btn-return-portal[disabled].active,
+fieldset[disabled] .btn-return-portal.active {
+    background-color: #DB5200;
+    border-color: #FFFFFF;
+}
+
+.btn-return-portal .badge {
+    color: #DB5200;
+    background-color: #ffffff;
+}
+
+.btn-news-more {
+    color: #ffffff;
+    background-color: #ef8d2e;
+    border-color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-news-more:hover,
+.btn-news-more:focus,
+.btn-news-more:active,
+.btn-news-more.active,
+.open .dropdown-toggle.btn-news-more {
+    color: #ffffff;
+    background-color: #db5200;
+    border-color: #FFFFFF;
+}
+
+.btn-news-more:active,
+.btn-news-more.active,
+.open .dropdown-toggle.btn-news-more {
+    background-image: none;
+}
+
+.btn-news-more.disabled,
+.btn-news-more[disabled],
+fieldset[disabled] .btn-news-more,
+.btn-news-more.disabled:hover,
+.btn-news-more[disabled]:hover,
+fieldset[disabled] .btn-news-more:hover,
+.btn-news-more.disabled:focus,
+.btn-news-more[disabled]:focus,
+fieldset[disabled] .btn-news-more:focus,
+.btn-news-more.disabled:active,
+.btn-news-more[disabled]:active,
+fieldset[disabled] .btn-news-more:active,
+.btn-news-more.disabled.active,
+.btn-news-more[disabled].active,
+fieldset[disabled] .btn-news-more.active {
+    background-color: #db5200;
+    border-color: #FFFFFF;
+}
+
+.btn-news-more .badge {
+    color: #db5200;
+    background-color: #ffffff;
+}
+
+.dropdown-menu {
+	background-color: #FFFFFF;
+	color: #393939;
+	font-size: 18px;
+}
+
+#desktopMenu a {
+	background-color: #FFFFFF;
+    color: inherit;
+    text-decoration: none;
+}
+
+#desktopMenu .dropdown-menu a:hover {
+    background-color: #C5C5C5;
+}
+
+.phoneMenuItem {
+    height:42px;
+    border-bottom:1px #E3E3E3 solid;
+    text-align:left;
+    font-size:16px;
+    padding-left: 25px;
+    background-color: #FFFFFF;
+}
+
+.phoneMenuItem a {
+    color: #393939;
+}
+
+.phoneMenuItemB {
+    height:32px;
+    border-bottom:1px #E3E3E3 solid;
+    text-align:left;
+    padding-left: 25px;
+    font-size:14px;
+    background-color: #E5E5E5;
+    color: #393939;
+}
+
+.phoneMenuItemB a {
+    color: #FFFFFF;
+}
+
+.phoneMenuItemC {
+    height:42px;
+    border-bottom:1px #E3E3E3 solid;
+    padding-left: 25px;
+    text-align:left;
+    font-size:16px;
+    background-color: #EC8D26;
+    color: #FFFFFF;
+}
+
+.phoneMenuItemC a {
+    color: #FFFFFF;
+}
+/** school site header (end) **/
+
+/** school site body (begin) **/
+.container {
+    max-width: 1440px;
+}
+
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-indicators .active {
+    background: #3bb1f4;
+    width: 16px;
+    height: 16px;
+}
+
+.div_banner_item {
+    width: 361px;
+    height: 314px;
+    float: right;
+}
+
+.div_banner_image {
+    width: 100%;
+}
+
+.sitelinkLogo {
+    width:288px;
+    height:42px;
+    line-height:42px;
+    font-size: 22px;
+    background-image:url('/theme/default/learn/icon_other_link.svg');
+    background-repeat:no-repeat;
+    background-color:#ef8d2e;
+    color:white;
+}
+
+.spanNewsDateCount i {
+    color: #ef8d2e;
+}
+
+/* 標題字型 */
+
+.block-title-font {
+    font-size: 24px;
+    color:#626262;
+    font-weight: bold;
+}
+
+.more-font-szie {
+    font-size: 16px;
+}
+
+/* 課程圖片 */
+.course-category-title-blue {
+    z-index: 100;
+    position: absolute;
+    left:0px;
+    top:0px;
+    padding: 5px 10px 5px 10px;
+    font-size:14px;
+    color: #FFFFFF;
+    background-color: #0088D2;
+}
+
+.course-category-title-orange {
+    z-index: 100;
+    position: absolute;
+    left:0px;
+    top:0px;
+    padding: 5px 10px 5px 10px;
+    font-size:14px;
+    color: #FFFFFF;
+    background-color: #F18E1E;
+}
+
+.course-category-title-green {
+    z-index: 100;
+    position: absolute;
+    left:0px;
+    top:0px;
+    padding: 5px 10px 5px 10px;
+    font-size:14px;
+    color: #FFFFFF;
+    background-color: #3BB149;
+}
+
+.course-date {
+    line-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #3BB149;
+}
+
+.course-title1 {
+    line-height: 28px;
+    height: 80px;
+    font-size: 18px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.course-title2 {
+    line-height: 20px;
+    height: 64px;
+    font-size: 15px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.course-teacher {
+    line-height: 22px;
+    height: 66px;
+    font-size: 14px;
+    color: #818181;
+}
+
+/* irs 登入課程的CSS */
+body {
+    background-image: url('/theme/default/irs/iospad_2048_1536_163.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+}
+
+.block-title-font {
+    font-size: 25px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.block-title-font > a {
+    color: #333333;
+}
+
+.block-input-title {
+    font-size: 14px;
+    color: #393939;
+}
+
+#BlockContainer {
+    padding-top: 20px;
+    /*min-height: 750px;*/
+}
+
+#block-title-row {
+    padding-bottom: 20px;
+}
+
+div.table-responsive > table > thead > tr > th{
+    height: 48px;
+    line-height: 32px;
+    background-color: #455868;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.table-responsive > table > tbody {
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.83) 47%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.83) 47%,rgba(255,255,255,0.6) 70%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.83) 47%,rgba(255,255,255,0.6) 70%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: initial;
+}
+
+div.table-responsive > table > tbody > tr > td{
+    height: 48px;
+    line-height: 32px;
+    color: #455868;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table td i,.itemlist i {
+    color:#7D8A95;
+    font-size: 18px;
+}
+
+.thumbnail {
+    border: 1px solid rgba(214, 213, 213, 0.58);
+    box-shadow: 0 0.75rem 1.5rem rgba(234, 235, 237, 0.56);
+    border-radius: 3px;
+}
+
+.upload_file {
+    font-size: 1.67rem;
+    margin: 0 40px 20px 40px;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+/*平板直向、平板橫向*/
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/*大手機尺寸*/
+@media (min-width: 375px) and (max-width: 767px) {
+    .navbar {
+        height: 50px;
+    }
+
+    body {
+        background-image: url('/theme/default/irs/bg01_phone.png');
+    }
+}
+
+/*手機尺寸*/
+@media (max-width: 767px) {
+    .navbar {
+        height: 50px;
+    }
+
+    body {
+        background-image: url('/theme/default/irs/bg01_phone.png');
+    }
+}

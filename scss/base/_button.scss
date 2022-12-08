@@ -1,0 +1,45 @@
+// override bootstrap button
+@import "special/button";
+
+// parameter: $name, $bcolor1, $bcolor2, $tcolor
+// btn-blue
+@include customeButton("blue", #54DADD, #05ABAB, #FFFFFF);
+// btn-gray
+@include customeButton("gray", #CFCFCF, #8F8F8F, #FFFFFF);
+// btn-orange
+@include customeButton("orange", #FEBC24, #F5A210, #FFFFFF);
+
+
+// parameter: $name, $bgcolor1, $bgcolor2, $brcolor, $tcolor
+// btn-plane-white
+@include customeButton2("white", #FFFFFF, #F1F1F1, #DDDDDD, #000000);
+
+
+// custom radio button
+.radio-blue {
+    display: inline-block;
+    margin: 0;
+    & + label {
+        display: none;
+    }
+    &:not(old) {
+        display: none;
+        & + label {
+            display: inline-block;
+            > span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: -7px 4px 0 0;
+                vertical-align: middle;
+                background: url(/public/images/icon_node_1.png) no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+    &:not(old):checked + label {
+        > span {
+            background: url(/public/images/icon_node_3.png) no-repeat;
+        }
+    }
+}

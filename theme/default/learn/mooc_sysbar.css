@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+    scrollbar-arrow-color: #9C98BB;
+    scrollbar-3dlight-color: #9C98BB;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-face-color: #EBEBEB;
+    scrollbar-shadow-color: #9C98BB;
+    scrollbar-track-color: #F0F0F0 ;
+    scrollbar-darkshadow-color: #FFFFFF;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.mooc-sidebar {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    background:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F3F3F3));
+    background: -moz-linear-gradient(top, #FFFFFF, #F3F3F3);
+    background: -o-linear-gradient(top, #FFFFFF, #F3F3F3);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #F3F3F3);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#F3F3F3');
+    border-right: 1px solid #FFFFFF;
+    position: relative;
+    left: -1px;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.mooc-sidebar .section {
+    padding: 0 5px;
+}
+
+.mooc-sidebar h2 {
+    color: #06A2A4;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 2.6em;
+    line-height: 3em;
+    margin: 0;
+    padding-left: 20px;
+    border-bottom-color: #C5C5C5;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+.mooc-sidebar ul {
+    margin: 0 0 3px 0;
+    padding-top: 7px;
+}
+
+.mooc-sidebar li {
+    background: transparent url("./icon_arrow_s.png") no-repeat 20px 20px;
+    background-position: 95% 50%;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    margin: 0;
+    list-style: none;
+    line-height: 2.1em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.mooc-sidebar li:hover {
+    background: transparent url("./icon_arrow_s_1.png") no-repeat 20px 20px;
+    background-position: 95% 50%;
+    background-color: #007F81;
+}
+
+.mooc-sidebar li:active,
+.mooc-sidebar li.active {
+    background: transparent url("./icon_arrow_s_1.png") no-repeat 20px 20px;
+    background-position: 95% 50%;
+    background-color: #06A2A4;
+}
+
+.mooc-sidebar li a {
+    color: #353535;
+    text-decoration: none;
+    padding: 3px 20px;
+    display: block;
+    outline: none;
+}
+
+.mooc-sidebar li a .cnt {
+    color: #06A2A4;
+    padding:0 0.3em;
+}
+
+.mooc-sidebar li a:hover {
+    color: #FFFFFF;
+}
+
+.mooc-sidebar li a:hover .cnt{
+    color: #FFFFFF;
+}
+
+.mooc-sidebar li:active a,
+.mooc-sidebar li.active a,
+.mooc-sidebar li:active a .cnt,
+.mooc-sidebar li.active a .cnt {
+    color: #FFFFFF;
+}

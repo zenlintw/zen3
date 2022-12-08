@@ -1,0 +1,27 @@
+// searchbar component
+.search-form {
+	margin: 0;
+	white-space: nowrap;
+	.search-keyword {
+		height: 2em;
+		width: 98%;
+		font-size: 1em;
+		padding-right: 3px;
+		padding-right: 4px \9;
+		padding-left: 3px;
+		padding-left: 4px \9;
+		margin-bottom: 0;
+		@include border-radius(3px);
+	}
+	.search-btn {
+		border: 0;
+		background: none;
+		padding: 3px 5px;
+		position: relative;
+		left: -2em;
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+}

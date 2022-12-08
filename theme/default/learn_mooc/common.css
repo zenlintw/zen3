@@ -1,0 +1,135 @@
+
+
+/*----------------------------------------------------------------------*/
+
+/*注意-粗體、紅色*/
+.strong-note {
+    color: red;
+    font-weight: bold;
+}
+
+/*底色-橘色*/
+.bkcolor-orange {
+    background-color: #F4800F;
+}
+
+/*底色-藍綠色*/
+.bkcolor-cyanblue {
+    background-color: #07A2A4;
+}
+
+/*文字-橘色*/
+.color-orange {
+    color: #F4800F;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*僅上方圓弧，無邊框*/
+.top-radius-4 {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+/*僅左方圓弧，無邊框*/
+.left-radius-4 {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    moz-border-radius-bottomleft: 4px;
+    moz-border-radius-topleft: 4px;
+    webkit-border-bottom-left-radius: 4px;
+    webkit-border-top-left-radius: 4px;
+}
+
+/*僅右方圓弧，無邊框*/
+.right-radius-4 {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    moz-border-radius-bottomright: 4px;
+    moz-border-radius-topright: 4px;
+    webkit-border-bottom-right-radius: 4px;
+    webkit-border-top-right-radius: 4px;
+}
+
+.all-radius-4 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*PADDING*/
+/*上內縮1em*/
+.box-padding-t-1 {
+    padding-top: 1em;
+}
+
+/*左右內縮3emx*/
+.box-padding-lr-3 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*MARGIN*/
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*水平排列*/
+.horizontal label {
+    float: left;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*表單輸入錯誤提示*/
+.error {
+    display: inline-block;
+}
+
+/*表單輸入錯誤提示*/
+.alert-input-error,.error {
+    color: #FF3C00;
+}
+
+/*表單輸入錯誤提示*/
+.alert.alert-input-error {
+    border: 1px solid #FF3C00;
+    background-color: #FFF;
+    box-shadow: 0 0 4px 0 rgba(255,60,0,0.7);
+}
+
+/*表單輸入錯誤提示*/
+textarea.error,
+textarea.error:focus,
+input.error,
+input.error:focus,
+textarea.alert-input-error,
+textarea.alert-input-error:focus,
+input.alert-input-error,
+input.alert-input-error:focus,
+div.alert-input-error,
+div.alert-input-error:focus,
+table.alert-input-error,
+table.alert-input-error:focus {
+    border: 1px solid #FF3C00;
+    box-shadow: 0 0 4px 0 rgba(255,60,0,0.7);
+    color: black;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*HTML編輯器*/
+#tinymce {
+    height: 15em;
+}

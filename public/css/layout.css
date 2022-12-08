@@ -1,0 +1,494 @@
+.box1 {
+  width: auto;
+  margin: auto;
+  padding: 0.8em;
+  max-width: 1000px;
+}
+@media screen and (max-width: 768px) {
+  .box1 {
+    margin: 0;
+  }
+}
+.box1 > .title {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  display: inline-block;
+}
+.box1 > .title > .bread-crumb {
+  display: inline-block;
+  font-size: 0.6em;
+}
+.box1 > .title > .bread-crumb > .path:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.box1 > .title > .bread-crumb > .now {
+  font-size: 1.8em;
+  word-wrap: break-word;
+}
+.box1 > .title > .bread-crumb > .now:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.box1 > .operate {
+  float: right;
+  display: inline-block;
+  display: table;
+  /* override bootstrap progress */
+}
+.box1 > .operate > div, .box1 > .operate > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box1 > .operate > button {
+  margin-left: 0.5em;
+  height: 2.2em;
+  width: 8em;
+}
+.box1 > .operate > select {
+  margin: 0.6em 0 0.6em 0.5em;
+  height: 2.4em;
+  width: 3.5em;
+  line-height: 2.4em;
+}
+.box1 > .operate > .message {
+  padding: 0.5em 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+}
+.box1 > .operate > .message div {
+  width: 95%;
+  height: 2.5em;
+  padding: 0 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #08B1B3;
+  font-size: 0.92em;
+  line-height: 2.5em;
+}
+.box1 > .operate .component {
+  display: table-cell;
+  white-space: nowrap;
+  padding: 0 0.35em;
+}
+.box1 > .operate .component button {
+  height: 2.2em;
+  width: 8em;
+}
+.box1 > .operate a.btn {
+  font-size: 1.1em;
+  margin-left: 0.5em;
+}
+.box1 > .operate .progress {
+  width: 100%;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+}
+.box1 > .operate > .add-article {
+  cursor: pointer;
+}
+.box1 > .operate > .add-article > .add-article-text {
+  float: right;
+  line-height: 2.5em;
+}
+.box1 > .components {
+  width: 100%;
+  margin-bottom: 0.7em;
+}
+.box1 > .content {
+  clear: both;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 -1px 2px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 -1px 2px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 -1px 2px 0;
+  padding: 1em 4em 2em 4em;
+  position: relative;
+  height: auto;
+  border: 1px solid #C4C4C4;
+  background: #FFFFFF;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .box1 > .content {
+    padding: 1em 1em;
+  }
+}
+.box1 .abreast {
+  display: table;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  vertical-align: top;
+}
+.box1 .abreast .abreast-cell {
+  display: table-cell;
+  height: 100%;
+  padding: 0.85em;
+  border-right: 1px solid #b3b3b3;
+  vertical-align: top;
+}
+
+.box2 > .title {
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.box2 > .title .main, .box2 > .title .data3 .reply, .data3 .box2 > .title .reply, .box2 > .title .data3 .note, .data3 .box2 > .title .note {
+  display: inline-block;
+}
+.box2 > .title .sub {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: normal;
+  padding-left: 1em;
+}
+.box2 > .title-bar {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+.box2 > .title-bar > .data2 > .subject {
+    margin-bottom: 0.5em;
+}
+.box2 > .title-bar > .data2 > .subject > tbody > tr{
+    background-color: #F3800F;
+}
+.box2 > .title-bar > .data2 > .subject > tbody > tr > td > div{
+    color: white;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+.box2 > .title-bar > .data2 > .subject > tbody > tr > td > div > a{
+    color: white;
+}
+.box2 > .title-bar2 {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+.box2 > .title-bar2 > .data2 > .subject {
+    margin-bottom: 0.5em;
+}
+.box2 > .title-bar2 > .data2 > .subject > tbody > tr{
+    background-color: #FFBC1D;
+}
+.box2 > .title-bar2 > .data2 > .subject > tbody > tr > td > div{
+    color: white;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+.box2 > .title-bar2 > .data2 > .subject > tbody > tr > td > div > a{
+    color: white;
+}
+.box2 > .operate {
+  float: right;
+  display: inline-block;
+  height: 3.2em;
+  line-height: 3.2em;
+}
+.box2 > .operate > div {
+  display: inline-block;
+}
+.box2 > .operate > button {
+  margin: 7px 0;
+}
+.box2 > .message {
+  color: red;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+.box2 > .content {
+  clear: both;
+  margin-bottom: 0.5em;
+}
+.box2 .func-title {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: table;
+  margin: 0.4em 0;
+  padding: 0;
+  width: 100%;
+  height: 3.9em;
+}
+.box2 .func-title > .element {
+  display: table-cell;
+  border-style: solid;
+  padding: 0.6em;
+  border-color: #DDDDDD;
+  border-width: 1px 1px 1px 0;
+  background-color: #f9f9f9;
+  color: #707070;
+  text-align: center;
+  vertical-align: middle;
+}
+.box2 .func-title > .element:first-child {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-width: 1px;
+}
+.box2 .func-title > .element:last-child {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.box2 .func-title > .element > button {
+  font-weight: bold;
+}
+.box2 .func-title > .type {
+  padding: 0;
+  min-width: 1em;
+}
+.box2 .func-title > .title {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.box2 .func-title > .title > .class {
+  display: inline-block;
+}
+.box2 > .title-blue > .type {
+  background-color: #51e3e6;
+  border-color: #51e3e6;
+}
+.box2 > .title-blue > .title .class {
+  color: #51e3e6;
+}
+.box2 > .title-orange > .type {
+  background-color: #F3800F;
+  border-color: #F3800F;
+}
+.box2 > .title-orange > .title .class {
+  color: #F3800F;
+}
+
+.selector {
+  padding: 14px;
+}
+
+.slt-active {
+  padding: 13px;
+  background-color: #E4EDF4;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #7EAED7;
+}
+
+.selector2 .selected, .selector2 .title:hover {
+  color: #F3800F;
+}
+.selector2 .title:hover {
+  cursor: pointer;
+}
+
+/* announcement */
+.data1 {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #F4F4F4;
+  padding: 0.9em;
+}
+.data1 > .date {
+  text-align: right;
+}
+.data1 > .content {
+  padding: 0.9em;
+  font-size: 1em;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+@media screen and (max-width: 768px) {
+  .data1 > .content {
+    padding: 0.5em;
+  }
+}
+.data1 > .file {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: left;
+  line-height: 1.5em;
+  background: #E1E1E1;
+}
+.data1 > .file div:first-child {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+}
+.data1 > .file div:first-child + div {
+  margin-left: 3.6em;
+  padding: 0.5em 1em;
+  color: #08B1B3;
+  font-size: 0.8em;
+  word-break: break-word;
+}
+
+/* subject list */
+.data2 {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+.data2 .special {
+  table-layout: fixed;
+  background-color: transparent;
+  border-spacing: 0px;
+  border-color: gray;
+  border-collapse: separate;
+}
+.data2 .special th, .data2 .special td {
+  padding: 0.6em 0.7em;
+  border-top: 0px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.data2 .special th > div, .data2 .special td > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.data2 .special th > .title, .data2 .special td > .title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #06A2A4;
+}
+.data2 .special th > .title > .class, .data2 .special td > .title > .class {
+  color: #F3800F;
+}
+.data2 .special th > .summary, .data2 .special th > .author, .data2 .special th > .date, .data2 .special td > .summary, .data2 .special td > .author, .data2 .special td > .date {
+  font-size: 0.86em;
+  color: #707070;
+}
+.data2 .special th > .hits, .data2 .special th > .readed, .data2 .special th > .like, .data2 .special td > .hits, .data2 .special td > .readed, .data2 .special td > .like {
+  display: table-cell;
+  font-size: 0.8em;
+  color: #afafaf;
+}
+.data2 .special th > .hits > span, .data2 .special th > .readed > span, .data2 .special th > .like > span, .data2 .special td > .hits > span, .data2 .special td > .readed > span, .data2 .special td > .like > span {
+  vertical-align: bottom;
+}
+.data2 .special th > button, .data2 .special td > button {
+  line-height: 1em;
+  padding: 3px;
+  font-size: 0.8em;
+}
+.data2 .special tr:hover {
+  cursor: pointer;
+}
+.data2 .special .t1 {
+  width: 7em;
+}
+.data2 .subject {
+  table-layout: fixed;
+  border-color: #FFFFFF;
+  border: 3px;
+}
+.data2 .subject tr {
+  background: #F4F4F4;
+  border-bottom: 0.3em solid #FFFFFF;
+}
+.content>.data2>.subject tr:hover {
+  background: #E5E5E5;
+}
+.data2 .subject tr:hover .icon-subject-go {
+  background-image: url('../images/icon_subject_go_1.png?1419385401');
+}
+.data2 .subject tr:last-child {
+  border-bottom: 0 solid #FFFFFF;
+}
+.data2 .subject th, .data2 .subject td {
+  border: 0px;
+  vertical-align: middle;
+}
+.data2 .subject th:first-child, .data2 .subject td:first-child {
+  -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.data2 .subject th:last-child, .data2 .subject td:last-child {
+  -moz-border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 4px 4px 0;
+}
+.data2 .subject th > .status, .data2 .subject td > .status {
+  background-image: url('../images/icon_read.png?1419385401');
+  background-position: top left;
+  height: 20px;
+  width: 20px;
+}
+.data2 .subject th > .new, .data2 .subject td > .new {
+  background-image: url('../images/icon_unread.png?1419385401');
+}
+.data2 .subject th > .title, .data2 .subject td > .title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.data2 #news-tpc tr:hover {
+  color: #06A2A4;
+}
+.data2 #news-tpc.no-data tr:hover {
+  color: #000000;
+}
+.data2 .subject th > .amount, .data2 .subject th > .like, .data2 .subject th > .date, .data2 .subject th > .reply, .data2 .subject td > .amount, .data2 .subject td > .like, .data2 .subject td > .date, .data2 .subject td > .reply {
+  display: table-cell;
+  color: #353535;
+  font-size: 0.8em;
+}
+.data2 .subject th > .amount > span, .data2 .subject th > .like > span, .data2 .subject th > .date > span, .data2 .subject th > .reply > span, .data2 .subject td > .amount > span, .data2 .subject td > .like > span, .data2 .subject td > .date > span, .data2 .subject td > .reply > span {
+  vertical-align: bottom;
+}
+.data2 .subject th > button, .data2 .subject td > button {
+  line-height: 1em;
+  padding: 3px;
+  font-size: 0.8em;
+}
+.data2 .subject .t1 {
+  width: 3em;
+}
+.data2 .subject .t2 {
+  text-align: center;
+  width: 4em;
+}
+.data2 .subject .t3 {
+  text-align: center;
+  width: 5em;
+}
+.data2 .subject .t4 {
+  min-width: 6em;
+}
+.data2 .subject .t5 {
+  width: 7em;
+}
+.data2 .subject .t6 {
+  width: 10em;
+}
+.data2 .subject .t9 {
+  width: 16em;
+}
+.box1 .content .dot {
+    height: 25px;
+    width: 25px;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+}

@@ -1,0 +1,488 @@
+/* 教師環境新套版 */
+body {
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+}
+
+.cssBg01 {
+    background-image: linear-gradient(to bottom, #FBFBFB, #DFDFDF);
+    background-color: #FBFBFB;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFFBFBFB', endColorstr = '#FFDFDFDF', GradientType = 0);
+}
+
+.cssBg02 {
+    background-image: linear-gradient(to bottom, #DFDFDF, #C6C6C6);
+    background-color: #C6C6C6;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFDFDFDF', endColorstr = '#FFC6C6C6', GradientType = 0);
+}
+
+.cssBg03 {
+	background-color: #2FC3BD;
+}
+
+.cssBg04 {
+	background-color: #048E89;
+}
+
+.cssBg05 {
+	background-color: #CCCCCC;
+}
+
+.cssInput {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #A0B5D3;
+}
+
+.MMenu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.MContainer {
+	position: absolute;
+	left: 110px;
+	top: 93px;
+	width: 425px;
+	height: 41px;
+	overflow: hidden;
+	clip: auto;
+	visibility: visible;
+	z-index: 5;
+}
+
+.MMenuItemFont, .MMenuItemFont:hover {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.MMenuItemFont:hover {
+    text-decoration: underline;
+}
+
+.MMenuItemOver, .MMenuItemOut {
+	background-color: transparent;
+	padding: 0 3px 0 5px;
+    border-left: 1px dashed #2FC3BD;
+}
+
+.MMenu > table tr td:first-child {
+    border-left-width: 0px; 
+}
+
+.MMenuItemOver >  .MMenuItemFont{
+    background-color: #CCCCCC;
+}
+
+.MScroll {
+	position: absolute;
+	top: 80px;
+	left: 600px;
+}
+
+.MScroll img {
+    margin: 0px 3px;
+    height: 30px;
+    width: 15px;
+}
+
+.SMenu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.SContainer {
+	position: absolute;
+	left: 110px;
+	top: 120px;
+	width: 425px;
+	height: 32px;
+	overflow: hidden;
+	clip: auto;
+	visibility: visible;
+	z-index: 5;
+}
+
+.SMenuItemOver {
+	font-size: 1em;
+	line-height: 1.1em;
+    color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.SMenuItemOut {
+    font-size: 1em;
+    line-height: 1.1em;
+	color: #2E2E2E;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.SMenuItemSplit {
+    font-size: 1em;
+    line-height: 1.1em;
+	height: 1.1em;
+	margin: 0px 8px 0px 1px;
+	border-top: 0px none #FFFFFF;
+	border-left: 0px none #FFFFFF;
+	border-bottom: 0px none #FFFFFF;
+	border-right: 1px solid #2E2E2E;
+	display: inline;
+}
+
+.SMenuItemSplit-white {
+    border-right-color: #FFFFFF;
+}
+
+.SMenuItemSplit-gray {
+    border-right-color: #ABA9AA;
+}
+
+.SMenuItemSplit-lg {
+    font-size: 28px;
+    line-height: 28px;
+    border-right-style: dashed;
+    margin: 0;
+}
+
+.SScroll {
+	position: absolute;
+	top: 116px;
+	left: 600px;
+}
+
+.SScroll img {
+    margin: 0px 1px;
+    height: 22px;
+    width: 12px;
+}
+
+.sysUsername {
+	padding: 6px 0px 0px 9px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysOnline {
+	position: absolute;
+	top: 0px;
+	left: 600px;
+}
+
+.sysOnlineFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysOnlineFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+.sysEnvFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysEnvFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysHelp {
+	position: absolute;
+	top: 46px;
+	left: 675px;
+	height: 20px;
+	margin: 0px 0px -5px 0px;
+	z-index: 20;
+}
+
+.sysHelpSplit {
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	margin: 0px 8px 0px 1px;
+	border-top: 0px none #FFFFFF;
+	border-left: 0px solid #FFFFFF;
+	border-bottom: 0px none #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	display: inline;
+}
+
+.sysHelpFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysHelpFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysTime {
+	position: absolute;
+	top: 72px;
+	left: 738px;
+}
+.sysTimeFont {
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysTimeFont:hover {
+	font-size: 12px;
+	line-height: 14px;
+	color: #993399;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.sysErrorFont {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #FF0000;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+/* 新元素 */
+/* icon */
+.icon-gear {
+    height: 25px;
+    width: 25px;
+    background: url('/public/images/icon_gear_white.png') 3px 3px no-repeat;
+}
+
+.icon-set-up {
+    height: 25px;
+    width: 25px;
+    background: url('/public/images/icon_set_up.png') 4px 2px no-repeat;
+}
+
+.icon-sign-out {
+    height: 25px;
+    width: 25px;
+    background: url('/public/images/icon_sign_out.png') 3px 3px no-repeat;
+}
+
+/* 課程名稱 */
+.CNameDiv {
+    position: absolute;
+    display: table;
+    height: 54px;
+    top: 22px;
+}
+.CNameDiv > div {
+    /* display: table-cell; */
+    display: inline-block;
+    height: 54px;
+    background-color: #2FC3BD;
+    vertical-align: middle;
+}
+.CNameDiv > :first-child {
+    width: 120px;
+}
+.CNameDiv .CNameContent {
+    color: #FFFFFF;
+    text-shadow: 1px 1px #7D7D7D;
+    /*max-width: 300px;*/
+    letter-spacing: 2px;
+    padding-right: 25px;
+}
+
+.CNameDiv .CNameContent > div {
+    height: 45px;
+    padding: 5px 0 0 0;
+    /*max-width: 300px;*/
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /*white-space: nowrap;*/
+}
+.CNameDiv .triangle {
+    background-color: transparent;
+}
+.CNameDiv .triangle .shape{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent transparent #2FC3BD #2FC3BD;
+    border-width: 27px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    width: 107px;
+    height: 81px;
+    background-color: transparent;
+    border-radius: 6px;
+    background-image: url('/public/images/icon_office_logo_2.png');
+}
+
+.quota {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* 個人資訊 */
+.personal-info {
+    display: inline-block;
+    /*position: absolute;
+    top: 0;
+    right: 0;*/
+    max-height: 38px;
+    /* overflow: hidden; */
+    background-image: linear-gradient(to bottom, #FFFFFF 50%, #ECECEC 50%);
+    background-color: #ECECEC;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFFFFFFF', endColorstr = '#FFECECEC', GradientType = 0);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); */
+    
+}
+.personal-info > div{
+    display: inline-block;
+    vertical-align: middle;
+    border-width: 0;
+    border-spacing: 0;
+    vertical-align:middle;
+}
+.personal-info > .pic > img {
+    height: 38px;
+    width: 38px;
+}
+.personal-info .user {
+    color: #038E89;
+    font-size: 12px;
+    padding: 0 16px;
+}
+.personal-info .class-link {
+    color: #038E89;
+    font-size: 12px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.personal-info .class-link > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2px;
+}
+.personal-info .class-link .icon-simulation-class {
+    height: 17px;
+    width: 33px;
+    min-width: 33px;
+    background: url('/public/images/icon_simulation_class_green.png') no-repeat;
+}
+.personal-info .class-link .icon-home {
+    height: 18px;
+    width: 21px;
+    min-width: 21px;
+    background: url('/public/images/icon_home_green.png') no-repeat;
+}
+.personal-info .settings > div, .personal-info .settings > ul > li {
+    text-align: center;
+    height: 37px;
+    width: 55px;
+}
+.personal-info .settings .drop-btn {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #A0A0A0;
+    background-image: linear-gradient(to bottom, #D0D0D0, #8B8B8B);
+    background-color: #8B8B8B;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FFD0D0D0', endColorstr = '#FF8B8B8B', GradientType = 0);
+    text-align: center;
+    cursor: pointer;
+
+}
+.personal-info .settings .drop-item {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    float: left;
+    list-style: none;
+    background-color: #535353;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+.personal-info .settings .drop-item > li > a {
+    display: block;
+    padding: 6px 15px;
+    cursor: pointer;
+    border-top: 1px solid #8C8C8C;
+}
+.personal-info .settings .drop-item > li > a:hover .icon-set-up {
+    background: url('/public/images/icon_set_up_1.png') 4px 2px no-repeat;
+}
+.personal-info .settings .drop-item > li > a:hover .icon-sign-out {
+    background: url('/public/images/icon_sign_out_1.png') 4px 2px no-repeat;
+}
+.more-course {
+    height: 33px;
+}
+.more-course:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.more-course select, .more-course a, .more-course div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.more-course a {
+    color: #2E2E2E;
+    font-size: 12px;
+    padding: 0px 15px;
+}
+.more-course a:hover {
+    color: #FFFFFF;
+}

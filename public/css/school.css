@@ -1,0 +1,849 @@
+/** school site header (begin) **/
+body {
+    background-color: #FFFFFF !important;
+}
+
+.bgWhite {
+    background-color: #FFFFFF;
+}
+
+.bgBlack {
+    background-color: #252525;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #252525;
+    color: #ffffff;
+    border: 0px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #60ffcc;
+    background-color: #252525;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #FFFFFF;
+    background-color: #252525;
+}
+
+.dropdown-menu {
+    background-color: #FFFFFF;
+    color: #252525;
+    font-size: 16px;
+    min-width: initial;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    color: #252525;
+    white-space: nowrap;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+    background-color: #60FFCC;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #252525;
+
+}
+
+.nav .navbar-nav > li {
+    font-size: 16px;
+}
+
+.navbar .nav > li > a {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #60ffcc;
+    background-color: transparent;
+}
+
+.siteHeaderOuterTable {
+    height: 65px;
+}
+
+.siteLogo {
+}
+
+.btnLogin {
+    color: #FFFFFF;
+}
+
+.boxshadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-return-portal {
+    color: #ffffff;
+    background-color: #DB5200;
+    border-color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-return-portal:hover,
+.btn-return-portal:focus,
+.btn-return-portal:active,
+.btn-return-portal.active,
+.open .dropdown-toggle.btn-return-portal {
+    color: #ffffff;
+    background-color: #B05621;
+    border-color: #FFFFFF;
+}
+
+.btn-return-portal:active,
+.btn-return-portal.active,
+.open .dropdown-toggle.btn-return-portal {
+    background-image: none;
+}
+
+.btn-return-portal.disabled,
+.btn-return-portal[disabled],
+fieldset[disabled] .btn-return-portal,
+.btn-return-portal.disabled:hover,
+.btn-return-portal[disabled]:hover,
+fieldset[disabled] .btn-return-portal:hover,
+.btn-return-portal.disabled:focus,
+.btn-return-portal[disabled]:focus,
+fieldset[disabled] .btn-return-portal:focus,
+.btn-return-portal.disabled:active,
+.btn-return-portal[disabled]:active,
+fieldset[disabled] .btn-return-portal:active,
+.btn-return-portal.disabled.active,
+.btn-return-portal[disabled].active,
+fieldset[disabled] .btn-return-portal.active {
+    background-color: #DB5200;
+    border-color: #FFFFFF;
+}
+
+.btn-return-portal .badge {
+    color: #DB5200;
+    background-color: #ffffff;
+}
+
+.btn-news-more {
+    color: #ffffff;
+    background-color: #ef8d2e;
+    border-color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-news-more:hover,
+.btn-news-more:focus,
+.btn-news-more:active,
+.btn-news-more.active,
+.open .dropdown-toggle.btn-news-more {
+    color: #ffffff;
+    background-color: #db5200;
+    border-color: #FFFFFF;
+}
+
+.btn-news-more:active,
+.btn-news-more.active,
+.open .dropdown-toggle.btn-news-more {
+    background-image: none;
+}
+
+.btn-news-more.disabled,
+.btn-news-more[disabled],
+fieldset[disabled] .btn-news-more,
+.btn-news-more.disabled:hover,
+.btn-news-more[disabled]:hover,
+fieldset[disabled] .btn-news-more:hover,
+.btn-news-more.disabled:focus,
+.btn-news-more[disabled]:focus,
+fieldset[disabled] .btn-news-more:focus,
+.btn-news-more.disabled:active,
+.btn-news-more[disabled]:active,
+fieldset[disabled] .btn-news-more:active,
+.btn-news-more.disabled.active,
+.btn-news-more[disabled].active,
+fieldset[disabled] .btn-news-more.active {
+    background-color: #db5200;
+    border-color: #FFFFFF;
+}
+
+.btn-news-more .badge {
+    color: #db5200;
+    background-color: #ffffff;
+}
+
+#desktopMenu a {
+    background-color: #FFFFFF;
+    color: inherit;
+    text-decoration: none;
+}
+
+#desktopMenu .dropdown-menu a:hover {
+    background-color: #C5C5C5;
+}
+
+.phoneMenuItem {
+    height: 42px;
+    border-bottom: 1px #E3E3E3 solid;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 25px;
+    background-color: #FFFFFF;
+}
+
+.phoneMenuItem a {
+    color: #393939;
+}
+
+.phoneMenuItemB {
+    height: 32px;
+    border-bottom: 1px #E3E3E3 solid;
+    text-align: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background-color: #E5E5E5;
+    color: #393939;
+}
+
+.phoneMenuItemB a {
+    color: #FFFFFF;
+}
+
+.phoneMenuItemC {
+    height: 42px;
+    border-bottom: 1px #E3E3E3 solid;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #EC8D26;
+    color: #FFFFFF;
+}
+
+.phoneMenuItemC a {
+    color: #FFFFFF;
+}
+/** school site header (end) **/
+
+/** school site body (begin) **/
+.container {
+    max-width: 1080px;
+}
+
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-indicators .active {
+    background: #3bb1f4;
+    width: 16px;
+    height: 16px;
+}
+
+.div_banner_item {
+    width: 361px;
+    height: 314px;
+    float: right;
+}
+
+.div_banner_image {
+    width: 100%;
+}
+
+.sitelinkLogo {
+    width: 288px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 22px;
+    background-image: url('/theme/default/learn/icon_other_link.svg');
+    background-repeat: no-repeat;
+    background-color: #ef8d2e;
+    color: white;
+}
+
+.spanNewsDateCount i {
+    color: #ef8d2e;
+}
+
+/* 標題字型 */
+
+.block-title-font {
+    font-size: 24px;
+    color: #626262;
+    font-weight: bold;
+}
+
+.more-font-szie {
+    font-size: 16px;
+}
+
+/* 課程圖片 */
+.course-category-title-blue {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #252525;
+}
+
+.course-category-title-orange {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #F18E1E;
+}
+
+.course-category-title-green {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #3BB149;
+}
+
+.course-date {
+    line-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #3BB149;
+}
+
+.course-title1 {
+    line-height: 28px;
+    height: 80px;
+    font-size: 18px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.course-title2 {
+    line-height: 20px;
+    height: 64px;
+    font-size: 15px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.course-teacher {
+    line-height: 22px;
+    height: 66px;
+    font-size: 14px;
+    color: #818181;
+}
+
+/** wmpro5.1新首頁的css --- begin */
+
+.t12_gray {
+    font-family: "微軟正黑體";
+    font-size: 12px;
+    color: #5a5a5a;
+}
+
+.t12_gray a:link {
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+.t12_gray a:visited {
+    color: #5a5a5a;
+    text-decoration: underline;
+}
+
+.t12_gray a:hover {
+    color: #5a5a5a;
+    text-decoration: underline;
+}
+
+.t12_gray a:active {
+    color: #5a5a5a;
+}
+
+.t13_b {
+    font-family: "微軟正黑體";
+    font-size: 13px;
+    color: #9da0a4;
+}
+
+.t13_g {
+    font-family: "微軟正黑體";
+    font-size: 13px;
+    color: #5a5a5a;
+}
+
+.t13_o {
+    font-family: "微軟正黑體";
+    font-size: 13px;
+    color: #f98a0c;
+}
+
+.t13_o a:link {
+    color: #f98a0c;
+    text-decoration: underline;
+}
+
+.t13_o a:visited {
+    color: #f98a0c;
+    text-decoration: underline;
+}
+
+.t13_o a:hover {
+    color: #f98a0c;
+    text-decoration: underline;
+}
+
+.t13_o a:active {
+    color: #f98a0c;
+}
+
+.t14_w_bold {
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.t14_White {
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.t14_White a:link {
+    color: #f98a0c;
+    text-decoration: none;
+}
+
+.t14_White a:visited {
+    color: #f98a0c;
+    text-decoration: underline;
+}
+
+.t14_White a:hover {
+    color: #f98a0c;
+    text-decoration: underline;
+}
+
+.t14_White a:active {
+    color: #f98a0c;
+}
+
+.t14_b {
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    color: #9da0a4;
+    text-indent: 10px;
+    height: 40px;
+}
+
+.t14_black_bold {
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.t14_gray {
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.t14_green {
+    font-size: 14px;
+    color: #00d893;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.t18_green_b {
+    font-size: 18px;
+    color: #00d893;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+}
+
+.t18_w {
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.t18_o {
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    color: #FF6C00;
+    font-weight: bold;
+}
+
+.t24_white {
+    font-family: "微軟正黑體";
+    font-size: 24px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.t16_gary {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.t16_gary_right {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #5a5a5a;
+    float: right;
+    margin-top: 35px;
+}
+
+.t16_w_b {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.t16_White {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #FFF;
+}
+
+.t16_White a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.t16_White a:visited {
+    color: #60ffcc;
+    text-decoration: none;
+}
+
+.t16_White a:hover {
+    color: #60ffcc;
+    text-decoration: none;
+}
+
+.t146_White a:active {
+    color: #60ffcc;
+}
+
+.t16_b {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #000;
+}
+
+.t16_black_bold {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.t20_black_bold {
+    font-family: "微軟正黑體";
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.t28 {
+    font-family: "微軟正黑體";
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 60px;
+}
+
+.t24_black_bold {
+    font-family: "微軟正黑體";
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.t32_bold {
+    font-family: "微軟正黑體";
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 40px;
+    border-bottom: 5px solid #57ddbd;
+}
+
+.t48_green_bold {
+    font-size: 48px;
+    color: #40fabe;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+}
+
+.t60_White_bold {
+    font-family: "微軟正黑體";
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.t36_White_bold {
+    font-family: "微軟正黑體";
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.circle12_green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00d893;
+}
+
+.circle12_gray {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+.circle30 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circle38_black {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.heading-bottom-border .course_categroy_tab.active{
+    border-bottom: 5px solid #60ffcc;
+}
+
+.subtitle.heading-bottom-border {
+    clear: both;
+    height: 65px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.subtitle h1 {
+    font-family: "微軟正黑體";
+    font-size: 32px;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 40px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-left: 0;
+}
+
+.line {
+    font-family: "微軟正黑體";
+    font-size: 13px;
+    color: #9da0a4;
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    border-left: 100px solid #ddd;
+    border-right: 100px solid #ddd;
+    text-align: center;
+}
+
+.line_green {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #60ffcc;
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    border-left: 180px solid #ddd;
+    border-right: 180px solid #ddd;
+    text-align: center;
+}
+
+.nav_search {
+    background: rgb(5,178,146);
+    text-align: center;
+    height: 60px;
+}
+
+.nav_box {
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search_box {
+    font-family: "微軟正黑體";
+    font-size: 14px !important;
+    color: #fff !important;
+    text-indent: 10px;
+    height: 40px;
+    max-width: 700px;
+    min-width: 400px;
+    border: 1px rgba(255,255,255,0) solid;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.but_login{
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #fff;
+    height:40px;
+    width:80px;
+    border:1px rgba(255,255,255,0.5) solid;
+    border-radius:3px;
+    background-color: rgba(255,255,255,0);
+}
+
+.but_registered {
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    border: 1px rgba(255,108,0,1) solid;
+    border-radius: 3px;
+    background-color: rgba(255,108,0,1);
+}
+
+.background {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.vert-mid {
+    margin: 60px auto;
+    vertical-align: middle;
+}
+/** wmpro5.1新首頁的css --- end */
+
+/** wmpro5.1 課程區塊 --- begin */
+.div_course_item_outer {
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.div_course_item {
+    border:1px #ccc solid;
+    border-radius:5px;
+    width: 100%;
+    max-width:476px;
+    min-width: 234px;
+    background-color:#fff;
+    margin:0 auto;
+    padding: 5px;
+}
+
+.div_course_item > table {
+    border-collapse: initial;
+}
+
+.course_caption {
+    height: 48px;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.course_teacher {
+    display: inline-block;
+    line-height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 140px;
+}
+
+.course_between {
+    white-space: nowrap;
+}
+
+/** wmpro5.1 課程區塊 --- end */
+
+/*平板直向、平板橫向*/
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/*手機尺寸*/
+@media (max-width: 767px) {
+    .esn-container > .panel {
+        width: 100%
+    }
+
+    .form-horizontal .controls {
+        margin-left: initial;
+    }
+
+    .div_course_item_outer {
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*大手機尺寸*/
+@media (min-width: 375px) and (max-width: 767px) {
+    .navbar {
+        height: 50px;
+    }
+}
+
+/*手機尺寸*/
+@media (max-width: 374px) {
+    .navbar {
+        height: 50px;
+    }
+}

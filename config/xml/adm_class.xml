@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <items>
+        <item system="true" id="SYS_03_01_000" hidden="false" env="4" role="9280">
+            <title>
+                <big5>成員管理</big5>
+                <gb2312>成员管理</gb2312>
+                <en>Member Management</en>
+                <euc-jp>成員管理</euc-jp>
+                <user-define>成員管理</user-define>
+            </title>
+            <href target="default" kind="0">about:blank</href>
+            <item system="true" id="SYS_03_01_001" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>成員資料</big5>
+                    <gb2312>成员资料</gb2312>
+                    <en>Member Data</en>
+                    <euc-jp>成員資料</euc-jp>
+                    <user-define>成員資料</user-define>
+                </title>
+                <href target="default" kind="1">/direct/member/member_list.php</href>
+            </item>
+            <item system="true" id="SYS_03_01_004" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>檢視成績</big5>
+                    <gb2312>检视成绩</gb2312>
+                    <en>View Grades</en>
+                    <euc-jp>檢視成績</euc-jp>
+                    <user-define>檢視成績</user-define>
+                </title>
+                <href target="default" kind="1">/direct/member/member_grade.php</href>
+            </item>
+            <item system="true" id="SYS_03_01_005" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>設定助理</big5>
+                    <gb2312>设定助理</gb2312>
+                    <en>Setup Assistants</en>
+                    <euc-jp>設定助理</euc-jp>
+                    <user-define>設定助理</user-define>
+                </title>
+                <href target="default" kind="1">/direct/member/director_list.php</href>
+            </item>
+            <item id="SYS_03_01_006" system="true" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>到課統計</big5>
+                    <gb2312>到课统计</gb2312>
+                    <en>Attendance Stats</en>
+                    <euc-jp>到課統計</euc-jp>
+                    <user-define>到課統計</user-define>
+                </title>
+                <href target="default" kind="8">/direct/member/member_stud_stat.php</href>
+            </item>
+        </item>
+        <item system="true" id="SYS_03_02_000" hidden="false" env="4" role="9280">
+            <title>
+                <big5>學員修課管理</big5>
+                <gb2312>学员修课管理</gb2312>
+                <en>Course Registration Management</en>
+                <euc-jp>學員修課管理</euc-jp>
+                <user-define>學員修課管理</user-define>
+            </title>
+            <href target="default" kind="1">about:blank</href>
+            <item system="true" id="SYS_03_02_001" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>修課指派</big5>
+                    <gb2312>修课指派</gb2312>
+                    <en>Course Assigning</en>
+                    <euc-jp>修課指派</euc-jp>
+                    <user-define>修課指派</user-define>
+                </title>
+                <href target="default" kind="1">/direct/enroll/enroll_help.php</href>
+            </item>
+            <item id="SYS_03_02_002" system="true" hidden="false" env="4" role="9280">
+                <title>
+                    <big5>審核學員</big5>
+                    <gb2312>审核学员</gb2312>
+                    <en>Review Students</en>
+                    <euc-jp>審核學員</euc-jp>
+                    <user-define>審核學員</user-define>
+                </title>
+                <href target="default" kind="1">/direct/review/review_review.php</href>
+            </item>
+        </item>
+    </items>
+</manifest>

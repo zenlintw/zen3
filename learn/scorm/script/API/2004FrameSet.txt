@@ -1,0 +1,20 @@
+<frameset name="parentFrame" border=0 rows="0,*" cols="*" frameBorder=NO marginheight=0 marginwidth=0 frameborder="NO">
+  <frame src="top.htm" name="topFrame" frameborder="no" scrolling="NO" noresize>
+  <frameset  name="middleFrame" cols="200,18,*" frameborder="NO" border="0" framespacing="0">
+	  <frameset name="foo" rows="24,*" frameborder="NO" border="0" framespacing="0">
+	  	  <frame src="" name="control" frameborder="no" id="control" >
+	  	  <frame noresize name="toc" src="" scrolling="auto">
+	  </frameset>
+	  <frame name="mid" scrolling="NO" noresize src="">
+	  <frameset rows="*,0,0,0,0,0,0" cols="*" marginheight=0 marginwidth=0 frameborder="NO">
+	    <frame name="center" src="wait.htm">
+	    <frame name="sequencing" src="">
+	    <frame name="appearance" src="">
+	    <frame name="tocstatus" src="">
+	    <frame name="check" src="sequencing/check_rules.php">	 
+	    <frame name="functions" src="sequencing/engine_functions.php">
+	    <frame name="engine" src="sequencing/engine.php">	    
+	  </frameset>
+  </frameset>
+  
+</frameset>

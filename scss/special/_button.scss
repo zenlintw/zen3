@@ -1,0 +1,45 @@
+//  gradient design
+@mixin customeButton($name, $bcolor1, $bcolor2, $tcolor) {
+    .btn-#{$name} {
+        @include background-image(linear-gradient(to bottom, $bcolor1, $bcolor2));
+        // background-image: linear-gradient(to bottom, #54dadd 1px, #17d1ce 1px, #05abab);
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+        background-color: $bcolor2;
+        border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+        background-repeat: repeat-x;
+        color: $tcolor;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+        // line-height: 1em;
+        &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+            color: $tcolor;
+            background-color: $bcolor2;
+            background-position: 0;
+            background-image: none;
+        }
+        &:hover, &:focus, &:active, &.active {
+            color: $tcolor \9;
+            background-color: $bcolor2 \9;
+        }
+    }
+
+}
+
+// Plane design
+@mixin customeButton2($name, $bgcolor1, $bgcolor2, $brcolor, $tcolor) {
+    .btn-plane-#{$name} {
+        color: $tcolor;
+        background: $bgcolor1;
+        border: 1px solid $brcolor;
+        @include border-radius($radius);
+        &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+            color: $tcolor;
+            background-color: $bgcolor2;
+        }
+        &:active, &.active {
+            color: $tcolor;
+            background-color: $bgcolor2 \9;
+        }
+
+    }
+
+}

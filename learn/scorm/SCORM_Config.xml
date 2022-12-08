@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<SCORM_Config>
+	<ENV_Config>
+		<http_set/>
+		<http_get/>
+	</ENV_Config>
+	<UI_Config>
+		<Course id="10001" Launch_Type="OpenWindow" screenResizable="no">
+			<Width>782</Width>
+			<Height>600</Height>
+			<TOC_display initial="open">open</TOC_display>
+			<Title_display>open</Title_display>
+		</Course>
+		<Course id="10002" Launch_Type="OpenWindow" screenResizable="no">
+			<Width>782</Width>
+			<Height>600</Height>
+			<TOC_display initial="open">open</TOC_display>
+			<Title_display>open</Title_display>
+		</Course>
+		<Default  Launch_Type="embedded" screenResizable="no">
+			<Width>782</Width>
+			<Height>600</Height>
+			<TOC_display initial="open">open</TOC_display>
+			<Title_display>closed</Title_display>
+		</Default>
+	</UI_Config>
+</SCORM_Config>

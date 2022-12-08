@@ -1,0 +1,19 @@
+<folder id="app_push_message">
+	<setting>
+		<order/>
+	</setting>
+	<title>
+		<big5>APP推播訊息</big5>
+		<gb2312>APP推播讯息</gb2312>
+		<en>App Server Push</en>
+		<euc-jp></euc-jp>
+		<user-define></user-define>
+	</title>
+	<help>
+		<big5>APP推播訊息</big5>
+		<gb2312>APP推播讯息</gb2312>
+		<en>App Server Push</en>
+		<euc-jp></euc-jp>
+		<user-define></user-define>
+	</help>
+</folder>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>XML-API Unit Test (Self)</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.0/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.0/jasmine.css">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+  <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="lib/jasmine-2.0.0/boot.js"></script>
+
+  <!-- include jquery -->
+  <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript">
+	$(document).ready(function () {
+	    // 從 local storage 回填
+		if (localStorage.getItem("unit-test-username") !== null) {
+			$('#username').val(localStorage.getItem("unit-test-username"));
+		}
+		if (localStorage.getItem("unit-test-password") !== null) {
+			$('#password').val(localStorage.getItem("unit-test-password"));
+		}
+		
+		$('#btn-run').click(function () {
+			localStorage.setItem("unit-test-username", $('#username').val());
+			localStorage.setItem("unit-test-password", $('#password').val());
+			location.reload();
+		});
+		
+		// 更新系統版本
+        $.ajax({
+            url: '../version.txt',
+            success: function (response) {
+                $('#hg-version').text(response);
+            }
+        });
+		
+        // 更新編譯版本
+        $.ajax({
+            url: '../rev.txt',
+            success: function (response) {
+                if (response !== 'rX') {
+                    $('#hg-rev').text(' (r' + parseInt(response, 10) + ')');
+                }
+            }
+        });
+	});
+  </script>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hongu Jasmine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#fff" size="2">Version <span id="hg-version"></span><span id="hg-rev" style="color: #ccc;"></span></font></a>
+		  
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+			  <!-- 用來抑制 jasmine 奇怪的行為 -->
+			  <input type="text" style="display: none;">
+              <input type="text" placeholder="Username" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control" id="password">
+            </div>
+            <button type="submit" class="btn btn-success" id="btn-run">Run Test</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- include spec files here... -->
+    <!-- 帳號資料初始化 -->
+    <script type="text/javascript" src="spec/InitialSetting.js"></script>
+
+    <!-- 登入 (要放在所有測試動作之前，否則找不到ticket會無法測試其他動作)-->
+    <script type="text/javascript" src="spec/LoginActionTest.js"></script>
+
+    <!-- 驗證 ticket -->
+    <script type="text/javascript" src="spec/ValidSessionTest.js"></script>
+    <!-- 取得我的個人資料 -->
+    <script type="text/javascript" src="spec/MyProfileTest.js"></script>
+    <!-- 取得最新消息 -->
+    <script type="text/javascript" src="spec/NewsTest.js"></script>
+    <!-- 演講廳 -->
+    <script type="text/javascript" src="spec/MediaTest.js"></script>
+    <!-- 系統時間 -->
+    <script type="text/javascript" src="spec/GetServerTimeTest.js"></script>
+    <!-- 我的課程 -->
+    <script type="text/javascript" src="spec/MyCourseTest.js"></script>
+    <!-- 我的歷史課程 -->
+    <script type="text/javascript" src="spec/MyCourseHistoryTest.js"></script>
+    <!-- 推播訊息-->
+    <script type="text/javascript" src="spec/NotificationTest.js"></script>
+    <!-- 雲端筆記 -->
+    <script type="text/javascript" src="spec/NotebookTest.js"></script>
+    <script type="text/javascript" src="spec/NoteTest.js"></script>
+    <!-- 評量區-問卷-->
+    <script type="text/javascript" src="spec/QuestionnaireTest.js"></script>
+    <!-- Logo與過場動畫-->
+    <script type="text/javascript" src="spec/LogoSplashTest.js"></script>
+    <!-- 上傳檔案 (原一條龍製作課程節點，現在已經不開發了)-->
+    <!--<script type="text/javascript" src="spec/CreateCourseNode.js"></script>-->
+    <!--即時互動系統 -->
+    <script type="text/javascript" src="spec/IRSTest.js"></script>
+    <!--線上點名 -->
+    <script type="text/javascript" src="spec/RollCallTest.js"></script>
+
+    <!-- 登出 (要放在所有測試動作之後，否則會有ticket遺失的問題)-->
+    <script type="text/javascript" src="spec/LogoutActionTest.js"></script>
+
+</body>
+</html>

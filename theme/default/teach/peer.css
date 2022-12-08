@@ -1,0 +1,168 @@
+/*以下供共用*/
+/*注意-粗體、紅色*/
+.strong-note {
+    color: red;
+    font-weight: bold;
+}
+
+/*寬度-33%*/
+.part-trisection {
+    width: 33%;
+}
+
+
+/*以下多不共用*/
+/*列表頁面標題*/
+#peer-page-title {
+    font-size: 2.1em;
+    margin-top: 35px;
+}
+
+/*列表頁面-新增作業按鈕文字大小*/
+#peer-page-title button{
+    font-size: 16px;
+}
+
+/*列表頁面標題-下方間隔*/
+#peer-page-title+.navbar-form {
+    margin-bottom: 9px;
+}
+
+/*微調位置-成績起迄日期*/
+#ck_score_begin_time, #ck_score_close_time {
+    margin-left: 73px;
+}
+
+/*微調位置-老師自評*/
+#lb_teacher_assessment {
+    left: 5px;
+    position: relative;
+    line-height: 2em;
+}
+
+/*微調底部空間-互評列表表格*/
+.table {
+    margin-bottom: 0;
+}
+
+/*進度列表文字置中*/
+.lcms-table-td-text_gray.pull-center {
+    text-align: center;
+}
+
+/*進度條上方列*/
+.bar {
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+/*進度條上方列置左*/
+.bar .left {
+    float: left;
+}
+
+/*進度條上方列-圖片*/
+.bar .left img {
+    margin-right: 10px;
+}
+
+/*進度條上方列-群組圖示*/
+.bar .left img {
+    float: left;
+}
+
+/*比重圓餅圖位置*/
+.bar .left .sparkpie {
+    position: relative;
+    left: 0px;
+    top: 2px;
+    padding-top: 3px;
+    padding-top: 12px\9;
+}
+
+/*進度條左上角-粗體*/
+.bar .left div {
+    font-weight: bold;
+}
+
+/*進度條上方列置右*/
+.bar .right {
+    float: right;
+    position: relative;
+    top: -5px;
+}
+
+/*上內縮1em*/
+.box-padding-t-1 {
+    padding-top: 1em;
+}
+
+/*左右內縮3emx*/
+.box-padding-lr-3 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/*同儕互評列表-功能列-文字大小*/
+.peer-func-list {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/*同儕互評列表-功能列-列高*/
+.peer-func-list tr td div {
+    line-height: 0.8em;
+}
+
+/*進度列表-進度名稱*/
+.process-title {
+    line-height: 1.7em;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+/*進度列表-日期起迄*/
+.process-period {
+    font-size: 1em;
+}
+
+/*進度列表-下方間隔*/
+.mooc-process {
+    margin-bottom: 40px;
+}
+
+/*進度列表-列表高度*/
+.mooc-process tr {
+    height: 89px;
+}
+
+/*繳交期間*/
+.mooc-process td.pay.active {
+    background-color: #06A2A4;
+    color: #FFFFFF;
+}
+
+/*評分期間*/
+.mooc-process td.rating.active {
+    background-color: #F3800F;
+    color: #FFFFFF;
+}
+
+/*成績公告期間*/
+.mooc-process td.score.active {
+    background-color: #2EB7EE;
+    color: #FFFFFF;
+}
+
+/*功能列-滑鼠滑過*/
+.peer-func-list .pull-center:hover {
+    background-color: #E5E5E5;
+}
+
+/*評分-按鈕寬度與文字尺寸*/
+.rating-text .actions button {
+    width: 110px;
+    font-size: 1em;
+    margin-left: 0.8em;
+}

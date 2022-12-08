@@ -1,0 +1,27 @@
+// personal photo
+@mixin personalPhoto($name, $width, $height, $border-width) {
+    .photo-#{$name} {
+        @include border-radius($radius);
+        @include box-shadow(rgba(0, 0, 0, 0.05) 0 -1px 2px 0);
+        display: inline-block;
+        width: $width;
+        height: $height;
+        padding: $border-width;
+        position: relative;
+        background-color: white;
+        border: 1px solid #CACACA;
+        > img {
+            width: $width;
+            height: $height;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat no-repeat;
+        }
+    }
+}
+
+@include personalPhoto("3l",   168px,  168px,   7px);
+@include personalPhoto("2l",   114px,  114px,   4px);
+@include personalPhoto("xl",    80px,   80px,   4px);
+@include personalPhoto("l",     62px,   62px,   4px);
+@include personalPhoto("s",     26px,   26px,   3px);

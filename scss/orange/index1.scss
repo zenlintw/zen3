@@ -1,0 +1,67 @@
+@charset "UTF-8";
+// 引用 black 變數
+@import "orange/var_orange";
+@import "compass/css3";
+@import "components/header";
+
+
+.icon-home {
+    background-image: url(/public/images/theme_white/co_icon_home_w.png);
+}
+
+.header {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.lcms-header .tools .profile .nav > li > a .personal-setup {
+    background-image: url(/public/images/theme_white/setup_w.png);
+}
+.lcms-header .tools .profile .nav-btn > li {
+    background-color: #CCCCCC;
+}
+.lcms-header .tools .profile .nav-up .user {
+    background-color: #CCCCCC;
+    &:hover{
+        background-color: #CCCCCC;
+    }
+}
+.wm-content .sidebar-toggle .icon-toggle {
+    background: transparent image-url("theme_white/icon-toggle-w1.png") no-repeat center;
+}
+.wm-content .sidebar-toggle .icon-toggle:hover {
+    background: transparent image-url("theme_white/icon-toggle-w2.png") no-repeat center;
+}
+.wm-content.personal .toggle-arrow {
+    border-color: transparent transparent transparent #ececec;
+}
+
+/* 下方未整理 scss 先使用覆寫的方式 */
+.nav-adv-search {
+    background-color: $nav-bg-color;
+}
+#franchisee {
+    background-color: $franchisee-bg-color;
+}
+.elastislide-wrapper {
+    background-color: $franchisee-bg-color2;
+}
+/* 課程分類 */
+.lcms-nav-group nav ul li.active,
+.lcms-nav-group nav ul li:hover{
+    border-color: $courselist-class-br-color;
+    a {
+        color: $courselist-class-txt-color;
+    }
+}
+.lcms-nav-tabs .mooc-nav-more {
+    background-color: $courselist-class-br-color;
+}
+/* 檢視單一課程頁尾區域 */
+.footer-bg {
+    background: $footer-bg-bottom-color;
+}
+.footer {
+    background-image: linear-gradient(to bottom, $footer-bg-top-color 66px, #282828 1px, $footer-bg-bottom-color 28px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FF898989', endColorstr = '#FF9E9584', GradientType = 0);
+}

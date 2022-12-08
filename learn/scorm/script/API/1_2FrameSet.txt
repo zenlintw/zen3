@@ -1,0 +1,5 @@
+<frameset frameborder="0" cols="200,*,0" border="0" framespacing="0" name=blue>
+	<frame name="toc" scrolling="No" noresize src="toc/toc.asp">
+	<frame name="center" src="content.asp">
+	<frame name="hidden" src="" scrolling="yes">
+</frameset>

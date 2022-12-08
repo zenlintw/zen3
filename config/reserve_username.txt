@@ -1,0 +1,12 @@
+admin*
+sysop
+system
+manager
+root
+guest
+teacher
+student
+*fuck*
+shit
+damn
+nobody

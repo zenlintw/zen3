@@ -1,0 +1,41 @@
+/* announcement */
+.data1 {
+	@include border-radius($radius);
+	background: #F4F4F4;
+	padding: 0.9em;
+	> .date {
+		text-align: right;
+	}
+	> .content {
+		padding: 0.9em;
+		font-size: 1em;
+		line-height: 1.5em;
+		word-wrap: break-word;
+		@media screen and (max-width: $mobilesize) {
+			padding: 0.5em;
+		}
+	}
+	> .file {
+		@include border-radius($radius);
+		text-align: left;
+		line-height: 1.5em;
+		background: #E1E1E1;
+		div:first-child {
+			padding: 0.5em 1em;
+			font-size: 1em;
+			font-weight: bold;
+			text-align: center;
+			// display: table-cell;
+			float: left;
+		}
+		div:first-child + div {
+			margin-left: 3.6em;
+			padding: 0.5em 1em;
+			color: #08B1B3;
+			font-size: 0.8em;
+			word-break: break-word;
+			// display: table-cell;
+
+		}
+	}
+}

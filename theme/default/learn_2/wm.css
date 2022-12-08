@@ -1,0 +1,425 @@
+/**
+ * 藍色系的佈景配色
+ *
+ * @since   2004/02/12
+ * @author  ShenTing Lin
+ * @version $Id: wm.css,v 1.1 2010/02/24 02:40:45 saly Exp $
+ * @copyright Wisdom Master 3(C)  Copyright(R)   SunNet Co. Taiwan, R.O.C
+ **/
+
+/* ------ 新的佈景 ------ */
+
+/* ------ Scroll Bar 的配色 ------ */
+body {
+	scrollbar-arrow-color: #9C98BB;
+	scrollbar-3dlight-color: #9C98BB;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-face-color: #EBEBEB;
+	scrollbar-shadow-color: #9C98BB;
+	scrollbar-track-color: #F0F0F0 ;
+	scrollbar-darkshadow-color: #FFFFFF;
+}
+
+/* ------ Tabs 的標籤 ------ */
+.cssTabs {
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 4px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	cursor: default;
+	color: #000000;
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+/* ------ 左邊的工具列 ------ */
+	/* ------ Frame 的背景色 ------ */
+.cssTbBodyBg {
+	color: #000000;
+	background-color: #BBB9B2;
+}
+	/* ------ 用來修正在 IE5 上面呈現會出現有問題的畫面 ------ */
+.cssTbBugIE5 {
+	position: absolute;
+	right: -1px;
+	top: 30px;
+	width: 7px;
+	height: 100%;
+	background-color: #BBB9B2;
+	clip: auto;
+	overflow: auto;
+	z-index: 40;
+}
+	/* ------ 工具列最上面的按鈕 ------ */
+.cssTbBtn {
+	padding: 6px 5px 0px 0px;
+}
+	/* ------ 工具列位置與背景色 ------ */
+.cssToolbar {
+	width: 188px;
+	position: absolute;
+	left: 6px;
+	top: 30px;
+	background-color: #BBB9B2;
+	clip: auto;
+	overflow: auto;
+	z-index: 30;
+}
+	/* ------ 工具列最上面的那一層 ------ */
+.cssTbHead {
+	font-size: 12px;
+	line-height: 20px;
+	height: 20px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+	font-weight: bold;
+}
+	/* ------ 工具列的表格 ------ */
+.cssTbTable {
+	border: 1px solid #FFFFFF;
+	background-color: #F0F0F0;
+}
+
+.cssTbTr {
+	border-style: none solid none solid;
+	border-width: 0px 0px 0px 0px;
+	border-color: #CCCCE6 #CCCCE6 #CCCCE6 #CCCCE6;
+	padding: 3px 2px 2px 8px;
+	color: #000000;
+	background-color: #FFFFFF;
+	cursor: default;
+}
+	/* ------ 工具列的預設樣式 ------ */
+.cssTbTd {
+	border-style: none solid none solid;
+	border-width: 0px 0px 0px 0px;
+	border-color: #CCCCE6 #CCCCE6 #CCCCE6 #CCCCE6;
+	padding: 1px 1px 1px 1px;
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #000000;
+	background-color: #FFE073;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 滑鼠在工具列上 ------ */
+.cssTbFocus {
+	cursor: default;
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #000000;
+	background-color: #FEF8CD;
+	border: 1px solid #FFFFFF;
+	padding: 0px 3px 1px 3px;
+	margin: 0px 2px 0px 2px;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 滑鼠離開工具列 ------ */
+.cssTbBlur {
+	cursor: default;
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #000000;
+	background-color: #FFE073;
+	border: 1px solid #FFE073;
+	padding: 0px 3px 1px 3px;
+	margin: 0px 2px 0px 2px;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+/* ------ 表格 ------ */
+.cssTable {
+	background-color: #F0F0F0;
+	border: 1px solid #ACA9A2;
+}
+
+.cssTr {
+}
+
+.cssTrHelp {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #FFCC00;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssTrHead {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #FFE073;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssTrEvn {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssTrOdd {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #000000;
+	background-color: #FEF8CD;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssTd {
+}
+/* ------ 表單元件 ------ */
+.cssInput {
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #A0B5D3;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssBtn {
+	font-size: 12px;
+	height: 20px;
+	color: #000000;
+	background-color: #F5F1D5;
+	border: 1px solid #D0BA76;
+	padding-top: 2px;
+}
+
+.cssBtn[disabled] {
+	font-size: 12px;
+	height: 20px;
+	color: #C0C0C0;
+	background-color: #E6EEF3;
+	border: 1px solid #A0B5D3;
+	padding-top: 2px;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+/* ------ 連結 ------ */
+.cssAnchor {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #006699;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssAnchor:hover {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #0000FF;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+
+.cssAnchor:visited{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	color: #000080;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+/* ------ 課程群組的 Tree 需要使用 ------ */
+.cssUL {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.cssOL {
+	list-style-type: none;
+	padding-left: 10px;
+	margin-left: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+/* ------ 其它字型設定 ------ */
+	/* ------ 行事曆 (今天) ------ */
+.cssCaleBg01 {
+	background-color: #FFE073;
+}
+	/* ------ 行事曆 (事件提醒) ------ */
+.cssCaleBg02 {
+	background-color: #F5CCF6;
+}
+	/* ------ 行事曆 (星期天) ------ */
+.cssCaleFont01 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #FF0000;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 行事曆 (星期六) ------ */
+.cssCaleFont02 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #008F29;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 行事曆 (其它星期) ------ */
+.cssCaleFont03 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #BBB9B2;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 行事曆 (今天有事件) ------ */
+.cssCaleFont04 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #BC8AD7;
+	background-color: #FFE073;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 我的課程 (登入的數字) ------ */
+.cssFont01 {
+	font-size: 12px;
+	line-height: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #008F29;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 我的課程 (標頭部份) ------ */
+.cssMyHead {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: #000000;
+	background-color: #FFE073;
+	font-family: "Tahoma", "PMingliu", "MingLiU", "Times New Roman", "Times", "serif";
+}
+	/* ------ 討論室 ------ */
+.tabsOn {
+	width: 98px;
+	height: 25px;
+	background-color: #FFCC00;
+	color: #000000;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.tabsOff {
+	width: 98px;
+	height: 25px;
+	background-color: #A7BEED;
+	color: #FFFFFF;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.lstUserRoom {
+	width: 195px;
+	height: 213px;
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.cssLstUserRoom {
+	background-color : #E6EEFD;
+	width: 197px;
+}
+
+.cssChatUser {
+	width: 197px;
+	border: 1px solid #FFCC00;
+}
+
+.cssChatRoom {
+	width: 197px;
+	border : 1px solid #FFCC00;
+}
+
+.cssChatUserHead {
+	background-color : #BCD0F3;
+}
+
+.cssChatRoomHead {
+	background-color : #BCD0F3;
+}
+
+.cssDefContent {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.cssChatBG {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #BBB9B2;
+	color: #000000;
+}
+
+.cssChatInOut {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+
+.cssChatCont {
+	position: absolute;
+	top: 66px;
+	left: 10px;
+	background-color: #FFFFFF;
+	z-index: 10;
+}
+
+.cssChatLine {
+	padding-top: 1px;
+	padding-left: 24px;
+	text-indent: -20px;
+}
+
+.cssChatFile {
+	text-indent: 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-right: 3px;
+	/* background-color: #F0F0F0; */
+	border: 0px solid #FFCC00;
+}
+

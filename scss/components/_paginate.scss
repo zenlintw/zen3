@@ -1,0 +1,127 @@
+/* Paginate
+--------------------------------- */
+// page icon css
+@mixin pager-icons($picon) {
+    @each $val in $picon {
+        .paginate-#{$val} {
+            display: block;
+            background: transparent image-url("paginate/paginate_#{$val}.png") no-repeat;
+            width: 36px;
+            height: 36px;
+            &:hover {
+                background: transparent image-url("paginate/paginate_#{$val}_1.png") no-repeat;
+                cursor: pointer;
+            }
+            .disabled & {
+                background: transparent image-url("paginate/paginate_#{$val}_2.png") no-repeat;
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.paginate {
+    padding-bottom: 6px !important;
+}
+.esn-box-main .paginate table {
+    margin-bottom: 0;
+}
+.paginate-toolbar {
+    /* float: left; */
+    margin: auto;
+    padding: 0;
+    background-color: white !important;
+    .icon-excel-all-page, .icon-excel-this-page {
+        margin: 2px;
+    }
+    .paginate-btn {
+        .text {
+            margin: 0 6px;
+            line-height: 20px;
+        }
+    }
+    tr {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        background-color: white !important;
+    }
+    td {
+       -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        -ms-border-radius: 0 !important;
+        -o-border-radius: 0 !important;
+        border-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0;
+        background-color: white !important;
+    }
+    input {
+        width: 40px !important;
+        text-align:center;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 3px;
+    }
+}
+
+.paginate-list {
+    width: auto;
+    margin: 2px 3px;
+}
+.paginate-number-before {
+    font-size: 11px;
+    line-height: 26px;
+    margin-left: 2px;
+}
+.paginate-number {
+    width: 20px !important;
+    text-align:center;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 3px;
+}
+.paginate-number-after {
+    font-size: 11px;
+    line-height: 26px;
+    margin-right: 2px;
+}
+.paginate-separator {
+    float: left;
+    height: 24px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    margin: 1px 1px;
+}
+.paginate-btn {
+    display: block;
+    background-color: #FFF;
+    /*border: 1px solid #A9A9A9;*/
+    border-radius: 4px;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+$picon: ("first", "prev", "next", "last");
+@include pager-icons($picon);
+
+.paginate-load {
+    display: block;
+    background: transparent image-url("paginate/paginate_load.png") no-repeat 2px 2px;
+    width: 20px;
+    height: 20px;
+}
+.paginate-message {
+    display: none;
+    float: right;
+    padding: 5px 0 3px 0;
+}

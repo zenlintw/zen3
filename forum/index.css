@@ -1,0 +1,5 @@
+button		{border: 1px solid black; font: 10pt}
+td		{font: 11pt}
+A		{text-decoration : none;}
+A:HOVER		{color : Green; text-decoration : underline;}
+A:ACTION	{text-decoration : none; }

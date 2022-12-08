@@ -1,0 +1,13 @@
+// varible
+$mobilesize: 768px;
+$radius: 4px;
+
+// base
+@import "compass/css3";
+
+// components
+@import "components/msg-box";
+
+// layouts
+@import "layout/box1";
+@import "layout/content9";

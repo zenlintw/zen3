@@ -1,0 +1,680 @@
+@charset "UTF-8";
+/* LCMS Header
+-------------------------------------------------- */
+.container {
+  min-width: 885px;
+  width: 100%;
+  height: 52px;
+}
+
+.lcms-header .title {
+  position: relative;
+  background-color: #242424;
+  height: 52px;
+  border-width: 0;
+  z-index: 10;
+}
+.lcms-header .title .narrow {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 885px;
+  width: 100%;
+  height: 52px;
+}
+.lcms-header .title .fix-narrow {
+  width: 1170px;
+}
+.lcms-header .logo, .lcms-header .banner, .lcms-header .tools {
+  margin: 0;
+  padding: 0;
+}
+.lcms-header .logo {
+  background: transparent url("./logo.png") no-repeat;
+  width: 300px;
+  height: 52px;
+}
+.lcms-header .logo a {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 52px;
+  display: block;
+}
+.lcms-header .banner {
+  background: transparent url("./banner.jpg") no-repeat center;
+  width: 450px;
+  height: 87px;
+}
+.lcms-header .tools {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.lcms-header .tools .profile {
+  color: #292929;
+  font-size: 0.9em;
+  border: none;
+}
+.lcms-header .tools .profile .nav {
+  margin-bottom: 0;
+  height: 52px;
+}
+.lcms-header .tools .profile .nav > li {
+  display: inline-block;
+  float: left;
+  line-height: 52px;
+  padding-left: 14px;
+}
+.lcms-header .tools .profile .nav > li.setting {
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  vertical-align: top;
+  max-height: 49px;
+  display: inline-block;
+  padding: 0 16px;
+}
+.lcms-header .tools .profile .nav > li > span {
+  font-size: 1.1em;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+.lcms-header .tools .profile .nav > li > #lang {
+  top: 2px;
+  position: relative;
+  margin-left: 5px;
+  width: 80px;
+}
+.lcms-header .tools .profile .nav > li > a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 1.1em;
+}
+.lcms-header .tools .profile .nav > li > a:hover, .lcms-header .tools .profile .nav > li > a:focus {
+  background: transparent;
+  text-decoration: underline;
+  color: #19CED0;
+}
+.lcms-header .tools .profile .nav > li > a .personal-setup {
+  height: 32px;
+  width: 32px;
+  background-image: url(/theme/default/learn_mooc/setup_b.png);
+  margin-top: 10px;
+}
+.lcms-header .tools .profile .nav > li > a .icon-gear {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  background: url("/public/images/icon_gear.png") 3px 3px no-repeat;
+}
+.lcms-header .tools .profile .nav > .divider {
+  border-right: 1px solid #393939;
+  height: 100%;
+}
+.lcms-header .tools .profile .nav-up, .lcms-header .tools .profile .nav-down {
+  display: inline;
+  height: 53px;
+}
+.lcms-header .tools .profile .nav-up > li, .lcms-header .tools .profile .nav-down > li {
+  line-height: 31px;
+  background-color: #FB9504;
+  border-bottom: 4px solid #FCAE3F;
+  padding: 0;
+}
+.lcms-header .tools .profile .nav-up > li:hover, .lcms-header .tools .profile .nav-down > li:hover {
+  border-bottom: 4px solid #FF7F7E;
+  background-color: #e55756;
+}
+.lcms-header .tools .profile .nav-up > li:first-child, .lcms-header .tools .profile .nav-down > li:first-child {
+  margin-left: 20px;
+}
+.lcms-header .tools .profile .nav-up > li:first-of-type, .lcms-header .tools .profile .nav-down > li:first-of-type {
+  border-bottom-left-radius: 4px;
+}
+.lcms-header .tools .profile .nav-up > li:last-of-type, .lcms-header .tools .profile .nav-down > li:last-of-type {
+  border-bottom-right-radius: 4px;
+}
+.lcms-header .tools .profile .nav-up > li > a, .lcms-header .tools .profile .nav-down > li > a {
+  padding: 0 20px;
+  color: #FFFFFF;
+}
+.lcms-header .tools .profile .nav-up > li > a > img, .lcms-header .tools .profile .nav-down > li > a > img {
+  padding-right: 5px;
+  padding-bottom: 4px;
+}
+.lcms-header .tools .profile .nav-up > li > a:hover, .lcms-header .tools .profile .nav-down > li > a:hover {
+  color: #FFFFFF;
+}
+.lcms-header .tools .profile .nav-up > li > span, .lcms-header .tools .profile .nav-down > li > span {
+  margin-right: 0;
+}
+.lcms-header .tools .profile .nav-up > .user, .lcms-header .tools .profile .nav-down > .user {
+  border-width: 0px;
+  background-color: #626262;
+  overflow: hidden;
+  max-height: 35px;
+}
+.lcms-header .tools .profile .nav-up > .user:hover, .lcms-header .tools .profile .nav-down > .user:hover {
+  border-bottom: 0px solid;
+  border-top: 0px solid;
+  background-color: #CCCCCC;
+}
+.lcms-header .tools .profile .nav-up > .user img, .lcms-header .tools .profile .nav-down > .user img {
+  height: 35px;
+  width: 35px;
+  float: left;
+}
+.lcms-header .tools .profile .nav-up > .user > .name, .lcms-header .tools .profile .nav-down > .user > .name {
+  padding: 0 20px;
+  margin-left: 34px;
+  color: #FFFFFF;
+}
+.lcms-header .tools .profile .nav-up > .dropdown, .lcms-header .tools .profile .nav-down > .dropdown {
+  border: 0;
+  background-color: transparent;
+}
+.lcms-header .tools .profile .nav-up > .dropdown:hover, .lcms-header .tools .profile .nav-down > .dropdown:hover {
+  border-bottom: 0px solid;
+  border-top: 0px solid;
+  background-color: #CCCCCC;
+}
+.lcms-header .tools .profile .nav-up > .dropdown > a, .lcms-header .tools .profile .nav-down > .dropdown > a {
+  height: 33px;
+  padding: 0 12px;
+}
+.lcms-header .tools .profile .nav-up > .dropdown > a:hover, .lcms-header .tools .profile .nav-down > .dropdown > a:hover {
+  background-color: #ECECEC;
+  color: initial;
+}
+.lcms-header .tools .profile .nav-up > .dropdown .dropdown-toggle .personal-setup, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-toggle .personal-setup {
+  margin: 0 auto;
+}
+.lcms-header .tools .profile .nav-up > .dropdown .dropdown-menu, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-menu {
+  min-width: 58px;
+  max-width: 58px;
+  margin-top: 0;
+  padding: 0;
+  background-color: #CCCCCC;
+}
+.lcms-header .tools .profile .nav-up > .dropdown .dropdown-menu li, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-menu li {
+  text-align: center;
+  border-top: 1px solid #898989;
+}
+.lcms-header .tools .profile .nav-up > .dropdown .dropdown-menu li:first-of-type, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-menu li:first-of-type {
+  border-top-width: 0;
+}
+.lcms-header .tools .profile .nav-up > .dropdown .dropdown-menu li .icon-set-up, .lcms-header .tools .profile .nav-up > .dropdown .dropdown-menu li .icon-sign-out, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-menu li .icon-set-up, .lcms-header .tools .profile .nav-down > .dropdown .dropdown-menu li .icon-sign-out {
+  margin: 3px auto;
+}
+.lcms-header .tools .profile .nav-up > .divider, .lcms-header .tools .profile .nav-down > .divider {
+  border-right: 1px dashed #FFFFFF;
+  height: 31px;
+}
+.lcms-header .tools .profile .nav-down > li {
+  margin-top: 18px;
+  border-top: 4px solid #FCAE3F;
+  border-bottom: 0;
+}
+.lcms-header .tools .profile .nav-down > li:hover {
+  border-bottom: 0px solid #e55756;
+  border-top: 4px solid #FF7F7E;
+  background-color: #e55756;
+}
+.lcms-header .tools .profile .nav-down > li:first-of-type {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 4px;
+}
+.lcms-header .tools .profile .nav-down > li:last-of-type {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 4px;
+}
+.lcms-header .tools .profile .nav-btn > li {
+  margin: 0 5px;
+  background-color: #242424;
+  border: 1px solid #5A5A5A;
+  border-top-width: 0;
+  line-height: 35px;
+}
+.lcms-header .tools .profile .nav-btn > li, .lcms-header .tools .profile .nav-btn > li:first-of-type, .lcms-header .tools .profile .nav-btn > li:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+.lcms-header .tools .profile .nav-btn > li:hover {
+  border-bottom: 0px solid;
+  border-top: 0px solid;
+}
+.lcms-header .tools .profile .nav-btn > li > a {
+  padding: 0px 10px;
+}
+.lcms-header .tools .profile .nav-btn > .active {
+  background-color: #03A385;
+}
+.lcms-header .tools .profile li.realname {
+  float: none;
+}
+.lcms-header .tools .profile .realname > a {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 75px;
+  text-overflow: ellipsis;
+}
+.lcms-header .tools .search {
+  background-color: #DCDCDC;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px;
+}
+.lcms-header .tools .search > .input-append {
+  margin-bottom: 0;
+}
+.lcms-header .tools .search input[type="text"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  line-height: 19px;
+  height: 25px;
+  width: 190px;
+}
+.lcms-header .tools .search .btn {
+  color: #FFFFFF;
+  border: 1px solid #868686;
+  padding: 3px 23px;
+}
+.lcms-header .tools .adv-search {
+  position: relative;
+  margin-top: 10px;
+  z-index: 1;
+}
+.lcms-header .tools .adv-search a {
+  color: #292929;
+  font-size: 0.9em;
+}
+
+.wm-content .toggle-arrow {
+  height: 0px;
+  width: 0px;
+  border-color: transparent transparent transparent #ffffff;
+  border-width: 8px 0 8px 8px;
+  border-style: solid;
+  float: left;
+  margin-top: 17px;
+}
+.wm-content .sidebar-toggle {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.wm-content .sidebar-toggle .icon-toggle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px;
+  background: transparent url('../images/theme_white/icon-toggle-w1.png?1429848610') no-repeat center;
+}
+.wm-content .sidebar-toggle .icon-toggle:hover {
+  background: transparent url('../images/theme_white/icon-toggle-w2.png?1429848610') no-repeat center;
+}
+}
+.wm-content .container {
+  min-width: 600px;
+}
+.wm-content .lcms-header .title, .wm-content .lcms-header .logo, .wm-content .lcms-header .title .narrow, .wm-content .lcms-header .logo a, .wm-content .lcms-header .tools .profile .nav {
+  height: 49px;
+}
+.wm-content .lcms-header .title {
+  background-color: white;
+}
+.wm-content .lcms-header .title .narrow {
+  min-width: 400px;
+}
+.wm-content .lcms-header .logo {
+  background-position: left;
+  float: left;
+}
+.wm-content .lcms-header .tools .profile .nav .icon-home {
+  background-image: url(/public/images/theme_white/co_icon_home_w.png);
+}
+.wm-content .lcms-header .tools .profile .nav > li {
+  float: right;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.wm-content .lcms-header .tools .profile .nav > li.setting {
+  border: 0;
+}
+.wm-content .lcms-header .tools .profile .nav > li.dropdown {
+  padding: 0;
+}
+.wm-content .lcms-header .tools .profile .nav > li > a {
+  color: #707070;
+}
+.wm-content .lcms-header .tools .profile .nav > li > a:hover, .wm-content .lcms-header .tools .profile .nav > li > a:focus {
+  background: transparent;
+  text-decoration: underline;
+  color: #19CED0;
+}
+.wm-content .lcms-header .tools .profile .nav > li > a .personal-setup {
+  height: 32px;
+  width: 32px;
+  background-image: url(/public/images/theme_white/setup_w.png);
+  margin-top: 10px;
+}
+.wm-content .lcms-header .tools .profile .nav .user-info {
+  color: #898989;
+  line-height: 50px;
+  height: 50px;
+  white-space: nowrap;
+}
+.wm-content .lcms-header .tools .profile .nav > .user {
+  padding: 0;
+  position: relative;
+  left: -1px;
+  max-height: 49px;
+}
+.wm-content .lcms-header .tools .profile .nav > .user > .user-inner {
+  vertical-align: top;
+  padding: 0 10px;
+  max-height: 49px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-left: 0;
+}
+.wm-content .lcms-header .tools .profile .nav > .user > .user-inner > .name {
+  color: #707070;
+  font-size: 12px;
+  display: inline-block;
+}
+.wm-content .lcms-header .tools .profile .nav > .user img {
+  vertical-align: top;
+  height: 40px;
+  width: 40px;
+  margin-top: 4px;
+}
+.wm-content .lcms-header .tools .profile .nav > .user > .home {
+  padding: 0 16px;
+  max-height: 49px;
+  box-sizing: border-box;
+  border-left: 0;
+}
+.wm-content .lcms-header .tools .profile .nav > .user > .home .icon-home {
+  height: 18px;
+  width: 21px;
+  min-width: 21px;
+  background: url("/public/images/icon_home_grey.png") no-repeat;
+}
+.wm-content .lcms-header .tools .profile .nav > .user > .divider {
+  border-right: 1px dashed #707070;
+  height: 31px;
+  margin-top: 8px;
+  vertical-align: top;
+  display: inline-block;
+}
+.wm-content .lcms-header .tools .profile .nav > .divider {
+  border-right: 1px dashed #707070;
+  height: 31px;
+  margin-top: 8px;
+}
+.wm-content .lcms-header .tools .profile .nav > .divider.logout {
+  padding: 0;
+}
+.wm-content.personal .lcms-header .title {
+  background-color: #07A2A4;
+}
+.wm-content.personal .lcms-header .tools .profile .nav > li.setting {
+  border: 1px solid #008789;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3ZDJkMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAyNzA3MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67d2d1), color-stop(100%, #027072));
+  background-image: -moz-linear-gradient(top, #67d2d1, #027072);
+  background-image: -webkit-linear-gradient(top, #67d2d1, #027072);
+  background-image: linear-gradient(to bottom, #67d2d1, #027072);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#67D2D1', endColorstr = '#07A2A4', GradientType = 0);
+}
+.wm-content.personal .lcms-header .tools .profile .nav > li > a {
+  color: white;
+}
+.wm-content.personal .lcms-header .tools .profile .nav > li > a:hover, .wm-content.personal .lcms-header .tools .profile .nav > li > a:focus {
+  color: #19CED0;
+}
+.wm-content.personal .lcms-header .tools .profile .nav > li > a .icon-gear {
+  background: url("/public/images/icon_gear_white.png") 3px 3px no-repeat;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user {
+  background: url("/public/images/bg_linear_gradient_green.png") repeat-x;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user > .user-inner {
+  border-left: 1px solid #008789;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user > .user-inner > .name {
+  color: white;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user > .home {
+  border-left: 1px solid #008789;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user > .home .icon-home {
+  background: url("/public/images/icon_home_white.png") no-repeat;
+}
+.wm-content.personal .lcms-header .tools .profile .nav .user > .divider {
+  display: none;
+}
+.wm-content.personal .lcms-header .tools .profile .nav > .divider {
+  border-right: 1px dashed #FFFFFF;
+}
+.wm-content.personal .lcms-header .tools .profile .nav > .divider.logout {
+  display: none;
+}
+.wm-content.personal .sidebar-toggle .icon-toggle {
+  background: transparent url('../images/icon_toggle_opacity.png?1439171353') no-repeat center;
+}
+.wm-content.personal .sidebar-toggle .icon-toggle:hover {
+  background: transparent url('../images/icon_toggle_opacity_1.png?1439171353') no-repeat center;
+}
+.wm-content.personal .logo {
+  display: block;
+}
+
+
+/* header 導覽列陰影 */
+.nav-bottom-line {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-top-color: #b8b8b8;
+  overflow: hidden;
+  top: -2px;
+  position: relative;
+}
+
+/* 課程迷失BAR */
+.courseinfo {
+  margin-top: -2px;
+  height: 40px;
+  overflow: hidden;
+}
+.courseinfo > .left {
+  max-width: 50%;
+  line-height: 55px;
+  margin-top: -1px;
+}
+.courseinfo > .right {
+  min-width: 450px;
+  max-width: 40%;
+  line-height: 40px;
+  margin: 40px 5px 0 0;
+  text-align: right;
+  height: 40px;
+  top: -40px;
+  position: relative;
+}
+.courseinfo .coursename {
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: bold;
+  color: #242424;
+  -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90,color='#242424');
+}
+.courseinfo .coursenum {
+  width: 200px;
+  font-size: 16px;
+}
+.courseinfo .coursenum .push {
+  cursor: pointer;
+  background: url("/theme/default/learn_mooc/co_icon_push_1.png");
+  margin: 7px 0 0 10px;
+  width: 26px;
+  height: 26px;
+}
+.courseinfo .coursenum .coursecount {
+  font-size: 12px;
+  color: #707070;
+}
+.courseinfo .share {
+  width: 200px;
+  display: none;
+  top: 0.3em;
+  position: relative;
+}
+.courseinfo .share > .pic > a > .fb {
+  background: transparent url("/theme/default/learn_mooc/co_icon_fb.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .fb:hover, .courseinfo .share > .pic > a > .fb:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_fb_1.png") no-repeat;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .plk {
+  background: transparent url("/theme/default/learn_mooc/co_icon_plurk.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .plk:hover, .courseinfo .share > .pic > a > .plk:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_plurk_1.png") no-repeat;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .tw {
+  background: transparent url("/theme/default/learn_mooc/co_icon_twitter.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .tw:hover, .courseinfo .share > .pic > a > .tw:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_twitter_1.png") no-repeat;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .wct {
+  background: transparent url("/theme/default/learn_mooc/co_icon_wchat.png") no-repeat;
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .wct:hover, .courseinfo .share > .pic > a > .wct:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_wchat_1.png") no-repeat;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .ln {
+  background: transparent url("/theme/default/learn_mooc/co_icon_line.png") no-repeat;
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  background-size: cover;
+}
+.courseinfo .share > .pic > a > .ln:hover, .courseinfo .share > .pic > a > .ln:focus {
+  background: transparent url("/theme/default/learn_mooc/co_icon_line_1.png") no-repeat;
+  background-size: cover;
+}
+.courseinfo .courseteacher {
+  max-width: 250px;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: right;
+  color: #707070;
+}
+.courseinfo .pic {
+  margin-right: 0.7em;
+  float: right;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+/* 課程迷失底線 */
+.courseinfo-bottom-line > div:first-child {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-top-color: #DDDDDD;
+  position: relative;
+}
+.courseinfo-bottom-line > div:first-child + div {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-top-color: #FFFFFF;
+  position: relative;
+}
+
+.personal-setup {
+  height: 32px;
+  width: 32px;
+  background-image: url(/theme/default/learn_mooc/setup_b.png);
+  margin-top: 10px;
+}
+
+/* 下方未整理 scss 先使用覆寫的方式 */
+.lcms-header .tools .profile .nav-up > .dropdown .btn {
+  border: 1px solid #000000;
+  background-image: linear-gradient(to bottom, #747474, #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#747474', endColorstr = '#000000', GradientType = 0);
+}
+
+.nav-adv-search {
+  background-color: #ABAAAA;
+}
+
+#franchisee {
+  background-color: #DCDCDC;
+}
+
+.elastislide-wrapper {
+  background-color: #898989;
+}
+
+/* 課程分類 */
+.lcms-nav-group nav ul li.active,
+.lcms-nav-group nav ul li:hover {
+  border-color: #494949;
+}
+.lcms-nav-group nav ul li.active a,
+.lcms-nav-group nav ul li:hover a {
+  color: #494949;
+}
+
+.lcms-nav-tabs .mooc-nav-more {
+  background-color: #494949;
+}
+
+.lcms-header .tools .profile .nav-up .user {
+  background-color: #626262;
+}
+.lcms-header .tools .profile .nav-up .user:hover {
+  background-color: #626262;
+}
+
+/* 檢視單一課程頁尾區域 */
+.footer-bg {
+  background: #9E9584;
+}
+
+.footer {
+  background-image: linear-gradient(to bottom, #898989 66px, #282828 1px, #9e9584 28px);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FF898989', endColorstr = '#FF9E9584', GradientType = 0);
+}

@@ -1,0 +1,35 @@
+.layout-hr {
+	display: table;
+	width: 100%;
+	> .layout-child {
+		display: table-cell;
+		vertical-align: top;
+	}
+	/*
+	@media screen and (max-width: $mobilesize) {
+		display: block;
+		> .layout-child.resp {
+			display: block;
+			width: 100%;
+		}
+	}
+	*/
+}
+
+
+@media screen and (max-width: $mobilesize) {
+	.resp {
+		display: block;
+		> .layout-child {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.layout-vert {
+	> .layout-child {
+		display: block;
+		vertical-align: top;
+	}
+}

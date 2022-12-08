@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>如何设定使用 Web 资料夹</title>
+    <link href="./image/bootstrap.min.css" rel="stylesheet" />
+    <link href="./image/application.css" rel="stylesheet" />
+</head>
+<body>
+<div class="full">
+    <div class="nav-adv-course">
+        <div class="fix-narrow">
+            <div class="title">
+                <div class="main-title"><br><br><br>如何设定使用 Web 资料夹</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-adv-course-bottom">
+    </div><div class="clearboth-block"></div>
+    <div class="main">
+        <div class="fix-narrow">
+            <div class="basic">
+                <div class="left">
+                    <div class="intro padding-left-15 padding-right-35">
+                        <div class="title">Windows 7 与 Windows 8 使用者</div>
+                        <div class="content">
+							<ol>
+								<li><b>安装 WebClient 注册表</b>
+									<ul>
+										<li>下载 <a href="./WebClient.reg">WebClient.reg</a> 注册表</li><br>
+										<li>直接点选【运行】<br><img src="./image/webclient_zh-cn_00.png"></li><br>
+										<li>允许程序对此计算机进行更改，点【是】<br><img src="./image/webclient_zh-cn_01.png"></li><br>
+										<li>是否确定要继续，点【是】<br><img src="./image/webclient_zh-cn_02.png"></li><br>
+										<li>已经成功加到注册表中，点【确定】<br><img src="./image/webclient_zh-cn_03.png"></li><br>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>新增「受信任的站点」</b>
+									<ul>
+										<li>开启IE，单击『工具』>『Ｉnternet 选项』>『安全』</li><br>
+										<li>单击『受信任的站点』，再单击『站点』<br><img src="./image/webclient_zh-cn_04.png"></li><br>
+										<li>
+										取消【勾选】『对该区域中的所有站点要求服务器验证(https:)』<br>
+										输入平台站点，http://<span id="p_dav"></span><br>
+										点【添加】
+										<div id="div_dav" style="padding-top: 115px; padding-left:30px; background:url(./image/webclient_zh-cn_05.png) no-repeat;width:367px;height:227px;"></div>
+										</li>
+									</ul>
+								</li>
+								<br><br>
+								<li><b>重新开机电脑</b></li>
+								<br><br>
+								<li><b>开始使用 Web 资料夹</b>
+									<ul>
+										<li>到课程办公室＞课程管理＞教材上传，于 Web 资料夹，点【开启】</li><br>
+										<li>当开启资源管理器后，则可以将所需档案复制、粘贴或拖拉方式上传<br><img src="./image/webclient_zh-cn_06.png"></li>
+									</ul>							
+								</li>
+							</ol>
+						</div>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="reference padding-left-15 padding-right-35">
+                        <div class="title">注意事项</div>
+                        <div class="content">
+							<ul>
+								<li>目前 Web资料夹，只限定使用 IE 浏览器<br>支援浏览器　：IE8 (含)以上<br>支援作业系统：Windows 7、Windows 8
+								
+								</li><br>
+								<li>Web 资料夹上传档案，单一最大档案限制 4GB</li><br>
+								<li>不可以使用 InPrivate 方式浏览，此会造成 Web 资料夹无法开启<br><img src="./image/webclient_zh-cn_07.png"></li><br>
+								<li>若发生在 Web 资料夹，点【开启】无反应，请尝试关闭所有 IE 浏览器后，再重新开启 IE 或重开机。</li><br>
+								<li>若粘贴档案时，出现『错误 0x80070780: 系统无法访问此文件。』<br>表示 Web资料夹 已与平台失去连线，请关闭 IE 与 Web资料夹后，再重新执行一次<br><img src="./image/webclient_zh-cn_08.png"></li>
+							</ul>
+						</div>
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+	  <script type="text/javascript">			
+			document.getElementById('div_dav').innerText = 'http://'+location.hostname;
+			document.getElementById('p_dav').innerText = location.hostname;
+	  </script>
+</body>
+</html>

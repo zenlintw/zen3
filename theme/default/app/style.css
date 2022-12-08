@@ -1,0 +1,24 @@
+.courseImageDeleteBtn {
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.courseImageBtn {
+  background-size: cover;
+  width: 143px;
+  height: 100;
+  border: none;
+}
+
+.courseImageContainer {
+  position: relative;
+  width: 143px;
+  height: 100px;
+  float: left;
+  padding: 5px;
+}

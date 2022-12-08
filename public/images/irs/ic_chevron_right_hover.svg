@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_chevron_right_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btn_next_disable_footer" transform="translate(-19.000000, -12.000000)" fill="#BBEBDD">
+            <path d="M33.8895281,24.308201 C34.2522517,23.9454774 34.2522517,23.3651196 33.8895281,23.0023959 L23.1238902,12.2367581 C22.7611666,11.8740344 22.1808088,11.8740344 21.8180851,12.2367581 L19.4096001,14.6452431 C19.0468765,15.0079667 19.0468765,15.5883246 19.4096001,15.9510482 L27.1138504,23.6552985 L19.4096001,31.3595487 C19.0468765,31.7222724 19.0468765,32.3026302 19.4096001,32.6653539 L21.8180851,35.0738389 C22.1808088,35.4365625 22.7611666,35.4365625 23.1238902,35.0738389 L33.8895281,24.308201 Z" id="ic_chevron_right_hover"></path>
+        </g>
+    </g>
+</svg>

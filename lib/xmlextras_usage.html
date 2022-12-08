@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Xml Extras (WebFX)</title>
+<style type="text/css">
+
+/*
+
+bright: rgb(234,242,255);
+normal: rgb(120,172,255);
+dark:	rgb(0,66,174);
+
+*/
+
+/* import menu css */
+@import "dhtml/xmenu/xmenu.css";
+
+#webfx-about {
+	position:		absolute;
+	background:		white;
+	top:			102px;
+	right:			10px;
+	width:			20px;
+	writing-mode:	tb-rl;
+	filter:			flipH() flipV() alpha(opacity=50);
+}
+
+/* headers css */
+
+#webfx-title {
+	position:		absolute;
+	left:			90px;
+	top:			-5px;
+	color:			black;
+	background:		transparent;
+	border:			0;
+	
+	padding:		0;
+	margin:			0;
+	
+	font-family:	Arial Black, Verdana, Helvetica, Sans-Serif;
+	font-weight:	bold;
+	font-style:		italic;
+	font-size:		45px;
+	letter-spacing:	-5px;
+}
+
+#webfx-title-background {
+	width:					100%;
+	height:					67px;
+	background:				white no-repeat;/*rgb(100,100,100) no-repeat;*/
+	background-image:		url("title-background.png");
+	background-position:	0 0;
+}
+
+#webfx-sub-title {
+	position:		absolute;
+	left:			96px;
+	top:			45px;
+	color:			black;
+	background:		transparent;
+	
+	padding:		0;
+	margin:			0;
+	border:			0;
+	
+	font-family:	Verdana, Helvetica, Sans-Serif;
+	font-size:		11px;
+}
+
+#webfx-menu-bar-1,
+#webfx-menu-bar-2,
+#webfx-menu-bar-3,
+#webfx-menu-bar-4,
+#webfx-menu-bar-5 {
+	height:			2px;
+	font-size:		0;
+	overflow:		hidden;
+	background:		rgb(120,172,255);/*#ff8800;*/
+
+	padding:		0;
+}
+
+#webfx-menu-bar-1 {
+	background:		rgb(0,66,174);/*rgb(120,172,255);/*black;/*rgb(234,242,255);*/
+	height:			1px;
+}
+
+#webfx-menu-bar-2 {
+	background:		rgb(120,172,255);/*#ff8800;*/
+	height:			1px;
+}
+
+#webfx-menu-bar-3 {
+	background:		rgb(120,172,255);/*#ff8800;*/
+	height:			1px;
+}
+
+#webfx-menu-bar-4 {
+	background:		rgb(0,66,174);
+	height:			1px;
+}
+
+#webfx-menu-bar-5 {
+	background:		#dddddd;
+	height:			3px;
+}
+
+/* headers css end */
+
+
+html, body {
+	height:		100%;
+	margin:		0;
+	padding:	0;
+	background:	url("images/background-shadow.gif") repeat-y white;
+	color:		black;
+	
+	font-size:	13px;
+	font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif";
+}
+
+.webfx-main-body {
+	margin-left:	100px;
+	border-left:	1px solid rgb(120,172,255);
+	/*border-right:	1px solid rgb(120,172,255);*/
+}
+
+/* h1 only used in header */			
+h2,h3,h4,h5,h6 {
+	margin-left:	10px;
+	margin-right:	10px;
+	padding:		2px 10px 2px 10px;
+	background:		rgb(234,242,255);
+	border-bottom:	1px solid rgb(120,172,255);
+	width:			480px;
+	width:			expression(500);
+}
+
+h1,h2 {
+	font-weight:	normal;
+}
+
+h3,h4,h5,h6 {
+	font-weight:	bold;
+}
+
+h1 {
+	font-size:		50px;
+}
+
+h2 {
+	font-size:		20px;
+}
+
+h3 {
+	font-size:		15px;
+}
+
+p {
+	margin:			10px;
+	font-size:		13px;
+	color:			black;
+	width:			500px;
+}
+
+td {
+	font-size:		13px;
+	font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif";
+}
+
+pre {
+	margin:			20px;
+	background:		#eeeeee;
+	padding:		10px;
+	border:			1px solid #dddddd;
+	color:			black;
+	width:			470px;
+	width:			expression(490);
+}
+
+code {
+	background:		#eeeeee;
+	border:			1px solid #dddddd;
+	color:			black;
+}
+
+a {
+	text-decoration:underline;
+	color:			rgb(0,66,174);
+}
+
+a:hover {/*rgb(0,66,174)*/
+	color:			rgb(0,66,174);
+	background:		rgb(234,242,255);
+}
+
+a:visited {
+	color:			rgb(120,172,255);
+}
+
+a:visited:hover {
+	color:			rgb(0,66,174);
+}
+
+hr {
+	margin-left:		10px;
+	margin-right:		10px;
+	padding:			0;
+	text-align:			left;
+	width:				500px;
+	height:				1px;
+	color:				rgb(120,172,255);
+	background-color:	rgb(120,172,255);
+	border-bottom:		1px solid rgb(120,172,255);
+	border:				0;
+}
+
+h2 a, h3 a {
+	display:			block;
+	text-decoration:	none;
+	width:				expression("100%");
+}
+
+table {
+	margin:			10px;
+	font-size:		13px;
+	color:			black;
+	/*width:			500px;*/
+}
+
+thead td {
+	background:		rgb(234,242,255);
+	border-bottom:	1px solid rgb(120,172,255);
+	font-weight:	bold;
+}
+
+.author {
+	margin-top:		50px;
+	font-style:		italic;
+}
+
+.date {
+	color:			rgb(0,66,174);
+}
+
+.warning,
+.warning a {
+	color:			red;
+}
+
+
+.warning a:visited,
+.warning a:hover {
+	color:	red;
+}
+
+.warning a:hover {
+	background:	rgb(255,230,230);
+}
+
+
+
+/* copied from xmenu.css */
+
+.webfx-menu-bar {
+	background:		rgb(120,172,255);/*rgb(255,128,0);*/
+
+	padding:		2px;
+	
+	font-family:	Verdana, Helvetica, Sans-Serif;
+	font-size:		11px;
+	
+}
+
+.webfx-menu-bar a,
+.webfx-menu-bar a:visited {
+	color:				black;
+	border:				1px solid rgb(120,172,255);/*rgb(255,128,0);*/
+	
+	text-decoration:	none;
+	padding:			1px;
+	padding-left:		5px;
+	padding-right:		5px;
+}
+
+.webfx-menu-bar a:hover {
+	color:			black;
+	background:		rgb(120,172,255);
+	border-left:	1px solid rgb(234,242,255);/*#ffcc88;*/
+	border-right:	1px solid rgb(0,66,174);/*#884400;*/
+	border-top:		1px solid rgb(234,242,255);/*#ffcc88;*/
+	border-bottom:	1px solid rgb(0,66,174);/*#884400;*/
+}
+
+.webfx-menu-bar a .arrow {
+	border:			0;
+	float:			none;
+/*
+	float:			right;
+	width:			6px;
+	height:			16px;
+
+	margin-right:	2px;
+	background: red;
+*/
+}
+
+.webfx-menu-bar a:active, .webfx-menu-bar a:focus {
+	-moz-outline:	none;
+	outline:		none;
+}
+
+/* end xmenu.css copy */
+</style>
+
+</head>
+<body>
+<h2>Usage</h2>
+
+<p>In this document we will go through some common uses of the XML objects provided
+by IE and Mozilla.</p>
+
+<p>To use the XML extras one has to include the needed JS file.</p>
+
+<pre>
+&lt;script type="text/javascript" src="<a href="xmlextras.js">xmlextras.js</a>"&gt;&lt;/script&gt;
+</pre>
+
+<p>Notice that this JS file uses try/catch statements and therefore it will give syntax errors
+in old browsers that does not support these.</p>
+
+<h2>Load XML File</h2>
+
+<h3>...using asyncronous XmlHttp</h3>
+
+<p>To load an XML file one can use both the <code>XmlHttp</code> object and the
+<code>XmlDocument</code> object but I usually prefer the first one because it is a bit more
+powerful.</p>
+
+<pre>
+function loadAsync(sUri) {
+   var xmlHttp = XmlHttp.create();
+   var async = true;
+   xmlHttp.open("GET", sUri, async);
+   xmlHttp.onreadystatechange = function () {
+      if (xmlHttp.readyState == 4)
+         doSomething(xmlHttp.responseXML); // responseXML : XmlDocument
+   }
+   xmlHttp.send(null);
+}
+</pre>
+
+<p>The <code>open</code> method takes three arguments and the first one is either
+<code>"GET"</code> or <code>"PUT"</code>. The last argument allows you to load the
+document synchronously or asynchronously. Synchronous loading is easier to use
+because the call to <code>send</code> does not return until the XML file has loaded.
+The downside to this is that the browser does not respond during this time. The argument
+to <code>send</code> is needed and in case one is using <code>"POST"</code> this
+should be of type <code>XmlDocument</code>.</p>
+
+<h3>...using syncronous XmlHttp</h3>
+
+<p>In case you want to use synchronous loading set the third argument of <code>open</code>
+to <code>false</code>. Once the <code>send</code> method has been called we can access the
+<code>responseXML</code> property.</p>
+
+<pre>
+function loadSync(sUri) {
+   var xmlHttp = XmlHttp.create();
+   var async = false;
+   xmlHttp.open("GET", sUri, async);
+   xmlHttp.send(null);
+   doSomething(xmlHttp.responseXML); // responseXML : XmlDocument
+}
+</pre>
+
+<h2>Posting an XML file</h2>
+
+<p>To post an XML document to the server we once again use the <code>XmlHttp</code> object.
+To do this one only needs to pass the <code>XmlDocument</code> as the argument to the
+<code>send</code> method.</p>
+
+<pre>
+function postAsync(sUri, xmlDoc) {
+   var xmlHttp = XmlHttp.create();
+   var async = true;
+   xmlHttp.open("GET", sUri, async);
+   xmlHttp.onreadystatechange = function () {
+      if (xmlHttp.readyState == 4)
+         doSomething(xmlHttp.responseXML); // responseXML : XmlDocument
+   }
+   xmlHttp.send(xmlDoc);
+}
+</pre>
+
+<h2>Loading a text file</h2>
+
+<p>The <code>XmlHttp</code> object also allows you to read non XML files. This is
+done in almost exactly the same way as one reads XML files but instead of looking
+at the <code>responseXML</code> property one looks at <code>responseText</code>.</p>
+
+<pre>
+function loadTextSync(sUri) {
+   var xmlHttp = XmlHttp.create();
+   var async = false;
+   xmlHttp.open("GET", sUri, async);
+   xmlHttp.send(null);
+   doSomething(xmlHttp.responseText); // responseText : String
+}
+</pre>
+
+<h2>Using XmlDocument</h2>
+
+<p>The <code>XmlDocument</code> can be used in almost exactly the same was as one
+uses the normal <code>document</code> object in DHTML. As long as one uses standard DOM
+methods and properties no problems should arise. Below is a simple example that
+creates a document, parses a string and then finds all test elements and
+alerts their name.</p>
+
+<pre>
+var doc = XmlDocument.create();
+doc.loadXML( "&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;" +
+   "&lt;root&gt;" +
+      "&lt;test name=\"Test 1\"/&gt;" +
+      "&lt;test name=\"Test 2\"/&gt;" +
+   "&lt;/root&gt;");
+
+var testEls = doc.getElementsByTagName("test");
+for (var i = 0; i &lt; testEls.length; i++)
+   alert(tests[i].getAttribute("name"));
+</pre>
+
+<h3>Load using XmlDocument</h3>
+
+<p>One can also load an xml file from the server using an <code>XmlDocument</code>
+object. This is done using the <code>load</code> method. To make the loading asychronous
+one sets the property <code>async</code> to <code>true</code> of the
+<code>XmlDocument</code> object. When using asynchronous loading wait until the
+<code>readyState</code> is <code>4</code>.</p>
+
+<pre>
+function loadAsync2(sUri) {
+   var doc = XmlDocument.create();
+   doc.async = true;
+   doc.onreadystatechange = function () {
+      if (doc.readyState == 4)
+         alert(doc.xml); // doc.xml : String
+   }
+   doc.load(sUri);
+}
+</pre>
+
+<p class="author">Author: Erik Arvidsson</p>
+
+<!-- end webfx-main-body -->
+</div>
+
+</body>
+</html>

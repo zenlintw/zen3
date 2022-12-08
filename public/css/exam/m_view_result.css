@@ -1,0 +1,16 @@
+.show_ans {
+    border-radius: 11px;
+    padding: 10px 22px;
+    background-color: rgb(238, 238, 238);
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.51);
+    margin-top: 0.4em;
+}
+
+.g_single_correct_ans {
+    display: inline;
+    padding: 4px 9px;
+    margin-left: 12px;
+    vertical-align: middle;
+}

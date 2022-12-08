@@ -1,0 +1,28 @@
+<?php
+/**
+ * AccountCenter_OTHDB 利用其他資料庫作為帳號中心
+ * author: jeff
+ * date:
+ */ 
+
+class AccountCenter_OTHDB extends AccountCenter
+{
+	/**
+	*   取得使用者的資料
+	*   @Access public : 類別函式
+	*   @param string $user : 使用者帳號
+	*   @return object : userinfo 物件
+	*/
+	function &getUserInfo($user){}
+	
+	/**
+	*   驗證帳密
+	*   @Access public : 類別函式
+	*   @param  string $user : 使用者帳號
+	*   @param  string $pwd  : 使用者密碼
+	*   @return bool : true=>通過，false=>不通過
+	*/
+	function validPassword($user, $pwd){}
+}
+
+?>
